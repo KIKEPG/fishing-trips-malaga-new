@@ -7,6 +7,7 @@
   <meta name="description" content="🎣 Reserva tu excursión de pesca en Marbella. Barco propio con todo incluido. La mejor experiencia de pesca en Marbella. ¡Reserva ya!">
   <link rel="canonical" href="https://fishingtripsmarbella.com/">
   <link rel="alternate" hreflang="es" href="https://fishingtripsmarbella.com/">
+  <link rel="alternate" hreflang="en" href="https://fishingtripsmarbella.com/en/">
   <link rel="alternate" hreflang="x-default" href="https://fishingtripsmarbella.com/">
 
   <link rel="icon" href="/favicon.ico" sizes="any">
@@ -1369,7 +1370,7 @@
   (function () {
     const NUMERO_WHATSAPP = "34686683373";
 
-    const isEN = !window.location.pathname.includes("/es");
+    const isEN = window.location.pathname.includes("/en");
 
     (function capturarUTMs() {
       const params = new URLSearchParams(window.location.search);
