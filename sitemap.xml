@@ -19,6 +19,17 @@
   </url>
   <url>
     <loc>https://fishingtripsmarbella.com/contactar/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://fishingtripsmarbella.com/contactar/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fishingtripsmarbella.com/en/contact/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fishingtripsmarbella.com/contactar/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://fishingtripsmarbella.com/en/contact/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://fishingtripsmarbella.com/contactar/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fishingtripsmarbella.com/en/contact/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fishingtripsmarbella.com/en/contact/"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
