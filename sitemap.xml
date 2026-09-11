@@ -4,8 +4,22 @@
   <url>
     <loc>https://fishingtripsmarbella.com/</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://fishingtripsmarbella.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fishingtripsmarbella.com/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://fishingtripsmarbella.com/"/>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://fishingtripsmarbella.com/en/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://fishingtripsmarbella.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fishingtripsmarbella.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fishingtripsmarbella.com/en/"/>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://fishingtripsmarbella.com/contactar/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 </urlset>
