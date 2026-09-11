@@ -163,6 +163,9 @@ img {
   justify-content: center;
   cursor: pointer;
 }
+.nav-close {
+  display: none;
+}
 
 /* Hero */
 .hero {
