@@ -312,7 +312,7 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 80px 64px;
+  padding: 80px 32px;
   gap: 40px;
 }
 .stats-bg {
@@ -375,7 +375,7 @@ img {
 
 .stats-dots { display: none; }
 
-.stats-faq { width: 100%; max-width: 900px; display: flex; flex-direction: column; align-items: center; gap: 24px; }
+.stats-faq { width: 100%; max-width: 1400px; display: flex; flex-direction: column; align-items: center; gap: 24px; }
 .stats-faq-title { color: #fff; font-size: 1.3rem; font-weight: 700; text-align: center; }
 .stats-faq .faq-list { width: 100%; }
 .stat-card strong {
@@ -435,12 +435,12 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 80px 64px;
+  padding: 80px 32px;
   gap: 40px;
 }
 .booking-header {
   text-align: center;
-  max-width: 1000px;
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
   gap: 16px;
