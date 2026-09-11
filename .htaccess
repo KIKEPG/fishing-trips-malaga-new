@@ -1,0 +1,24 @@
+RewriteEngine On
+
+# Sirve index.html como página por defecto
+DirectoryIndex index.html
+
+# Si alguien entra con la extensión .html, redirige a la URL limpia (sin .html)
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L]
+
+# No tocar peticiones que ya son un archivo o carpeta real (imágenes, CSS, JS, etc.)
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# /pagina o /pagina/ -> sirve pagina.html si existe, sin mostrar la extensión
+RewriteCond %{DOCUMENT_ROOT}/$1.html -f
+RewriteRule ^([^/]+)/?$ $1.html [L]
+
+# /es/pagina o /es/pagina/ -> sirve es/pagina.html si existe (subcarpetas de idioma)
+RewriteCond %{DOCUMENT_ROOT}/$1/$2.html -f
+RewriteRule ^([^/]+)/([^/]+)/?$ $1/$2.html [L]
+
+# Página 404 personalizada (opcional, crear 404.html cuando exista)
+# ErrorDocument 404 /404.html

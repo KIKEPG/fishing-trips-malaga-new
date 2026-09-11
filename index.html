@@ -52,6 +52,9 @@
     </button>
 
     <nav class="nav" id="primaryNav">
+      <button type="button" class="nav-close" id="navClose" aria-label="Cerrar menú">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
       <a href="/">Inicio</a>
       <a href="/contactar/">Contactar</a>
       <div class="lang-switch">
@@ -64,6 +67,7 @@
         Reservar Pesca
       </a>
     </nav>
+    <div class="nav-backdrop" id="navBackdrop"></div>
   </header>
 
   <!-- Hero Section -->
@@ -110,7 +114,12 @@
   <!-- Intro Charter Section -->
   <section class="section section-light intro-charter">
     <div class="intro-image-wrapper">
-      <img src="images/family.webp" alt="Padre e hijo mostrando su captura en una excursión de pesca en Marbella" width="800" height="1067" loading="lazy">
+      <div class="intro-carousel" id="introCarousel">
+        <img src="images/family.webp" alt="Padre e hijo mostrando su captura en una excursión de pesca en Marbella" width="800" height="1067" loading="lazy" class="intro-slide active">
+        <img src="images/padre-hijo-cabracho-marbella.webp" alt="Padre e hijo mostrando un cabracho capturado durante una excursión de pesca en familia en Marbella" width="700" height="933" loading="lazy" class="intro-slide">
+        <img src="images/abuelo-nieto-mero-marbella.webp" alt="Abuelo y nieto sujetando un mero capturado en una excursión de pesca en Marbella" width="700" height="933" loading="lazy" class="intro-slide">
+        <img src="images/nino-denton-marbella.webp" alt="Niño mostrando un dentón capturado durante una excursión de pesca en Marbella" width="700" height="933" loading="lazy" class="intro-slide">
+      </div>
       <div class="badge-years">
         <strong>+2</strong>
         <span>años ofreciendo<br>salidas de pesca</span>
@@ -866,19 +875,64 @@
     const navToggle = document.getElementById('navToggle');
     const navToggleIcon = document.getElementById('navToggleIcon');
     const primaryNav = document.getElementById('primaryNav');
+    const navBackdrop = document.getElementById('navBackdrop');
+
+    function openNav() {
+      primaryNav.classList.add('open');
+      navBackdrop.classList.add('open');
+      navToggle.setAttribute('aria-expanded', 'true');
+      navToggleIcon.className = 'fa-solid fa-xmark';
+      document.body.style.overflow = 'hidden';
+    }
+    function closeNav() {
+      primaryNav.classList.remove('open');
+      navBackdrop.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', 'false');
+      navToggleIcon.className = 'fa-solid fa-bars';
+      document.body.style.overflow = '';
+    }
     navToggle.addEventListener('click', () => {
-      const isOpen = primaryNav.classList.toggle('open');
-      navToggle.setAttribute('aria-expanded', String(isOpen));
-      navToggleIcon.className = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
-      document.body.style.overflow = isOpen ? 'hidden' : '';
+      if (primaryNav.classList.contains('open')) { closeNav(); } else { openNav(); }
     });
-    primaryNav.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        primaryNav.classList.remove('open');
-        navToggle.setAttribute('aria-expanded', 'false');
-        navToggleIcon.className = 'fa-solid fa-bars';
-        document.body.style.overflow = '';
+    navBackdrop.addEventListener('click', closeNav);
+    document.getElementById('navClose').addEventListener('click', closeNav);
+
+    // ---- Aparición dinámica de las secciones al hacer scroll ----
+    (function () {
+      const sections = document.querySelectorAll('section');
+      if (!('IntersectionObserver' in window)) {
+        sections.forEach(s => s.classList.add('in-view'));
+        return;
+      }
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      sections.forEach(section => {
+        section.classList.add('reveal');
+        io.observe(section);
       });
+    })();
+
+    // ---- Carrusel automático de la foto de "Tu Charter de Pesca" (sin dots ni controles) ----
+    (function () {
+      const carousel = document.getElementById('introCarousel');
+      if (!carousel) return;
+      const slides = Array.from(carousel.querySelectorAll('.intro-slide'));
+      if (slides.length < 2) return;
+      let current = 0;
+      setInterval(() => {
+        slides[current].classList.remove('active');
+        current = (current + 1) % slides.length;
+        slides[current].classList.add('active');
+      }, 4000);
+    })();
+    primaryNav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', closeNav);
     });
 
     // ---- Cookies Banner Logic (Funcional / Preferencias / Estadísticas / Marketing) ----
