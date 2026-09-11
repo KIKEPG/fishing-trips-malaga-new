@@ -667,6 +667,9 @@ img {
 .lightbox:not([hidden]) {
   display: flex;
 }
+#cookie-prefs-panel:not([hidden]) {
+  display: flex;
+}
 .lightbox img {
   max-width: 100%;
   max-height: 100%;
