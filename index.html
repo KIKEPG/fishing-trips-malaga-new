@@ -16,6 +16,8 @@
   <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 
+  <link rel="preload" as="image" href="/images/hero-video-poster.webp" fetchpriority="high">
+
   <link rel="stylesheet" href="/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
@@ -73,7 +75,11 @@
 
   <!-- Hero Section -->
   <section class="hero">
-    <img src="/images/hero.webp" alt="Cliente de Fishing Trips Marbella mostrando su captura durante una excursión de pesca en Marbella" class="hero-bg hero-zoom" width="1200" height="1600" fetchpriority="high">
+    <video class="hero-bg" id="heroVideo" autoplay muted loop playsinline preload="auto" poster="/images/hero-video-poster.webp" width="480" height="848" aria-hidden="true">
+      <source src="/images/hero-video.webm" type="video/webm">
+      <source src="/images/hero-video.mp4" type="video/mp4">
+      <img src="/images/hero-video-poster.webp" alt="Cliente de Fishing Trips Marbella mostrando su captura durante una excursión de pesca en Marbella" class="hero-bg" width="480" height="848">
+    </video>
     <div class="hero-overlay"></div>
     
     <div class="hero-content">
@@ -864,6 +870,13 @@
 
   <!-- Scripts -->
   <script>
+    // ---- Vídeo del hero: respeta "reducir movimiento" ----
+    const heroVideo = document.getElementById('heroVideo');
+    if (heroVideo && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      heroVideo.pause();
+      heroVideo.removeAttribute('autoplay');
+    }
+
     // ---- Sticky header (fondo sólido al hacer scroll) ----
     const siteHeader = document.getElementById('siteHeader');
     function updateHeaderScrolled() {
