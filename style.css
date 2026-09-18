@@ -121,7 +121,7 @@ img {
   left: 0;
   right: 0;
   z-index: 200;
-  padding: 20px 56px;
+  padding: 4px 56px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -133,7 +133,7 @@ img {
   background: #ffffff;
   box-shadow: 0 4px 20px rgba(0,0,0,0.12);
 }
-.header.scrolled { padding: 12px 56px; }
+.header.scrolled { padding: 4px 56px; }
 .header.scrolled .nav a, .header.header-solid .nav a { color: var(--text-dark); }
 .header.scrolled .lang-switch, .header.header-solid .lang-switch { color: var(--text-dark); }
 .header.scrolled .lang-active, .header.header-solid .lang-active { border-bottom-color: var(--text-dark); }
@@ -145,8 +145,8 @@ img {
   align-items: center;
   gap: 14px;
 }
-.logo-container img { width: 100px; height: 100px; display: block; transition: width 0.3s ease, height 0.3s ease; }
-.header.scrolled .logo-container img { width: 100px; height: 100px; }
+.logo-container img { width: 84px; height: 84px; display: block; transition: width 0.3s ease, height 0.3s ease; }
+.header.scrolled .logo-container img { width: 84px; height: 84px; }
 .nav { display: flex; align-items: center; gap: 40px; }
 .nav a { color: #fff; font-weight: 500; font-size: 0.9rem; }
 .nav a:hover { color: var(--accent); }
@@ -197,6 +197,9 @@ img {
 .nav-dropdown:focus-within .nav-dropdown-menu {
   opacity: 1; visibility: visible; pointer-events: auto; transform: translateX(-50%) translateY(0);
 }
+.nav-dropdown-menu::before {
+  content: ""; position: absolute; left: 0; right: 0; top: -22px; height: 22px;
+}
 .nav-dropdown-menu a {
   color: var(--text-dark) !important; font-size: 0.88rem; font-weight: 500;
   padding: 10px 14px; border-radius: 8px; white-space: nowrap;
@@ -242,13 +245,6 @@ img {
 
 /* Divider bajo el H1 (intro de página interna) */
 .section-divider { width: 100%; max-width: 760px; height: 1px; background: rgba(20,32,63,0.12); border: none; }
-
-/* Chips de especies */
-.species-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; max-width: 900px; }
-.species-tag {
-  background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.22);
-  color: #fff; font-size: 0.85rem; font-weight: 600; padding: 9px 20px; border-radius: 999px;
-}
 
 @media (max-width: 768px) {
   .page-hero { height: 340px; }
@@ -299,10 +295,10 @@ video.hero-bg { object-position: 50% 38%; }
   .h2 { font-size: 2rem; }
 }
 @media (max-width: 768px) {
-  .header { padding: 16px 20px; }
-  .header.scrolled { padding: 10px 20px; }
-  .logo-container img { width: 100px; height: 100px; }
-  .header.scrolled .logo-container img { width: 100px; height: 100px; }
+  .header { padding: 4px 20px; }
+  .header.scrolled { padding: 4px 20px; }
+  .logo-container img { width: 68px; height: 68px; }
+  .header.scrolled .logo-container img { width: 68px; height: 68px; }
 
   .nav-toggle { display: flex; }
   .nav {
@@ -371,6 +367,8 @@ video.hero-bg { object-position: 50% 38%; }
 }
 
 /* Section: Intro Charter */
+.header + .intro-charter { padding-top: 184px; }
+@media (max-width: 1024px) { .header + .intro-charter { padding-top: 120px; } }
 .intro-charter {
   display: flex;
   align-items: center;
@@ -1017,12 +1015,16 @@ video.hero-bg { object-position: 50% 38%; }
 
 /* Boat Features */
 .boat-features {
+  position: relative;
   display: flex;
   align-items: stretch;
-  height: 560px;
+  min-height: 560px;
   background: #ffffff;
 }
 .boat-image {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 50%;
   height: 100%;
   object-fit: cover;
@@ -1030,14 +1032,14 @@ video.hero-bg { object-position: 50% 38%; }
 }
 .boat-content {
   width: 50%;
+  margin-left: 50%;
   background: #ffffff;
   color: var(--text-dark);
-  padding: 56px;
+  padding: 72px 56px;
   display: flex;
   flex-direction: column;
   gap: 20px;
   justify-content: center;
-  overflow: hidden;
 }
 .boat-specs {
   display: flex;
@@ -1208,9 +1210,10 @@ video.hero-bg { object-position: 50% 38%; }
 
 @media (max-width: 1024px) {
   .booking-grid, .testimonials-grid { grid-template-columns: repeat(2, 1fr); }
-  .boat-features { flex-direction: column; height: auto; }
+  .boat-features { flex-direction: column; min-height: 0; }
   .boat-image, .boat-content { width: 100%; }
-  .boat-image { height: 320px; }
+  .boat-image { position: static; height: 320px; }
+  .boat-content { margin-left: 0; }
   .footer-content { flex-direction: column; gap: 40px; }
 }
 @media (max-width: 768px) {
