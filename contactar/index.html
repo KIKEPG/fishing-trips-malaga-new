@@ -57,6 +57,15 @@
         <i class="fa-solid fa-xmark"></i>
       </button>
       <a href="/">Inicio</a>
+      <div class="nav-dropdown" id="navDropdownTipos">
+        <button type="button" class="nav-dropdown-toggle" aria-expanded="false" aria-controls="navDropdownMenuTipos">
+          Tipos de Pesca
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="nav-dropdown-menu" id="navDropdownMenuTipos">
+          <a href="/pesca-de-fondo/">Pesca de fondo</a>
+        </div>
+      </div>
       <a href="/contactar/">Contactar</a>
       <div class="lang-switch">
         <a href="/" class="lang-active">ES</a>
@@ -243,6 +252,29 @@
     });
     navBackdrop.addEventListener('click', closeNav);
     document.getElementById('navClose').addEventListener('click', closeNav);
+
+    // ---- Desplegable "Tipos de Pesca" ----
+    document.querySelectorAll('.nav-dropdown-toggle').forEach((btn) => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const dropdown = btn.closest('.nav-dropdown');
+        const isOpen = dropdown.classList.contains('open');
+        document.querySelectorAll('.nav-dropdown.open').forEach((d) => {
+          d.classList.remove('open');
+          d.querySelector('.nav-dropdown-toggle').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+          dropdown.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+    document.addEventListener('click', () => {
+      document.querySelectorAll('.nav-dropdown.open').forEach((d) => {
+        d.classList.remove('open');
+        d.querySelector('.nav-dropdown-toggle').setAttribute('aria-expanded', 'false');
+      });
+    });
 
     // ---- Aparición dinámica de las secciones al hacer scroll ----
     (function () {

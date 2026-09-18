@@ -59,6 +59,15 @@
         <i class="fa-solid fa-xmark"></i>
       </button>
       <a href="/">Inicio</a>
+      <div class="nav-dropdown" id="navDropdownTipos">
+        <button type="button" class="nav-dropdown-toggle" aria-expanded="false" aria-controls="navDropdownMenuTipos">
+          Tipos de Pesca
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="nav-dropdown-menu" id="navDropdownMenuTipos">
+          <a href="/pesca-de-fondo/">Pesca de fondo</a>
+        </div>
+      </div>
       <a href="/contactar/">Contactar</a>
       <div class="lang-switch">
         <a href="/" class="lang-active">ES</a>
@@ -657,39 +666,57 @@
       <div class="boat-specs">
         <div class="boat-spec">
           <span class="boat-spec-icon">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15a3 3 0 100-6 3 3 0 000 6z"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 11-2.83-2.83l.06-.06A1.65 1.65 0 004.6 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 112.83-2.83l.06.06A1.65 1.65 0 009 4.6a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 112.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+          </span>
+          <span>Yamaha 150 caballos 2026</span>
+        </div>
+        <div class="boat-spec">
+          <span class="boat-spec-icon">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M4 12l4-4M4 12l4 4M20 12l-4-4M20 12l-4 4"/></svg>
           </span>
-          <span>Eslora de 6 metros</span>
+          <span>6,5 metros de eslora (largo)</span>
+        </div>
+        <div class="boat-spec">
+          <span class="boat-spec-icon">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v16M12 4l-4 4M12 4l4 4M12 20l-4-4M12 20l4-4"/></svg>
+          </span>
+          <span>2,2 metros de manga (ancho)</span>
         </div>
         <div class="boat-spec">
           <span class="boat-spec-icon">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M2 21v-1a6 6 0 016-6h2a6 6 0 016 6v1"/><circle cx="18" cy="9" r="2.5"/><path d="M16 21v-1a4.5 4.5 0 015-4.5"/></svg>
           </span>
-          <span>Capacidad para 6 personas</span>
+          <span>Capacidad 5 personas + el Capitán</span>
         </div>
         <div class="boat-spec">
           <span class="boat-spec-icon">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15a3 3 0 100-6 3 3 0 000 6z"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 11-2.83-2.83l.06-.06A1.65 1.65 0 004.6 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 112.83-2.83l.06.06A1.65 1.65 0 009 4.6a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 112.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 00-5.4 5.4L2 19l3 3 7.3-7.3a4 4 0 005.4-5.4l-2.1 2.1-2-2 2.1-2.1z"/></svg>
           </span>
-          <span>Motor Mercury 115 EFI FourStroke</span>
+          <span>Equipamiento profesional para pesca</span>
         </div>
         <div class="boat-spec">
           <span class="boat-spec-icon">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3v3M12 18v3M21 12h-3M6 12H3"/><circle cx="12" cy="12" r="2"/></svg>
           </span>
-          <span>Navegación GPS Garmin + 2 Lowrance</span>
+          <span>Sondas GPS Lowrance última generación</span>
+        </div>
+        <div class="boat-spec">
+          <span class="boat-spec-icon">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12c4-5 10-7 16-4-2 2-2 6 0 8-6 3-12 1-16-4z"/><circle cx="16.2" cy="10.2" r="0.6" fill="#ffffff"/></svg>
+          </span>
+          <span>Dos viveros incorporados</span>
+        </div>
+        <div class="boat-spec">
+          <span class="boat-spec-icon">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/></svg>
+          </span>
+          <span>Motor Mercury 115 EFI FourStroke</span>
         </div>
         <div class="boat-spec">
           <span class="boat-spec-icon">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 3v6c0 5-3.5 8.5-8 11-4.5-2.5-8-6-8-11V5l8-3z"/></svg>
           </span>
           <span>Kit de seguridad completo a bordo</span>
-        </div>
-        <div class="boat-spec">
-          <span class="boat-spec-icon">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M6 21v-2a6 6 0 0112 0v2"/></svg>
-          </span>
-          <span>Patrón con +15 años de experiencia</span>
         </div>
       </div>
 
@@ -910,6 +937,29 @@
     });
     navBackdrop.addEventListener('click', closeNav);
     document.getElementById('navClose').addEventListener('click', closeNav);
+
+    // ---- Desplegable "Tipos de Pesca" ----
+    document.querySelectorAll('.nav-dropdown-toggle').forEach((btn) => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const dropdown = btn.closest('.nav-dropdown');
+        const isOpen = dropdown.classList.contains('open');
+        document.querySelectorAll('.nav-dropdown.open').forEach((d) => {
+          d.classList.remove('open');
+          d.querySelector('.nav-dropdown-toggle').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+          dropdown.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+    document.addEventListener('click', () => {
+      document.querySelectorAll('.nav-dropdown.open').forEach((d) => {
+        d.classList.remove('open');
+        d.querySelector('.nav-dropdown-toggle').setAttribute('aria-expanded', 'false');
+      });
+    });
 
     // ---- Aparición dinámica de las secciones al hacer scroll ----
     (function () {
