@@ -1148,6 +1148,15 @@ video.hero-bg { object-position: 50% 38%; }
 .faq-item.active .faq-answer {
   display: block;
 }
+.faq-answer p + p { margin-top: 10px; }
+/* Enlaces internos dentro de texto corrido */
+.intro-content p a, .stats-header p a, .faq-answer a {
+  text-decoration: underline; text-underline-offset: 3px; font-weight: 600;
+}
+.intro-content p a, .faq-answer a { color: var(--text-dark); }
+.stats-header p a { color: inherit; }
+.intro-content p a:hover, .faq-answer a:hover { color: var(--accent); }
+
 
 /* Mapa */
 .map-section {

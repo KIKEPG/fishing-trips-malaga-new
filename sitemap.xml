@@ -25,6 +25,41 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://fishingtripsmarbella.com/pesca-al-vivo/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://fishingtripsmarbella.com/pesca-al-vivo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fishingtripsmarbella.com/pesca-al-vivo/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fishingtripsmarbella.com/pesca-al-jigging/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://fishingtripsmarbella.com/pesca-al-jigging/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fishingtripsmarbella.com/pesca-al-jigging/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fishingtripsmarbella.com/pesca-del-calamar/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://fishingtripsmarbella.com/pesca-del-calamar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fishingtripsmarbella.com/pesca-del-calamar/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fishingtripsmarbella.com/pesca-al-currican/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://fishingtripsmarbella.com/pesca-al-currican/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fishingtripsmarbella.com/pesca-al-currican/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fishingtripsmarbella.com/pesca-del-atun/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://fishingtripsmarbella.com/pesca-del-atun/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fishingtripsmarbella.com/pesca-del-atun/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://fishingtripsmarbella.com/contactar/</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://fishingtripsmarbella.com/contactar/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://fishingtripsmarbella.com/en/contact/"/>
