@@ -277,8 +277,8 @@ video.hero-bg { object-position: 50% 38%; }
     linear-gradient(100deg, rgba(8,16,32,0.74) 0%, rgba(10,20,38,0.62) 30%, rgba(12,24,44,0.32) 58%, rgba(12,24,44,0.12) 100%),
     linear-gradient(180deg, rgba(9,23,42,0) 55%, rgba(9,23,42,0.55) 88%, rgba(9,23,42,0.8) 100%);
 }
-.hero-content { position: relative; z-index: 10; max-width: 660px; display: flex; flex-direction: column; gap: 24px; padding-left: 56px; padding-top: 110px; }
-.hero p { color: rgba(255,255,255,0.82); font-size: 1.1rem; max-width: 520px; }
+.hero-content { position: relative; z-index: 10; max-width: 820px; display: flex; flex-direction: column; gap: 24px; padding-left: 56px; padding-top: 110px; }
+.hero p { color: rgba(255,255,255,0.82); font-size: 1.1rem; max-width: 720px; }
 .trust-row { display: flex; flex-direction: column; align-items: flex-start; gap: 18px; margin-top: 10px; }
 .trust-caption { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.5px; color: rgba(255,255,255,0.65); }
 .trust-badges { display: flex; align-items: center; gap: 8px; }
@@ -298,8 +298,8 @@ video.hero-bg { object-position: 50% 38%; }
 @media (max-width: 768px) {
   .header { padding: 4px 20px; }
   .header.scrolled { padding: 4px 20px; }
-  .logo-container img { width: 68px; height: 68px; }
-  .header.scrolled .logo-container img { width: 68px; height: 68px; }
+  .logo-container img { width: 80px; height: 80px; }
+  .header.scrolled .logo-container img { width: 80px; height: 80px; }
 
   .nav-toggle { display: flex; }
   .nav {
@@ -1790,3 +1790,6 @@ a.portal-card:hover { transform: translateY(-4px); }
   height: auto;
   display: block;
 }
+
+/* Hero: eyebrow como h2 (mantiene el estilo de eyebrow) */
+.hero-content h2.eyebrow { line-height: 1.4; }
