@@ -238,7 +238,7 @@ El siguiente bloque **es el widget completo, real y ya probado en producción** 
     display: flex !important; justify-content: space-between !important; align-items: center !important;
     margin-bottom: 8px !important;
   }
-  .sf-wa-float__header h2 { font-size: 16px !important; margin: 0 !important; color: #222 !important; font-weight: bold !important; }
+  .sf-wa-float__header .sf-wa-float__title { font-size: 16px !important; margin: 0 !important; color: #222 !important; font-weight: bold !important; }
   .sf-wa-float__close {
     background: none !important; border: none !important; width: auto !important; height: auto !important;
     min-width: 0 !important; min-height: 0 !important; border-radius: 0 !important;
@@ -345,7 +345,7 @@ El siguiente bloque **es el widget completo, real y ya probado en producción** 
 
 <div class="sf-wa-float__panel" id="sfWaPanel">
   <div class="sf-wa-float__header">
-    <h2 data-i18n="title">Información por WhatsApp</h2>
+    <div class="sf-wa-float__title" data-i18n="title">Información por WhatsApp</div>
     <button type="button" class="sf-wa-float__close" id="sfWaClose" aria-label="Close">&times;</button>
   </div>
 

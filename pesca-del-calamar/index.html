@@ -930,7 +930,7 @@
   <div id="cookie-banner" role="dialog" aria-live="polite" aria-label="Preferencias de cookies" style="display:none; position:fixed; bottom:0; left:0; right:0; background:var(--bg-off-white); padding:24px 28px; box-shadow:0 -6px 24px rgba(20,32,63,0.12); z-index:2000; flex-direction:column; gap:16px; border-top:3px solid var(--accent);">
     <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:24px;">
       <div style="max-width:640px; display:flex; flex-direction:column; gap:8px;">
-        <h2 style="margin:0; font-size:1.15rem; font-weight:700; color:var(--text-dark);">Tu privacidad nos importa</h2>
+        <div style="margin:0; font-size:1.15rem; font-weight:700; color:var(--text-dark);">Tu privacidad nos importa</div>
         <p style="margin:0; font-size:14px; line-height:1.55; color:var(--text-gray);">Usamos cookies propias necesarias para que la web funcione. Con tu permiso, también nos gustaría usar cookies de análisis para entender cómo mejorar tu visita. Puedes aceptarlas, rechazarlas o configurarlas cuando quieras. Más información en nuestra <a href="/politicas-de-cookies/" style="color:var(--accent2); text-decoration:underline;">Política de Cookies</a>.</p>
       </div>
       <div style="display:flex; align-items:center; gap:22px; flex-wrap:wrap;">
@@ -1362,7 +1362,7 @@
       display: flex !important; justify-content: space-between !important; align-items: center !important;
       margin-bottom: 8px !important;
     }
-    .sf-wa-float__header h2 { font-size: 16px !important; margin: 0 !important; color: #222 !important; font-weight: bold !important; }
+    .sf-wa-float__header .sf-wa-float__title { font-size: 16px !important; margin: 0 !important; color: #222 !important; font-weight: bold !important; }
     .sf-wa-float__close {
       background: none !important; border: none !important; width: auto !important; height: auto !important;
       min-width: 0 !important; min-height: 0 !important; border-radius: 0 !important;
@@ -1469,7 +1469,7 @@
 
   <div class="sf-wa-float__panel" id="sfWaPanel">
     <div class="sf-wa-float__header">
-      <h2 data-i18n="title">Información por WhatsApp</h2>
+      <div class="sf-wa-float__title" data-i18n="title">Información por WhatsApp</div>
       <button type="button" class="sf-wa-float__close" id="sfWaClose" aria-label="Close">&times;</button>
     </div>
 
