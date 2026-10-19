@@ -1791,8 +1791,8 @@ a.portal-card:hover { transform: translateY(-4px); }
   display: block;
 }
 
-/* Hero: eyebrow como h2 (mantiene el estilo de eyebrow) */
-.hero-content h2.eyebrow { line-height: 1.4; }
+/* Hero: eyebrow como h1 (mantiene el estilo de eyebrow) */
+.hero-content h1.eyebrow { line-height: 1.4; }
 
 /* Tipos de pesca: 2 filas × 3 columnas en desktop, carrusel en mobile */
 .fishing-types {
@@ -2035,3 +2035,8 @@ a.portal-card:hover { transform: translateY(-4px); }
   }
   .steps-dots { margin-top: 0; }
 }
+
+/* Sección "Todo sobre las salidas": eyebrow como h2 (mismo aspecto que el <p> anterior) */
+.stats-header h2.eyebrow { font-size: 1.1rem; max-width: 960px; }
+/* Preguntas del FAQ como h3: el h3 solo envuelve al botón, sin estilo propio */
+.faq-question-heading { font-size: inherit; font-weight: inherit; line-height: inherit; }

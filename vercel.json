@@ -1,4 +1,18 @@
 {
   "cleanUrls": true,
-  "trailingSlash": true
+  "trailingSlash": true,
+  "redirects": [
+    { "source": "/pesca-del-atun/:path*", "destination": "/pesca-del-atun-marbella/", "permanent": true },
+    { "source": "/pesca-al-jigging/:path*", "destination": "/pesca-al-jigging-marbella/", "permanent": true },
+    { "source": "/pesca-del-calamar/:path*", "destination": "/pesca-del-calamar-marbella/", "permanent": true },
+    { "source": "/pesca-de-fondo/:path*", "destination": "/pesca-de-fondo-marbella/", "permanent": true },
+    { "source": "/pesca-al-vivo/:path*", "destination": "/pesca-al-vivo-marbella/", "permanent": true },
+    { "source": "/pesca-al-currican/:path*", "destination": "/pesca-al-currican-marbella/", "permanent": true },
+    { "source": "/en/tuna-fishing/:path*", "destination": "/en/tuna-fishing-marbella/", "permanent": true },
+    { "source": "/en/jigging/:path*", "destination": "/en/jigging-marbella/", "permanent": true },
+    { "source": "/en/squid-fishing/:path*", "destination": "/en/squid-fishing-marbella/", "permanent": true },
+    { "source": "/en/bottom-fishing/:path*", "destination": "/en/bottom-fishing-marbella/", "permanent": true },
+    { "source": "/en/live-bait-fishing/:path*", "destination": "/en/live-bait-fishing-marbella/", "permanent": true },
+    { "source": "/en/trolling/:path*", "destination": "/en/trolling-marbella/", "permanent": true }
+  ]
 }
