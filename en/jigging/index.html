@@ -579,6 +579,9 @@
       <button type="button" class="gallery-item" data-full="images/nino-denton-marbella.webp"><img src="/images/nino-denton-marbella.webp" alt="Boy showing a dentex caught during a fishing trip in Marbella" width="700" height="933" loading="lazy"></button>
       <button type="button" class="gallery-item" data-full="images/pescador-pargo-marbella.webp"><img src="/images/pescador-pargo-marbella.webp" alt="Angler holding a red porgy caught while rod fishing in Marbella" width="700" height="933" loading="lazy"></button>
       <button type="button" class="gallery-item" data-full="images/pescador-atardecer-marbella.webp"><img src="/images/pescador-atardecer-marbella.webp" alt="Angler showing his catch at sunset during a fishing trip in Marbella" width="700" height="933" loading="lazy"></button>
+      <button type="button" class="gallery-item" data-full="images/barco-pesca-grupo-marbella.webp"><img src="/images/barco-pesca-grupo-marbella.webp" alt="Group of friends cruising on board the fishing boat with rods ready in Marbella" width="700" height="933" loading="lazy"></button>
+      <button type="button" class="gallery-item" data-full="images/pescador-bonito-marbella.webp"><img src="/images/pescador-bonito-marbella.webp" alt="Angler holding up a freshly caught bonito on board during a fishing trip in Marbella" width="700" height="933" loading="lazy"></button>
+      <button type="button" class="gallery-item" data-full="images/pescador-bonito-atardecer-marbella.webp"><img src="/images/pescador-bonito-atardecer-marbella.webp" alt="Smiling angler showing a bonito caught at sunset during a fishing trip in Marbella" width="700" height="933" loading="lazy"></button>
     </div>
     <div class="gallery-dots" id="galleryDots"></div>
   </section>
@@ -892,6 +895,24 @@
       </div>
     </div>
   </footer>
+
+  <!-- Volver arriba -->
+  <button type="button" class="back-to-top" id="backToTop" aria-label="Back to top" title="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+  <script>
+    (function () {
+      const btn = document.getElementById('backToTop');
+      if (!btn) return;
+      const toggle = () => btn.classList.toggle('is-visible', window.scrollY > 600);
+      window.addEventListener('scroll', toggle, { passive: true });
+      toggle();
+      btn.addEventListener('click', () => {
+        const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
+      });
+    })();
+  </script>
 
   <!-- Cookies Banner -->
   <div id="cookie-banner" role="dialog" aria-live="polite" aria-label="Cookie preferences" style="display:none; position:fixed; bottom:0; left:0; right:0; background:var(--bg-off-white); padding:24px 28px; box-shadow:0 -6px 24px rgba(20,32,63,0.12); z-index:2000; flex-direction:column; gap:16px; border-top:3px solid var(--accent);">
