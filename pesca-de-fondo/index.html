@@ -851,12 +851,22 @@
     (function () {
       const btn = document.getElementById('backToTop');
       if (!btn) return;
-      const toggle = () => btn.classList.toggle('is-visible', window.scrollY > 600);
-      window.addEventListener('scroll', toggle, { passive: true });
-      toggle();
+      // Centinela a 600px del inicio: funciona aunque el scroll lo haga <body>
+      // (pasa en móvil con overflow-x: hidden en html y body, donde window.scrollY se queda en 0)
+      const sentinel = document.createElement('div');
+      sentinel.setAttribute('aria-hidden', 'true');
+      sentinel.style.cssText = 'position:absolute;top:600px;left:0;width:1px;height:1px;pointer-events:none;';
+      document.body.prepend(sentinel);
+      if ('IntersectionObserver' in window) {
+        new IntersectionObserver(([entry]) => {
+          btn.classList.toggle('is-visible', !entry.isIntersecting && entry.boundingClientRect.top < 0);
+        }).observe(sentinel);
+      } else {
+        btn.classList.add('is-visible');
+      }
       btn.addEventListener('click', () => {
-        const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-        window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
+        const behavior = window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
+        [window, document.documentElement, document.body].forEach(el => el.scrollTo({ top: 0, behavior }));
       });
     })();
   </script>

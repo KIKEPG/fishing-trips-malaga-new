@@ -2008,3 +2008,6 @@ a.portal-card:hover { transform: translateY(-4px); }
 @media (prefers-reduced-motion: reduce) {
   .back-to-top, .back-to-top svg { transition: none; }
 }
+@media (max-width: 768px) {
+  .back-to-top { width: 44px; height: 44px; right: 28px; bottom: 92px; }
+}
