@@ -2011,3 +2011,27 @@ a.portal-card:hover { transform: translateY(-4px); }
 @media (max-width: 768px) {
   .back-to-top { width: 44px; height: 44px; right: 28px; bottom: 92px; }
 }
+
+/* "¿Cómo reservar?": carrusel en mobile, mismo patrón que testimonios */
+@media (max-width: 768px) {
+  .booking-steps { padding: 56px 20px; gap: 28px; }
+  .booking-grid {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    margin: 0 -20px;
+    padding: 4px 20px 24px;
+    gap: 14px;
+    width: auto;
+    align-self: stretch;
+  }
+  .booking-grid::-webkit-scrollbar { display: none; }
+  .booking-grid .step-card {
+    flex: 0 0 84%;
+    scroll-snap-align: center;
+    box-sizing: border-box;
+  }
+  .steps-dots { margin-top: 0; }
+}
