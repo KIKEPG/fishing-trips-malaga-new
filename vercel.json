@@ -13,6 +13,22 @@
     { "source": "/en/squid-fishing/:path*", "destination": "/en/squid-fishing-marbella/", "permanent": true },
     { "source": "/en/bottom-fishing/:path*", "destination": "/en/bottom-fishing-marbella/", "permanent": true },
     { "source": "/en/live-bait-fishing/:path*", "destination": "/en/live-bait-fishing-marbella/", "permanent": true },
-    { "source": "/en/trolling/:path*", "destination": "/en/trolling-marbella/", "permanent": true }
+    { "source": "/en/trolling/:path*", "destination": "/en/trolling-marbella/", "permanent": true },
+    { "source": "/es", "destination": "/", "statusCode": 301 },
+    { "source": "/es/", "destination": "/", "statusCode": 301 },
+    { "source": "/es/contactar", "destination": "/contactar/", "statusCode": 301 },
+    { "source": "/es/contactar/", "destination": "/contactar/", "statusCode": 301 },
+    { "source": "/es/:path*", "destination": "/", "statusCode": 301 },
+    { "source": "/contact-us", "destination": "/en/contact/", "statusCode": 301 },
+    { "source": "/contact-us/", "destination": "/en/contact/", "statusCode": 301 },
+    { "source": "/sitemap_index.xml", "destination": "/sitemap.xml", "statusCode": 301 },
+    { "source": "/page-sitemap.xml", "destination": "/sitemap.xml", "statusCode": 301 }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "(.*)\\.vercel\\.app" }],
+      "headers": [{ "key": "X-Robots-Tag", "value": "noindex, nofollow" }]
+    }
   ]
 }
