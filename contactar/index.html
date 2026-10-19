@@ -36,7 +36,12 @@
       "addressCountry": "ES"
     },
     "url": "https://fishingtripsmarbella.com/contactar/",
-    "sameAs": ["https://www.instagram.com/fishing_trips_marbella/"]
+    "sameAs": [
+      "https://www.instagram.com/fishing_trips_marbella/",
+      "https://www.google.com/maps?cid=11112407875120241665",
+      "https://www.getyourguide.com/marbella-l1217/excursion-de-pesca-en-marbella-con-un-pescador-profesional-t1365620/",
+      "https://www.viator.com/tours/Marbella/Deep-Sea-Fishing-Adventure-in-Marbella/d22304-5670808P1"
+    ]
   }
   </script>
 </head>
@@ -781,7 +786,7 @@
   (function () {
     const NUMERO_WHATSAPP = "34686683373";
 
-    const isEN = window.location.pathname.includes("/en");
+    const isEN = /^\/en(\/|$)/.test(window.location.pathname);
 
     (function capturarUTMs() {
       const params = new URLSearchParams(window.location.search);

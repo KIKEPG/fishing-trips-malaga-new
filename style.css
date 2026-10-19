@@ -2040,3 +2040,10 @@ a.portal-card:hover { transform: translateY(-4px); }
 .stats-header h2.eyebrow { font-size: 1.1rem; max-width: 960px; }
 /* Preguntas del FAQ como h3: el h3 solo envuelve al botón, sin estilo propio */
 .faq-question-heading { font-size: inherit; font-weight: inherit; line-height: inherit; }
+
+/* Portales con solo 3 tarjetas visibles (FishingBooker y Tripadvisor ocultos de momento):
+   mismo ancho de tarjeta que con 5 columnas, centradas */
+.portals-grid--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); max-width: calc((100% - 72px) * 0.6 + 36px); margin-inline: auto; }
+@media (max-width: 1024px) {
+  .portals-grid--3 { max-width: 100%; }
+}

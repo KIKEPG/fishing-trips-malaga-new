@@ -177,7 +177,7 @@ El siguiente bloque **es el widget completo, real y ya probado en producción** 
 - Botón flotante circular verde (`#25D366`) fijo abajo-derecha, que abre un panel con mini-formulario
 - Campos: nombre, selector de fechas (calendario propio hecho a mano, sin librería externa tipo Flatpickr — precisamente para evitar el problema ya conocido de Flatpickr cargando sin su CSS), franja horaria (7:30h / 16:00h, radio buttons), número de personas (1-5), puerto de salida (ver aviso arriba), duda opcional
 - Al enviar: genera un mensaje de WhatsApp pre-rellenado y abre `https://api.whatsapp.com/send/?phone=...&text=...`
-- Detecta idioma por la URL: si el path **no** contiene `/es`, asume inglés; si lo contiene, español — coherente con la estructura de rutas ya definida (`/` = EN, `/es/` = ES)
+- Detecta idioma por la URL: si el path empieza por `/en/` (o es exactamente `/en`), inglés; en cualquier otro caso, español — coherente con la estructura real de rutas (`/` = ES, `/en/` = EN). No usar `includes()`: también casaría con rutas españolas que contengan "/en" o "/es" en otra posición
 - Genera un código de lead único tipo `FTWEB` + fecha (AAMMDD) + 3 dígitos aleatorios (ej. `FTWEB260807482`) — decisión de diseño documentada en el propio código: evita depender de `localStorage` para contadores secuenciales, que no persiste de forma fiable
 - Captura y persiste UTMs de campañas (`utm_source`, `utm_medium`, `utm_campaign`, `utm_term`, `utm_content`) en `localStorage`, y los añade al mensaje de WhatsApp y al evento de analítica si existen
 - Dispara `window.dataLayer.push({ event: "whatsapp_lead", ... })` con todos los datos del lead — el `dataLayer.push` no requiere que GTM esté instalado para no fallar (es solo un array), así que puede quedar activo aunque GTM esté aparcado por ahora (ver preguntas de bloqueo)
@@ -400,7 +400,7 @@ El siguiente bloque **es el widget completo, real y ya probado en producción** 
 (function () {
   const NUMERO_WHATSAPP = "34686683373";
 
-  const isEN = !window.location.pathname.includes("/es");
+  const isEN = /^\/en(\/|$)/.test(window.location.pathname);
 
   (function capturarUTMs() {
     const params = new URLSearchParams(window.location.search);
