@@ -22,122 +22,173 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Fishing Trips Marbella",
-    "image": "https://fishingtripsmarbella.com/images/hero.webp",
-    "telephone": "+34686683373",
-    "priceRange": "€€",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Puerto deportivo Marina La Bajadilla",
-      "addressLocality": "Marbella",
-      "postalCode": "29603",
-      "addressRegion": "Málaga",
-      "addressCountry": "ES"
-    },
-    "url": "https://fishingtripsmarbella.com/pesca-del-atun-marbella/",
-    "sameAs": [
-      "https://www.instagram.com/fishing_trips_marbella/",
-      "https://www.google.com/maps?cid=11112407875120241665",
-      "https://www.getyourguide.com/marbella-l1217/excursion-de-pesca-en-marbella-con-un-pescador-profesional-t1365620/",
-      "https://www.viator.com/tours/Marbella/Deep-Sea-Fishing-Adventure-in-Marbella/d22304-5670808P1"
-    ]
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://fishingtripsmarbella.com/" },
-      { "@type": "ListItem", "position": 2, "name": "Pesca del atún", "item": "https://fishingtripsmarbella.com/pesca-del-atun-marbella/" }
-    ]
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
+    "@graph": [
       {
-        "@type": "Question",
-        "name": "¿Dónde se puede hacer pesca del atún en Marbella?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Salimos desde el Puerto Deportivo Marina La Bajadilla y navegamos hasta las zonas de la Costa del Sol donde se concentran los cardúmenes de atún rojo en temporada. El patrón sigue las señales del mar —aves trabajando, cambios de temperatura, actividad en superficie— para localizar la zona más productiva el día de la salida."
+        "@type": "LocalBusiness",
+        "@id": "https://fishingtripsmarbella.com/#business",
+        "name": "Fishing Trips Marbella",
+        "url": "https://fishingtripsmarbella.com/",
+        "telephone": "+34686683373",
+        "image": "https://fishingtripsmarbella.com/images/boat-real.webp",
+        "hasMap": "https://maps.app.goo.gl/8U9EbCWF8f1QCgRJ9",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Puerto Deportivo Marina La Bajadilla",
+          "addressLocality": "Marbella",
+          "postalCode": "29603",
+          "addressRegion": "Málaga",
+          "addressCountry": "ES"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 36.5077216,
+          "longitude": -4.8743017
         }
       },
       {
-        "@type": "Question",
-        "name": "¿En qué consiste la pesca del atún?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Se practica principalmente la pesca al curricán, arrastrando señuelos grandes detrás del barco a la velocidad adecuada para simular una presa en fuga. Cuando un atún ataca, empieza una pelea que puede durar bastante más que con cualquier otra especie, por su tamaño y su fuerza. El equipo utilizado es más robusto que en el resto de técnicas —cañas, carretes y líneas reforzadas— precisamente para poder manejar con seguridad a un pez de este calibre. Es una pesca de resistencia tanto para el pescador como para el equipo: no se trata de un tirón rápido, sino de un combate sostenido donde hay que mantener la tensión de la línea sin ceder terreno, guiado en todo momento por el patrón."
+        "@type": "Service",
+        "@id": "https://fishingtripsmarbella.com/pesca-del-atun-marbella/#service",
+        "name": "Pesca del atún en Marbella",
+        "serviceType": "Pesca del atún",
+        "description": "Salida de pesca del atún rojo al curricán desde el Puerto deportivo Marina La Bajadilla, Marbella, con equipo reforzado. Captura y suelta obligatoria por normativa, solo en el periodo autorizado. La modalidad más exigente físicamente; no hace falta experiencia previa. Barco, patrón y equipo de pesca incluidos.",
+        "url": "https://fishingtripsmarbella.com/pesca-del-atun-marbella/",
+        "inLanguage": "es",
+        "provider": {
+          "@id": "https://fishingtripsmarbella.com/#business"
+        },
+        "areaServed": {
+          "@type": "City",
+          "name": "Marbella"
+        },
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Pescadores que buscan un reto"
+        },
+        "image": "https://fishingtripsmarbella.com/images/pescador-dos-dentones-marbella.webp"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://fishingtripsmarbella.com/pesca-del-atun-marbella/#webpage",
+        "url": "https://fishingtripsmarbella.com/pesca-del-atun-marbella/",
+        "name": "Pesca del Atún en Marbella | Fishing Trips Marbella",
+        "inLanguage": "es",
+        "isPartOf": {
+          "@id": "https://fishingtripsmarbella.com/#website"
+        },
+        "about": {
+          "@id": "https://fishingtripsmarbella.com/pesca-del-atun-marbella/#service"
+        },
+        "breadcrumb": {
+          "@id": "https://fishingtripsmarbella.com/pesca-del-atun-marbella/#breadcrumb"
+        },
+        "mainEntity": {
+          "@id": "https://fishingtripsmarbella.com/pesca-del-atun-marbella/#faq"
         }
       },
       {
-        "@type": "Question",
-        "name": "¿Es verdad que hay que devolver el atún al mar?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Sí. La pesca recreativa del atún rojo en España se practica en modalidad de captura y suelta: se sube el pez junto al barco, se disfruta de la pelea y se puede hacer una foto, pero después se devuelve al mar en las mejores condiciones posibles. Esta práctica existe para proteger a la especie y es obligatoria por normativa, no una elección del charter."
-        }
+        "@type": "BreadcrumbList",
+        "@id": "https://fishingtripsmarbella.com/pesca-del-atun-marbella/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://fishingtripsmarbella.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Pesca del atún en Marbella",
+            "item": "https://fishingtripsmarbella.com/pesca-del-atun-marbella/"
+          }
+        ]
       },
       {
-        "@type": "Question",
-        "name": "¿En qué época del año se puede pescar atún?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "La pesca recreativa del atún rojo en España se autoriza cada año dentro de un periodo concreto fijado por el Ministerio de Agricultura, Pesca y Alimentación, que además puede cerrarse antes de tiempo si se agota el cupo asignado. Escríbenos por WhatsApp y te confirmamos si la temporada está abierta para las fechas que te interesan."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Puedo pescar atún en barco privado o es compartido?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "La salida es privada: el barco es solo para tu grupo, no se comparte con otros clientes que no conozcas. Vais vosotros, con un máximo de 5 personas, así que la experiencia y la atención del patrón son solo para vuestro grupo de principio a fin."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Necesito licencia o permiso especial para pescar atún?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No necesitas tramitar nada tú mismo. La pesca del atún rojo en modalidad recreativa se realiza bajo la autorización correspondiente de la embarcación, así que puedes venir sin ningún papeleo previo — solo te tienes que presentar en el puerto."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Es la pesca del atún para mí?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Es la modalidad más exigente físicamente de todas las que ofrecemos: la pelea con un atún rojo puede ser larga e intensa. No hace falta experiencia previa —el patrón te guía en todo momento—, pero sí conviene tener una condición física razonable si quieres ser tú quien lleve la caña durante todo el combate. Si vais en grupo, también podéis turnaros."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Qué equipo necesito llevar?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Nada de equipo de pesca — cañas, carretes, señuelos y todos los aparejos reforzados están incluidos. Sí te recomendamos ropa cómoda que te permita moverte con libertad, calzado antideslizante, gafas de sol, protector solar y, si tienes previsto luchar tú con el pez, algo de agua extra a mano."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Cuántas personas pueden ir en cada salida?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Un máximo de 5 personas por salida. En el caso del atún, al ser una pelea que puede requerir turnos, es habitual repartir el esfuerzo entre varios miembros del grupo."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Cuánto dura una salida de pesca del atún?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "La duración puede ser mayor que en el resto de técnicas, ya que una pelea con un atún rojo puede alargarse considerablemente. Al reservar por WhatsApp te confirmamos la duración y el horario de la salida."
-        }
+        "@type": "FAQPage",
+        "@id": "https://fishingtripsmarbella.com/pesca-del-atun-marbella/#faq",
+        "inLanguage": "es",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿En qué consiste la pesca del atún?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Se practica principalmente la pesca al curricán, arrastrando señuelos grandes detrás del barco a la velocidad adecuada para simular una presa en fuga. Cuando un atún ataca, empieza una pelea que puede durar bastante más que con cualquier otra especie, por su tamaño y su fuerza. El equipo utilizado es más robusto que en el resto de técnicas —cañas, carretes y líneas reforzadas— precisamente para poder manejar con seguridad a un pez de este calibre. Es una pesca de resistencia tanto para el pescador como para el equipo: no se trata de un tirón rápido, sino de un combate sostenido donde hay que mantener la tensión de la línea sin ceder terreno, guiado en todo momento por el patrón."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Necesito licencia o permiso especial para pescar atún?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No necesitas tramitar nada tú mismo. La pesca del atún rojo en modalidad recreativa se realiza bajo la autorización correspondiente de la embarcación, así que puedes venir sin ningún papeleo previo — solo te tienes que presentar en el puerto. Además, en cada salida irás con nuestro patrón, tu guía de pesca local en Marbella: Más de 20 años de experiencia en el Mediterráneo; Patrón de Yate; Pro Staff de JLC Fishing; Conoce los mejores caladeros de la Costa del Sol; Adapta cada salida a la temporada y las especies; Embajador oficial de Yamaha Marine España."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué equipo necesito llevar?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nada de equipo de pesca — cañas, carretes, señuelos y todos los aparejos reforzados están incluidos. Sí te recomendamos ropa cómoda que te permita moverte con libertad, calzado antideslizante, gafas de sol, protector solar y, si tienes previsto luchar tú con el pez, algo de agua extra a mano."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Es la pesca del atún para mí?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Es la modalidad más exigente físicamente de todas las que ofrecemos: la pelea con un atún rojo puede ser larga e intensa. No hace falta experiencia previa —el patrón te guía en todo momento—, pero sí conviene tener una condición física razonable si quieres ser tú quien lleve la caña durante todo el combate. Si vais en grupo, también podéis turnaros."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Dónde se puede hacer pesca del atún en Marbella?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Salimos desde el Puerto Deportivo Marina La Bajadilla y navegamos hasta las zonas de la Costa del Sol donde se concentran los cardúmenes de atún rojo en temporada. El patrón sigue las señales del mar —aves trabajando, cambios de temperatura, actividad en superficie— para localizar la zona más productiva el día de la salida. El puerto deportivo de Marbella es uno de los lugares más emblemáticos de la Costa del Sol: un animado punto de encuentro para locales y turistas en pleno centro de la ciudad. Nos encontrarás en Puerto deportivo Marina La Bajadilla, 29603 Marbella, Málaga, con fácil acceso en coche, taxi o a pie. Más allá de tu excursión, el puerto es un destino en sí mismo, con restaurantes frente al mar, eventos náuticos y clubes de playa. Descubre más en la web oficial del puerto deportivo de Marbella."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Es verdad que hay que devolver el atún al mar?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. La pesca recreativa del atún rojo en España se practica en modalidad de captura y suelta: se sube el pez junto al barco, se disfruta de la pelea y se puede hacer una foto, pero después se devuelve al mar en las mejores condiciones posibles. Esta práctica existe para proteger a la especie y es obligatoria por normativa, no una elección del charter."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿En qué época del año se puede pescar atún?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La pesca recreativa del atún rojo en España se autoriza cada año dentro de un periodo concreto fijado por el Ministerio de Agricultura, Pesca y Alimentación, que además puede cerrarse antes de tiempo si se agota el cupo asignado. Escríbenos por WhatsApp y te confirmamos si la temporada está abierta para las fechas que te interesan."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Puedo pescar atún en barco privado o es compartido?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La salida es privada: el barco es solo para tu grupo, no se comparte con otros clientes que no conozcas. Vais vosotros, con un máximo de 5 personas, así que la experiencia y la atención del patrón son solo para vuestro grupo de principio a fin."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuántas personas pueden ir en cada salida?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Un máximo de 5 personas por salida. En el caso del atún, al ser una pelea que puede requerir turnos, es habitual repartir el esfuerzo entre varios miembros del grupo."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánto dura una salida de pesca del atún?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La duración puede ser mayor que en el resto de técnicas, ya que una pelea con un atún rojo puede alargarse considerablemente. Al reservar por WhatsApp te confirmamos la duración y el horario de la salida."
+            }
+          }
+        ]
       }
     ]
   }

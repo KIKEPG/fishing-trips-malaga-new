@@ -24,25 +24,419 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Fishing Trips Marbella",
-    "image": "https://fishingtripsmarbella.com/images/hero.webp",
-    "telephone": "+34686683373",
-    "priceRange": "€€",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Puerto deportivo Marina La Bajadilla",
-      "addressLocality": "Marbella",
-      "postalCode": "29603",
-      "addressRegion": "Málaga",
-      "addressCountry": "ES"
-    },
-    "url": "https://fishingtripsmarbella.com/",
-    "sameAs": [
-      "https://www.instagram.com/fishing_trips_marbella/",
-      "https://www.google.com/maps?cid=11112407875120241665",
-      "https://www.getyourguide.com/marbella-l1217/excursion-de-pesca-en-marbella-con-un-pescador-profesional-t1365620/",
-      "https://www.viator.com/tours/Marbella/Deep-Sea-Fishing-Adventure-in-Marbella/d22304-5670808P1"
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://fishingtripsmarbella.com/#website",
+        "url": "https://fishingtripsmarbella.com/",
+        "name": "Fishing Trips Marbella",
+        "alternateName": [
+          "Excursiones de Pesca Marbella",
+          "Fishing Trips Marbella Charter"
+        ],
+        "inLanguage": [
+          "es",
+          "en"
+        ],
+        "publisher": {
+          "@id": "https://fishingtripsmarbella.com/#business"
+        }
+      },
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://fishingtripsmarbella.com/#business",
+        "name": "Fishing Trips Marbella",
+        "alternateName": "Excursiones de Pesca Marbella",
+        "description": "Excursiones de pesca en barco y alquiler de barco de pesca con patrón desde el Puerto Deportivo La Bajadilla de Marbella (Costa del Sol). Salidas compartidas (pagas solo tu plaza) y privadas para hasta 5 personas con patrón y guía local experto. Pesca de fondo, pesca al vivo, jigging, pesca del calamar, curricán y captura y suelta de atún rojo. Equipo profesional, bebidas frías, snacks y combustible incluidos. Apto para principiantes y niños.",
+        "url": "https://fishingtripsmarbella.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "@id": "https://fishingtripsmarbella.com/#logo",
+          "url": "https://fishingtripsmarbella.com/images/logo.webp",
+          "caption": "Fishing Trips Marbella"
+        },
+        "image": [
+          "https://fishingtripsmarbella.com/images/hero-video-poster.webp",
+          "https://fishingtripsmarbella.com/images/boat-real.webp",
+          "https://fishingtripsmarbella.com/images/nino-denton-marbella.webp",
+          "https://fishingtripsmarbella.com/images/guide.webp"
+        ],
+        "telephone": "+34686683373",
+        "foundingDate": "2023",
+        "knowsLanguage": [
+          "es",
+          "en"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Puerto Deportivo Marina La Bajadilla",
+          "addressLocality": "Marbella",
+          "postalCode": "29603",
+          "addressRegion": "Málaga",
+          "addressCountry": "ES"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 36.5077216,
+          "longitude": -4.8743017
+        },
+        "hasMap": "https://maps.app.goo.gl/8U9EbCWF8f1QCgRJ9",
+        "areaServed": [
+          {
+            "@type": "City",
+            "name": "Marbella"
+          },
+          {
+            "@type": "Place",
+            "name": "Costa del Sol"
+          }
+        ],
+        "knowsAbout": [
+          "Pesca deportiva",
+          "Pesca de altura",
+          "Pesca de fondo",
+          "Pesca al vivo",
+          "Jigging",
+          "Pesca del calamar",
+          "Pesca al curricán",
+          "Captura y suelta de atún rojo",
+          "Especies del Mediterráneo",
+          "Dentón",
+          "Bonito",
+          "Pez limón",
+          "Mero"
+        ],
+        "amenityFeature": [
+          {
+            "@type": "LocationFeatureSpecification",
+            "name": "Equipo de pesca profesional incluido",
+            "value": true
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            "name": "Señuelos y cebos para cada técnica",
+            "value": true
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            "name": "Sondas GPS Lowrance",
+            "value": true
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            "name": "Dos viveros integrados",
+            "value": true
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            "name": "Equipo de seguridad completo",
+            "value": true
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            "name": "Bebidas frías y snacks a bordo",
+            "value": true
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            "name": "Combustible incluido",
+            "value": true
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            "name": "Pescado limpio para llevar a casa",
+            "value": true
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            "name": "Apto para principiantes y niños",
+            "value": true
+          }
+        ],
+        "employee": {
+          "@id": "https://fishingtripsmarbella.com/#skipper"
+        },
+        "sponsor": {
+          "@type": "Organization",
+          "name": "Yamaha Marine España"
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Excursiones de pesca en Marbella",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@id": "https://fishingtripsmarbella.com/#salida-compartida"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@id": "https://fishingtripsmarbella.com/#salida-privada"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Pesca de fondo en Marbella",
+                "url": "https://fishingtripsmarbella.com/pesca-de-fondo-marbella/"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Pesca al vivo en Marbella",
+                "url": "https://fishingtripsmarbella.com/pesca-al-vivo-marbella/"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Pesca al jigging en Marbella",
+                "url": "https://fishingtripsmarbella.com/pesca-al-jigging-marbella/"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Pesca del calamar en Marbella",
+                "url": "https://fishingtripsmarbella.com/pesca-del-calamar-marbella/"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Pesca al curricán en Marbella",
+                "url": "https://fishingtripsmarbella.com/pesca-al-currican-marbella/"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Pesca del atún en Marbella",
+                "url": "https://fishingtripsmarbella.com/pesca-del-atun-marbella/"
+              }
+            }
+          ]
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+34686683373",
+          "contactType": "reservations",
+          "availableLanguage": [
+            "Spanish",
+            "English"
+          ],
+          "areaServed": "ES"
+        },
+        "sameAs": [
+          "https://www.instagram.com/fishing_trips_marbella/",
+          "https://share.google/t2Gna9XSgn9SA09nb"
+        ]
+      },
+      {
+        "@type": "Person",
+        "@id": "https://fishingtripsmarbella.com/#skipper",
+        "name": "Arturo",
+        "jobTitle": "Patrón y guía de pesca local",
+        "worksFor": {
+          "@id": "https://fishingtripsmarbella.com/#business"
+        },
+        "image": "https://fishingtripsmarbella.com/images/guide.webp",
+        "description": "Patrón con más de 20 años de experiencia de pesca en el Mediterráneo. Patrón de Yate, Pro Staff de JLC Fishing y embajador oficial de Yamaha Marine España.",
+        "hasCredential": {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Titulación náutica profesional",
+          "name": "Patrón de Yate"
+        },
+        "knowsAbout": [
+          "Pesca deportiva",
+          "Caladeros de la Costa del Sol",
+          "Jigging",
+          "Curricán",
+          "Pesca del atún rojo"
+        ]
+      },
+      {
+        "@type": "BoatTerminal",
+        "@id": "https://fishingtripsmarbella.com/#marina",
+        "name": "Puerto Deportivo Marina La Bajadilla",
+        "url": "https://puertodeportivo.marbella.es/",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Marbella",
+          "postalCode": "29603",
+          "addressRegion": "Málaga",
+          "addressCountry": "ES"
+        }
+      },
+      {
+        "@type": "TouristTrip",
+        "@id": "https://fishingtripsmarbella.com/#salida-compartida",
+        "name": "Excursión de pesca compartida en Marbella",
+        "description": "Comparte barco con otros pescadores y paga solo tu plaza. La opción perfecta si venís solos o en pareja y queréis vivir el mar con buen ambiente.",
+        "touristType": [
+          "Viajeros solos",
+          "Parejas",
+          "Principiantes",
+          "Pescadores con experiencia"
+        ],
+        "itinerary": {
+          "@id": "https://fishingtripsmarbella.com/#marina"
+        },
+        "provider": {
+          "@id": "https://fishingtripsmarbella.com/#business"
+        }
+      },
+      {
+        "@type": "TouristTrip",
+        "@id": "https://fishingtripsmarbella.com/#salida-privada",
+        "name": "Excursión de pesca privada en Marbella",
+        "description": "El barco solo para tu grupo, hasta 5 personas. El patrón adapta la técnica, la zona y el ritmo a vosotros: ideal para familias y amigos.",
+        "touristType": [
+          "Familias",
+          "Grupos de amigos",
+          "Niños",
+          "Principiantes",
+          "Pescadores con experiencia"
+        ],
+        "itinerary": {
+          "@id": "https://fishingtripsmarbella.com/#marina"
+        },
+        "provider": {
+          "@id": "https://fishingtripsmarbella.com/#business"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://fishingtripsmarbella.com/#webpage",
+        "url": "https://fishingtripsmarbella.com/",
+        "name": "Excursión Pesca Marbella - Alquiler Barco de pesca",
+        "inLanguage": "es",
+        "isPartOf": {
+          "@id": "https://fishingtripsmarbella.com/#website"
+        },
+        "about": {
+          "@id": "https://fishingtripsmarbella.com/#business"
+        },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://fishingtripsmarbella.com/images/hero-video-poster.webp"
+        },
+        "mainEntity": {
+          "@id": "https://fishingtripsmarbella.com/#faq"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://fishingtripsmarbella.com/#faq",
+        "inLanguage": "es",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Qué incluye la excursión de pesca en Marbella?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Cañas, carretes, cebos y todo el equipo de pesca profesional, además de patrón experto y guía local durante toda la salida."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Necesito experiencia previa para pescar?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No, nuestras excursiones están pensadas tanto para principiantes como para pescadores con experiencia. El patrón te explica todo lo necesario a bordo."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Desde dónde sale el barco?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Todas nuestras salidas de pesca desde el puerto deportivo de Marbella zarpan desde Puerto deportivo Marina La Bajadilla, 29603 Marbella, Málaga, con salidas diarias y fácil acceso en coche, taxi o a pie."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Necesito licencia de pesca para pescar en Marbella?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. No necesitas tramitar ninguna licencia: la salida se realiza con la autorización de pesca de nuestra embarcación. Además, en cada salida irás con nuestro patrón, tu guía de pesca local en Marbella: más de 20 años de experiencia en el Mediterráneo, Patrón de Yate, Pro Staff de JLC Fishing, conoce los mejores caladeros de la Costa del Sol, adapta cada salida a la temporada y las especies, y es embajador oficial de Yamaha Marine España."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Tenemos que llevarnos comida y bebida durante la pesca en Marbella?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No, no necesitas preocuparte por eso. Todas nuestras excursiones incluyen agua, refrescos fríos y snacks para que estés hidratado y con energía durante toda la jornada."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Es aconsejable llevar algún tipo de ropa especial para pescar en Marbella?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Dependiendo de la época del año, te recomendamos traer lo justo para estar cómodo. En verano: bañador, gorra, gafas de sol, protector solar. En invierno/primavera: sudadera o chaqueta ligera. Calzado cómodo y antideslizante."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánto tiempo dura la excursión de pesca?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La duración total de la salida de pesca está entre las 4 y 5 horas. Este tiempo está pensado para que puedas disfrutar al máximo sin que la experiencia se haga larga o cansada."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Salimos de pesca aunque las condiciones climáticas sean adversas?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. La seguridad y la comodidad de nuestros pasajeros son lo más importante. Si detectamos viento fuerte, oleaje elevado o previsión de tormentas, nos pondremos en contacto contigo para reprogramar la excursión de pesca sin coste alguno."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "En caso de mareo o malestar general, ¿qué se hace?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Recomendamos traer pastillas antimareo como Biodramina. Si alguien no se encuentra bien, adaptamos el ritmo o volvemos al puerto si es necesario."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Hace falta llevarnos algún tipo de material de pesca?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No es necesario traer nada. Ponemos a tu disposición todo el material de pesca profesional que necesitas: cañas, carretes, cebos, señuelos, anzuelos, etc."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cómo reservo mi salida de pesca en Marbella?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Directamente por WhatsApp pulsando en \"Reservar Pesca\": nos cuentas tus fechas disponibles, la hora y el número de personas, y te confirmamos la disponibilidad."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuántas personas pueden ir en cada salida?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "El barco admite un máximo de 5 personas por salida, más el patrón."
+            }
+          }
+        ]
+      }
     ]
   }
   </script>

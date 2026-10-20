@@ -16,138 +16,180 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="stylesheet" href="/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Fishing Trips Marbella",
-  "image": "https://fishingtripsmarbella.com/images/hero.webp",
-  "telephone": "+34686683373",
-  "priceRange": "€€",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Puerto deportivo Marina La Bajadilla",
-    "addressLocality": "Marbella",
-    "postalCode": "29603",
-    "addressRegion": "Málaga",
-    "addressCountry": "ES"
-  },
-  "url": "https://fishingtripsmarbella.com/en/tuna-fishing-marbella/",
-  "sameAs": [
-      "https://www.instagram.com/fishing_trips_marbella/",
-      "https://www.google.com/maps?cid=11112407875120241665",
-      "https://www.getyourguide.com/marbella-l1217/excursion-de-pesca-en-marbella-con-un-pescador-profesional-t1365620/",
-      "https://www.viator.com/tours/Marbella/Deep-Sea-Fishing-Adventure-in-Marbella/d22304-5670808P1"
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://fishingtripsmarbella.com/#business",
+        "name": "Fishing Trips Marbella",
+        "url": "https://fishingtripsmarbella.com/",
+        "telephone": "+34686683373",
+        "image": "https://fishingtripsmarbella.com/images/boat-real.webp",
+        "hasMap": "https://maps.app.goo.gl/8U9EbCWF8f1QCgRJ9",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Puerto Deportivo Marina La Bajadilla",
+          "addressLocality": "Marbella",
+          "postalCode": "29603",
+          "addressRegion": "Málaga",
+          "addressCountry": "ES"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 36.5077216,
+          "longitude": -4.8743017
+        }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://fishingtripsmarbella.com/en/tuna-fishing-marbella/#service",
+        "name": "Tuna fishing in Marbella",
+        "serviceType": "Tuna fishing",
+        "description": "Bluefin tuna fishing trip from Marina La Bajadilla, Marbella, trolling with heavy-duty gear. Catch and release is required by law, only during the authorised season. The most physically demanding option; no previous experience needed. Boat, skipper and fishing gear included.",
+        "url": "https://fishingtripsmarbella.com/en/tuna-fishing-marbella/",
+        "inLanguage": "en",
+        "provider": {
+          "@id": "https://fishingtripsmarbella.com/#business"
+        },
+        "areaServed": {
+          "@type": "City",
+          "name": "Marbella"
+        },
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Anglers looking for a challenge"
+        },
+        "image": "https://fishingtripsmarbella.com/images/pescador-dos-dentones-marbella.webp"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://fishingtripsmarbella.com/en/tuna-fishing-marbella/#webpage",
+        "url": "https://fishingtripsmarbella.com/en/tuna-fishing-marbella/",
+        "name": "Tuna Fishing in Marbella | Fishing Trips Marbella",
+        "inLanguage": "en",
+        "isPartOf": {
+          "@id": "https://fishingtripsmarbella.com/#website"
+        },
+        "about": {
+          "@id": "https://fishingtripsmarbella.com/en/tuna-fishing-marbella/#service"
+        },
+        "breadcrumb": {
+          "@id": "https://fishingtripsmarbella.com/en/tuna-fishing-marbella/#breadcrumb"
+        },
+        "mainEntity": {
+          "@id": "https://fishingtripsmarbella.com/en/tuna-fishing-marbella/#faq"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://fishingtripsmarbella.com/en/tuna-fishing-marbella/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://fishingtripsmarbella.com/en/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Tuna fishing in Marbella",
+            "item": "https://fishingtripsmarbella.com/en/tuna-fishing-marbella/"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://fishingtripsmarbella.com/en/tuna-fishing-marbella/#faq",
+        "inLanguage": "en",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is tuna fishing?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It's mainly done by trolling, pulling large lures behind the boat at the right speed to imitate fleeing prey. When a tuna strikes, a fight begins that can last much longer than with any other species, because of its size and strength. The gear is sturdier than for other techniques — heavy-duty rods, reels and lines — precisely so a fish of this size can be handled safely. It's a test of endurance for both angler and gear: not a quick tug, but a sustained battle where you have to keep the line tight without giving ground, guided by the skipper at all times."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need a licence or special permit to fish for tuna?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You don't need to arrange anything yourself. Recreational bluefin tuna fishing is carried out under the boat's own authorisation, so you can come along without any paperwork — just turn up at the marina. On every trip you'll also be with our skipper, your local fishing guide in Marbella: Over 20 years of experience in the Mediterranean; Yacht Master; Pro Staff at JLC Fishing; Knows the best fishing spots on the Costa del Sol; Tailors every trip to the season and the species; Official ambassador for Yamaha Marine España."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What gear do I need to bring?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No fishing gear — rods, reels, lures and all the heavy-duty tackle are included. We do recommend comfortable clothes you can move freely in, non-slip shoes, sunglasses, sunscreen and, if you plan to fight the fish yourself, some extra water to hand."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is tuna fishing for me?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It's the most physically demanding style we offer: a fight with a bluefin tuna can be long and intense. You don't need previous experience — the skipper guides you all the way — but a reasonable level of fitness helps if you want to be the one holding the rod for the whole fight. If you come as a group, you can also take turns."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where can I go tuna fishing in Marbella?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We set off from Marina La Bajadilla and head to the areas of the Costa del Sol where bluefin tuna shoals gather in season. The skipper follows the signs at sea — birds working, temperature changes, surface activity — to find the most productive area on the day. Marbella's marina is one of the most iconic spots on the Costa del Sol: a lively meeting point for locals and tourists right in the heart of the city. You'll find us at Marina La Bajadilla, 29603 Marbella, Málaga, with easy access by car, taxi or on foot. Beyond your fishing trip, the marina is a destination in itself, with beachfront restaurants, nautical events and beach clubs. Find out more on the official Marbella marina website."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is it true that tuna have to be released?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Recreational bluefin tuna fishing in Spain is catch and release: the fish is brought alongside the boat, you enjoy the fight and can take a photo, and then it's returned to the sea in the best possible condition. This practice exists to protect the species and is required by law, not a choice made by the charter."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What time of year can you fish for tuna?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Recreational bluefin tuna fishing in Spain is authorised each year within a specific period set by the Ministry of Agriculture, Fisheries and Food, which can also close early if the quota runs out. Message us on WhatsApp and we'll confirm whether the season is open for your dates."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I go tuna fishing on a private boat or is it shared?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The trip is private: the boat is just for your group and is never shared with people you don't know. It's just you, up to 5 people, so the experience and the skipper's attention are all yours from start to finish."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How many people can join each trip?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A maximum of 5 people per trip. With tuna, as the fight may call for turns, it's common to share the effort between several members of the group."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does a tuna fishing trip last?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It can last longer than other techniques, as a fight with a bluefin tuna can go on for quite a while. When you book via WhatsApp, we'll confirm the length and the time of your trip."
+            }
+          }
+        ]
+      }
     ]
-}
-  </script>
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://fishingtripsmarbella.com/en/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Tuna fishing",
-      "item": "https://fishingtripsmarbella.com/en/tuna-fishing-marbella/"
-    }
-  ]
-}
-  </script>
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is tuna fishing?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It's mainly done by trolling, pulling large lures behind the boat at the right speed to imitate fleeing prey. When a tuna strikes, a fight begins that can last much longer than with any other species, because of its size and strength. The gear is sturdier than for other techniques — heavy-duty rods, reels and lines — precisely so a fish of this size can be handled safely. It's a test of endurance for both angler and gear: not a quick tug, but a sustained battle where you have to keep the line tight without giving ground, guided by the skipper at all times."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do I need a licence or special permit to fish for tuna?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "You don't need to arrange anything yourself. Recreational bluefin tuna fishing is carried out under the boat's own authorisation, so you can come along without any paperwork — just turn up at the marina. On every trip you'll also be with our skipper, your local fishing guide in Marbella: Over 20 years of experience in the Mediterranean Yacht Master Pro Staff at JLC Fishing Knows the best fishing spots on the Costa del Sol Tailors every trip to the season and the species Official ambassador for Yamaha Marine España"
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What gear do I need to bring?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No fishing gear — rods, reels, lures and all the heavy-duty tackle are included. We do recommend comfortable clothes you can move freely in, non-slip shoes, sunglasses, sunscreen and, if you plan to fight the fish yourself, some extra water to hand."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is tuna fishing for me?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It's the most physically demanding style we offer: a fight with a bluefin tuna can be long and intense. You don't need previous experience — the skipper guides you all the way — but a reasonable level of fitness helps if you want to be the one holding the rod for the whole fight. If you come as a group, you can also take turns."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Where can I go tuna fishing in Marbella?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "We set off from Marina La Bajadilla and head to the areas of the Costa del Sol where bluefin tuna shoals gather in season. The skipper follows the signs at sea — birds working, temperature changes, surface activity — to find the most productive area on the day. Marbella's marina is one of the most iconic spots on the Costa del Sol: a lively meeting point for locals and tourists right in the heart of the city. You'll find us at Marina La Bajadilla, 29603 Marbella, Málaga, with easy access by car, taxi or on foot. Beyond your fishing trip, the marina is a destination in itself, with beachfront restaurants, nautical events and beach clubs. Find out more on the official Marbella marina website."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is it true that tuna have to be released?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Recreational bluefin tuna fishing in Spain is catch and release: the fish is brought alongside the boat, you enjoy the fight and can take a photo, and then it's returned to the sea in the best possible condition. This practice exists to protect the species and is required by law, not a choice made by the charter."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What time of year can you fish for tuna?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Recreational bluefin tuna fishing in Spain is authorised each year within a specific period set by the Ministry of Agriculture, Fisheries and Food, which can also close early if the quota runs out. Message us on WhatsApp and we'll confirm whether the season is open for your dates."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I go tuna fishing on a private boat or is it shared?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The trip is private: the boat is just for your group and is never shared with people you don't know. It's just you, up to 5 people, so the experience and the skipper's attention are all yours from start to finish."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How many people can join each trip?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A maximum of 5 people per trip. With tuna, as the fight may call for turns, it's common to share the effort between several members of the group."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How long does a tuna fishing trip last?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It can last longer than other techniques, as a fight with a bluefin tuna can go on for quite a while. When you book via WhatsApp, we'll confirm the length and the time of your trip."
-      }
-    }
-  ]
-}
+  }
   </script>
 </head>
 <body>

@@ -22,130 +22,181 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Fishing Trips Marbella",
-    "image": "https://fishingtripsmarbella.com/images/hero.webp",
-    "telephone": "+34686683373",
-    "priceRange": "€€",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Puerto deportivo Marina La Bajadilla",
-      "addressLocality": "Marbella",
-      "postalCode": "29603",
-      "addressRegion": "Málaga",
-      "addressCountry": "ES"
-    },
-    "url": "https://fishingtripsmarbella.com/pesca-al-vivo-marbella/",
-    "sameAs": [
-      "https://www.instagram.com/fishing_trips_marbella/",
-      "https://www.google.com/maps?cid=11112407875120241665",
-      "https://www.getyourguide.com/marbella-l1217/excursion-de-pesca-en-marbella-con-un-pescador-profesional-t1365620/",
-      "https://www.viator.com/tours/Marbella/Deep-Sea-Fishing-Adventure-in-Marbella/d22304-5670808P1"
-    ]
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://fishingtripsmarbella.com/" },
-      { "@type": "ListItem", "position": 2, "name": "Pesca al vivo", "item": "https://fishingtripsmarbella.com/pesca-al-vivo-marbella/" }
-    ]
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
+    "@graph": [
       {
-        "@type": "Question",
-        "name": "¿Dónde se puede hacer pesca al vivo en Marbella?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Salimos desde el Puerto Deportivo Marina La Bajadilla, en Marbella, y nos movemos por los caladeros de la Costa del Sol donde se concentran los grandes depredadores — zonas de corriente, bajos y estructuras rocosas que nuestro patrón conoce bien. No hace falta que sepas dónde pescar: la ubicación exacta la decidimos nosotros el día de la salida, según las condiciones del mar y la época del año."
+        "@type": "LocalBusiness",
+        "@id": "https://fishingtripsmarbella.com/#business",
+        "name": "Fishing Trips Marbella",
+        "url": "https://fishingtripsmarbella.com/",
+        "telephone": "+34686683373",
+        "image": "https://fishingtripsmarbella.com/images/boat-real.webp",
+        "hasMap": "https://maps.app.goo.gl/8U9EbCWF8f1QCgRJ9",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Puerto Deportivo Marina La Bajadilla",
+          "addressLocality": "Marbella",
+          "postalCode": "29603",
+          "addressRegion": "Málaga",
+          "addressCountry": "ES"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 36.5077216,
+          "longitude": -4.8743017
         }
       },
       {
-        "@type": "Question",
-        "name": "¿En qué consiste la pesca al vivo?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "La pesca al vivo consiste en usar un pez pequeño y vivo —jurel, caballa o sardina— como cebo, en lugar de cebo muerto o señuelos artificiales. La idea es sencilla pero muy efectiva: le damos al depredador exactamente lo que está buscando cazar de forma natural. A bordo llevamos un vivero con renovación de agua para que el cebo se mantenga fresco y activo durante toda la salida — un cebo vivo y con buen movimiento es lo que realmente atrae a piezas grandes como el pargo, el dentón, el mero o el pez limón. El patrón se encarga de capturar y mantener el cebo, y de presentarlo en el punto exacto donde sabe que se mueven los depredadores según la zona y la época del año. Es una modalidad más activa que la pesca de fondo: el pez vivo genera movimiento constante en el agua, lo que provoca picadas más \"de ataque\" — el depredador no muerde, embiste. Por eso es la técnica preferida de quien busca no solo pescar, sino vivir una pelea con la caña de verdad."
+        "@type": "Service",
+        "@id": "https://fishingtripsmarbella.com/pesca-al-vivo-marbella/#service",
+        "name": "Pesca al vivo en Marbella",
+        "serviceType": "Pesca al vivo",
+        "description": "Salida de pesca al vivo en barco desde el Puerto deportivo Marina La Bajadilla, Marbella, con jurel, caballa o sardina vivos como cebo, mantenidos en vivero. Pargo, dentón, mero, abadejo y pez limón: piezas grandes. Para principiantes y pescadores con experiencia. Barco, patrón, cebo y equipo de pesca incluidos.",
+        "url": "https://fishingtripsmarbella.com/pesca-al-vivo-marbella/",
+        "inLanguage": "es",
+        "provider": {
+          "@id": "https://fishingtripsmarbella.com/#business"
+        },
+        "areaServed": {
+          "@type": "City",
+          "name": "Marbella"
+        },
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Principiantes y pescadores con experiencia"
+        },
+        "image": "https://fishingtripsmarbella.com/images/pescador-pargo-marbella.webp"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://fishingtripsmarbella.com/pesca-al-vivo-marbella/#webpage",
+        "url": "https://fishingtripsmarbella.com/pesca-al-vivo-marbella/",
+        "name": "Pesca al Vivo en Marbella | Fishing Trips Marbella",
+        "inLanguage": "es",
+        "isPartOf": {
+          "@id": "https://fishingtripsmarbella.com/#website"
+        },
+        "about": {
+          "@id": "https://fishingtripsmarbella.com/pesca-al-vivo-marbella/#service"
+        },
+        "breadcrumb": {
+          "@id": "https://fishingtripsmarbella.com/pesca-al-vivo-marbella/#breadcrumb"
+        },
+        "mainEntity": {
+          "@id": "https://fishingtripsmarbella.com/pesca-al-vivo-marbella/#faq"
         }
       },
       {
-        "@type": "Question",
-        "name": "¿Qué cebo vivo utilizáis?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Usamos jureles, caballa y sardina, capturados el mismo día y mantenidos en un vivero a bordo con circulación de agua constante para que lleguen frescos y con buen movimiento al momento de pescar. Un cebo vivo y activo es la clave de esta técnica — no necesitas traer nada, nosotros nos ocupamos de todo el proceso."
-        }
+        "@type": "BreadcrumbList",
+        "@id": "https://fishingtripsmarbella.com/pesca-al-vivo-marbella/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://fishingtripsmarbella.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Pesca al vivo en Marbella",
+            "item": "https://fishingtripsmarbella.com/pesca-al-vivo-marbella/"
+          }
+        ]
       },
       {
-        "@type": "Question",
-        "name": "¿Puedo pescar al vivo en barco privado o es compartido?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "La salida es privada: el barco es solo para tu grupo, no se comparte con otros clientes que no conozcas. Vais vosotros, con un máximo de 5 personas, así que la experiencia y la atención del patrón son solo para vuestro grupo de principio a fin."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Qué hacemos con las especies que hemos capturado con la pesca al vivo?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Te puedes llevar tu captura a casa si quieres, respetando siempre las tallas mínimas legales de cada especie. Si lo prefieres, también podemos devolver la pieza al mar en buenas condiciones — tú decides el día de la salida, y el patrón te asesora según lo que hayáis pescado."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Tenéis licencia para hacer pesca al vivo?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No necesitas tener licencia de pesca propia. La excursión se organiza bajo la licencia profesional de la embarcación y el patrón, así que puedes venir sin ningún papeleo previo — solo te tienes que presentar en el puerto."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Es la pesca al vivo para mí?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Sí, tanto si ya has pescado antes como si es tu primera vez. Es verdad que es una modalidad algo más activa que la pesca de fondo —las picadas son más bruscas y la pelea con el pez puede durar un rato—, así que si buscas más adrenalina y una captura de mayor tamaño, esta es tu técnica. El patrón te guía en todo momento, desde cómo sujetar la caña hasta cómo aguantar la pelea cuando pique algo grande."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Qué equipo necesito llevar?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Nada de equipo de pesca — cañas, carretes, cebo vivo y todos los aparejos están incluidos. Solo te recomendamos traer ropa cómoda, calzado antideslizante, gafas de sol, protector solar y algo de abrigo si la salida es de mañana temprano."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Qué especies se capturan en la pesca al vivo?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Las piezas más habituales son pargo, pargo XXL, dentón, mero, abadejo y pez limón — algunos de los depredadores más valorados y difíciles de capturar del Mediterráneo. Al ser una técnica dirigida a piezas grandes, las capturas suelen ser de mayor tamaño que en otras modalidades."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Cuántas personas pueden ir en cada salida?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Un máximo de 5 personas por salida, para que el patrón pueda atender bien a todo el grupo y cada uno tenga su turno con la caña en el momento de la picada."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿A qué hora salen las excursiones?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Ofrecemos dos franjas horarias: a las 7:30h o a las 16:00h. Puedes elegir la que mejor se adapte a tu día al hacer la reserva por WhatsApp."
-        }
+        "@type": "FAQPage",
+        "@id": "https://fishingtripsmarbella.com/pesca-al-vivo-marbella/#faq",
+        "inLanguage": "es",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿En qué consiste la pesca al vivo?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La pesca al vivo consiste en usar un pez pequeño y vivo —jurel, caballa o sardina— como cebo, en lugar de cebo muerto o señuelos artificiales. La idea es sencilla pero muy efectiva: le damos al depredador exactamente lo que está buscando cazar de forma natural. A bordo llevamos un vivero con renovación de agua para que el cebo se mantenga fresco y activo durante toda la salida — un cebo vivo y con buen movimiento es lo que realmente atrae a piezas grandes como el pargo, el dentón, el mero o el pez limón. El patrón se encarga de capturar y mantener el cebo, y de presentarlo en el punto exacto donde sabe que se mueven los depredadores según la zona y la época del año. Es una modalidad más activa que la pesca de fondo: el pez vivo genera movimiento constante en el agua, lo que provoca picadas más \"de ataque\" — el depredador no muerde, embiste. Por eso es la técnica preferida de quien busca no solo pescar, sino vivir una pelea con la caña de verdad."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Tenéis licencia para hacer pesca al vivo?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No necesitas tener licencia de pesca propia. La excursión se organiza bajo la licencia profesional de la embarcación y el patrón, así que puedes venir sin ningún papeleo previo — solo te tienes que presentar en el puerto. Además, en cada salida irás con nuestro patrón, tu guía de pesca local en Marbella: Más de 20 años de experiencia en el Mediterráneo; Patrón de Yate; Pro Staff de JLC Fishing; Conoce los mejores caladeros de la Costa del Sol; Adapta cada salida a la temporada y las especies; Embajador oficial de Yamaha Marine España."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué equipo necesito llevar?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nada de equipo de pesca — cañas, carretes, cebo vivo y todos los aparejos están incluidos. Solo te recomendamos traer ropa cómoda, calzado antideslizante, gafas de sol, protector solar y algo de abrigo si la salida es de mañana temprano."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Es la pesca al vivo para mí?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí, tanto si ya has pescado antes como si es tu primera vez. Es verdad que es una modalidad algo más activa que la pesca de fondo —las picadas son más bruscas y la pelea con el pez puede durar un rato—, así que si buscas más adrenalina y una captura de mayor tamaño, esta es tu técnica. El patrón te guía en todo momento, desde cómo sujetar la caña hasta cómo aguantar la pelea cuando pique algo grande."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Dónde se puede hacer pesca al vivo en Marbella?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Salimos desde el Puerto Deportivo Marina La Bajadilla, en Marbella, y nos movemos por los caladeros de la Costa del Sol donde se concentran los grandes depredadores — zonas de corriente, bajos y estructuras rocosas que nuestro patrón conoce bien. No hace falta que sepas dónde pescar: la ubicación exacta la decidimos nosotros el día de la salida, según las condiciones del mar y la época del año. El puerto deportivo de Marbella es uno de los lugares más emblemáticos de la Costa del Sol: un animado punto de encuentro para locales y turistas en pleno centro de la ciudad. Nos encontrarás en Puerto deportivo Marina La Bajadilla, 29603 Marbella, Málaga, con fácil acceso en coche, taxi o a pie. Más allá de tu excursión, el puerto es un destino en sí mismo, con restaurantes frente al mar, eventos náuticos y clubes de playa. Descubre más en la web oficial del puerto deportivo de Marbella."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué cebo vivo utilizáis?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Usamos jureles, caballa y sardina, capturados el mismo día y mantenidos en un vivero a bordo con circulación de agua constante para que lleguen frescos y con buen movimiento al momento de pescar. Un cebo vivo y activo es la clave de esta técnica — no necesitas traer nada, nosotros nos ocupamos de todo el proceso."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Puedo pescar al vivo en barco privado o es compartido?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La salida es privada: el barco es solo para tu grupo, no se comparte con otros clientes que no conozcas. Vais vosotros, con un máximo de 5 personas, así que la experiencia y la atención del patrón son solo para vuestro grupo de principio a fin."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué hacemos con las especies que hemos capturado con la pesca al vivo?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Te puedes llevar tu captura a casa si quieres, respetando siempre las tallas mínimas legales de cada especie. Si lo prefieres, también podemos devolver la pieza al mar en buenas condiciones — tú decides el día de la salida, y el patrón te asesora según lo que hayáis pescado."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué especies se capturan en la pesca al vivo?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Las piezas más habituales son pargo, pargo XXL, dentón, mero, abadejo y pez limón — algunos de los depredadores más valorados y difíciles de capturar del Mediterráneo. Al ser una técnica dirigida a piezas grandes, las capturas suelen ser de mayor tamaño que en otras modalidades."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuántas personas pueden ir en cada salida?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Un máximo de 5 personas por salida, para que el patrón pueda atender bien a todo el grupo y cada uno tenga su turno con la caña en el momento de la picada."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿A qué hora salen las excursiones?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ofrecemos dos franjas horarias: a las 7:30h o a las 16:00h. Puedes elegir la que mejor se adapte a tu día al hacer la reserva por WhatsApp."
+            }
+          }
+        ]
       }
     ]
   }

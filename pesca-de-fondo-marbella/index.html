@@ -22,87 +22,173 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Fishing Trips Marbella",
-    "image": "https://fishingtripsmarbella.com/images/hero.webp",
-    "telephone": "+34686683373",
-    "priceRange": "€€",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Puerto deportivo Marina La Bajadilla",
-      "addressLocality": "Marbella",
-      "postalCode": "29603",
-      "addressRegion": "Málaga",
-      "addressCountry": "ES"
-    },
-    "url": "https://fishingtripsmarbella.com/pesca-de-fondo-marbella/",
-    "sameAs": [
-      "https://www.instagram.com/fishing_trips_marbella/",
-      "https://www.google.com/maps?cid=11112407875120241665",
-      "https://www.getyourguide.com/marbella-l1217/excursion-de-pesca-en-marbella-con-un-pescador-profesional-t1365620/",
-      "https://www.viator.com/tours/Marbella/Deep-Sea-Fishing-Adventure-in-Marbella/d22304-5670808P1"
-    ]
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://fishingtripsmarbella.com/" },
-      { "@type": "ListItem", "position": 2, "name": "Pesca de fondo", "item": "https://fishingtripsmarbella.com/pesca-de-fondo-marbella/" }
-    ]
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
+    "@graph": [
       {
-        "@type": "Question",
-        "name": "¿Dónde se puede hacer pesca de fondo en Marbella?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Salimos desde el puerto deportivo Marina La Bajadilla, en Marbella, y navegamos hasta los bajos rocosos y caladeros de fondo que nuestro patrón conoce en la Costa del Sol: los puntos que dan resultado en cada época del año, no un sitio al azar." }
+        "@type": "LocalBusiness",
+        "@id": "https://fishingtripsmarbella.com/#business",
+        "name": "Fishing Trips Marbella",
+        "url": "https://fishingtripsmarbella.com/",
+        "telephone": "+34686683373",
+        "image": "https://fishingtripsmarbella.com/images/boat-real.webp",
+        "hasMap": "https://maps.app.goo.gl/8U9EbCWF8f1QCgRJ9",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Puerto Deportivo Marina La Bajadilla",
+          "addressLocality": "Marbella",
+          "postalCode": "29603",
+          "addressRegion": "Málaga",
+          "addressCountry": "ES"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 36.5077216,
+          "longitude": -4.8743017
+        }
       },
       {
-        "@type": "Question",
-        "name": "¿Puedo pescar de fondo en barco privado o es compartido?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Tu barco es privado para tu grupo: reservas la salida completa, hasta 5 personas, y no se comparte con otros grupos ni desconocidos." }
+        "@type": "Service",
+        "@id": "https://fishingtripsmarbella.com/pesca-de-fondo-marbella/#service",
+        "name": "Pesca de fondo en Marbella",
+        "serviceType": "Pesca de fondo",
+        "description": "Salida de pesca de fondo en barco desde el Puerto deportivo Marina La Bajadilla, Marbella, sobre los bajos rocosos y caladeros de la Costa del Sol, donde esperan doradas, sargos, meros o dentones. Técnica tranquila y accesible, ideal para principiantes y niños. Barco, patrón y equipo de pesca incluidos.",
+        "url": "https://fishingtripsmarbella.com/pesca-de-fondo-marbella/",
+        "inLanguage": "es",
+        "provider": {
+          "@id": "https://fishingtripsmarbella.com/#business"
+        },
+        "areaServed": {
+          "@type": "City",
+          "name": "Marbella"
+        },
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Principiantes, familias y niños"
+        },
+        "image": "https://fishingtripsmarbella.com/images/nino-cabracho-marbella.webp"
       },
       {
-        "@type": "Question",
-        "name": "¿Qué hacemos con las especies que hemos capturado con la pesca de fondo?",
-        "acceptedAnswer": { "@type": "Answer", "text": "La pesca es vuestra. Nuestro patrón se encarga de limpiar el pescado, incluido en la salida, para que os lo llevéis listo a casa." }
+        "@type": "WebPage",
+        "@id": "https://fishingtripsmarbella.com/pesca-de-fondo-marbella/#webpage",
+        "url": "https://fishingtripsmarbella.com/pesca-de-fondo-marbella/",
+        "name": "Pesca de Fondo en Marbella | Fishing Trips Marbella",
+        "inLanguage": "es",
+        "isPartOf": {
+          "@id": "https://fishingtripsmarbella.com/#website"
+        },
+        "about": {
+          "@id": "https://fishingtripsmarbella.com/pesca-de-fondo-marbella/#service"
+        },
+        "breadcrumb": {
+          "@id": "https://fishingtripsmarbella.com/pesca-de-fondo-marbella/#breadcrumb"
+        },
+        "mainEntity": {
+          "@id": "https://fishingtripsmarbella.com/pesca-de-fondo-marbella/#faq"
+        }
       },
       {
-        "@type": "Question",
-        "name": "¿Tenéis licencia para hacer pesca de fondo?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Sí. Nuestra embarcación cuenta con el permiso de pesca marítima de recreo, así que no necesitas licencia propia para pescar a bordo." }
+        "@type": "BreadcrumbList",
+        "@id": "https://fishingtripsmarbella.com/pesca-de-fondo-marbella/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://fishingtripsmarbella.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Pesca de fondo en Marbella",
+            "item": "https://fishingtripsmarbella.com/pesca-de-fondo-marbella/"
+          }
+        ]
       },
       {
-        "@type": "Question",
-        "name": "¿Es la pesca de fondo para mí?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Sí, aunque nunca hayas cogido una caña. No requiere fuerza ni técnica de lanzado — es perfecta si vas con niños, es tu primera vez en un barco de pesca o buscas una experiencia relajada en el mar." }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Qué equipo necesito llevar?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Ninguno. Cañas, cebo y aparejos van incluidos en la salida — solo tienes que venir con ganas de pescar." }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Qué especies se capturan en la pesca de fondo?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Dependiendo de la época y la zona, es habitual capturar dorada, urta, pargo, breca, sargo, gallineta, congrio, brótola, morena, dentón, pulpo y abadejo: especies de roca y de fondo, las más valoradas del Mediterráneo." }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Cuántas personas pueden ir en cada salida?",
-        "acceptedAnswer": { "@type": "Answer", "text": "El barco admite un máximo de 5 personas, más el patrón, así que siempre hay ayuda cerca si la necesitas." }
-      },
-      {
-        "@type": "Question",
-        "name": "¿A qué hora salen las excursiones?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Ofrecemos dos franjas, de mañana (7:30h) o de tarde (16:00h) — eliges la que mejor te encaje." }
+        "@type": "FAQPage",
+        "@id": "https://fishingtripsmarbella.com/pesca-de-fondo-marbella/#faq",
+        "inLanguage": "es",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿En qué consiste la pesca de fondo?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Consiste en bajar el cebo hasta el fondo, sobre los bajos rocosos y caladeros que nuestro patrón conoce en la Costa del Sol, donde esperan doradas, sargos, meros o dentones. Una vez abajo, solo hay que mantener la línea tensa y estar atento al tirón de la picada. Es la forma más clásica de pescar en el mar: una técnica tranquila y accesible, ideal si nunca has cogido una caña. Nosotros llevamos el barco, el equipo y el conocimiento de la zona."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Tenéis licencia para hacer pesca de fondo?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. Nuestra embarcación cuenta con el permiso de pesca marítima de recreo, así que no necesitas licencia propia para pescar a bordo. Además, en cada salida irás con nuestro patrón, tu guía de pesca local en Marbella: Más de 20 años de experiencia en el Mediterráneo; Patrón de Yate; Pro Staff de JLC Fishing; Conoce los mejores caladeros de la Costa del Sol; Adapta cada salida a la temporada y las especies; Embajador oficial de Yamaha Marine España."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué equipo necesito llevar?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ninguno. Cañas, cebo y aparejos van incluidos en la salida — solo tienes que venir con ganas de pescar."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Es la pesca de fondo para mí?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí, aunque nunca hayas cogido una caña. No requiere fuerza ni técnica de lanzado — es perfecta si vas con niños, es tu primera vez en un barco de pesca o buscas una experiencia relajada en el mar."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Dónde se puede hacer pesca de fondo en Marbella?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Salimos desde el puerto deportivo Marina La Bajadilla, en Marbella, y navegamos hasta los bajos rocosos y caladeros de fondo que nuestro patrón conoce en la Costa del Sol: los puntos que dan resultado en cada época del año, no un sitio al azar. El puerto deportivo de Marbella es uno de los lugares más emblemáticos de la Costa del Sol: un animado punto de encuentro para locales y turistas en pleno centro de la ciudad. Nos encontrarás en Puerto deportivo Marina La Bajadilla, 29603 Marbella, Málaga, con fácil acceso en coche, taxi o a pie. Más allá de tu excursión, el puerto es un destino en sí mismo, con restaurantes frente al mar, eventos náuticos y clubes de playa. Descubre más en la web oficial del puerto deportivo de Marbella."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Puedo pescar de fondo en barco privado o es compartido?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tu barco es privado para tu grupo: reservas la salida completa, hasta 5 personas, y no se comparte con otros grupos ni desconocidos."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué hacemos con las especies que hemos capturado con la pesca de fondo?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La pesca es vuestra. Nuestro patrón se encarga de limpiar el pescado, incluido en la salida, para que os lo llevéis listo a casa."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué especies se capturan en la pesca de fondo?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Dependiendo de la época y la zona, es habitual capturar dorada, urta, pargo, breca, sargo, gallineta, congrio, brótola, morena, dentón, pulpo y abadejo: especies de roca y de fondo, las más valoradas del Mediterráneo."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuántas personas pueden ir en cada salida?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "El barco admite un máximo de 5 personas, más el patrón, así que siempre hay ayuda cerca si la necesitas."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿A qué hora salen las excursiones?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ofrecemos dos franjas, de mañana (7:30h) o de tarde (16:00h) — eliges la que mejor te encaje."
+            }
+          }
+        ]
       }
     ]
   }

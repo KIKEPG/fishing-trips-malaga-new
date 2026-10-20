@@ -52,7 +52,7 @@ Objetivo de conversión principal:
 |---|---|
 | ¿Marca definitiva: "Fishing Trips Marbella" o "Fishing Trips Málaga"? | ✅ **Resuelto: "Fishing Trips Marbella".** Cualquier mención a "Málaga" en el copy, el diseño heredado o el sitio antiguo (incluido el bullet que dice "en Málaga") debe corregirse a "Marbella" |
 | Dirección canónica del negocio | ✅ **Resuelto.** Ver "Datos ya confirmados", usar en todos lados, incluido schema `LocalBusiness` y Google Maps |
-| Capacidad real del barco | ✅ **Resuelto: 6 personas**, en todos lados (specs del barco, FAQ, cualquier mención). El diseño actual dice 7 en dos sitios (barra de stats y ficha técnica) — **corregir a 6 al pasar a producción**, no eran datos correctos |
+| Capacidad real del barco | ✅ **Resuelto: 5 personas + patrón** (decisión de Kike, 20/10/2026; antes 6), en todos lados (specs del barco, FAQ, cualquier mención). El diseño actual dice 7 en dos sitios (barra de stats y ficha técnica) — **corregir a 5 + patrón al pasar a producción**, no eran datos correctos |
 | Instagram oficial | ✅ **Resuelto.** Ver "Datos ya confirmados" |
 | Testimonios: ¿hardcodeados o embed en vivo? | ✅ **Resuelto: hardcodear una selección curada de reseñas reales**, con proceso de actualización manual periódica. No usar plugin/embed en vivo |
 | Idiomas: ¿solo ES/EN o se añaden más? | ✅ **Resuelto: solo ES y EN**, no se añaden más idiomas por ahora |
@@ -68,7 +68,7 @@ Objetivo de conversión principal:
 - **Dirección canónica (usar siempre, sin variaciones):** Puerto deportivo Marina La Bajadilla, 29603 Marbella, Málaga
 - **Enlace de la dirección:** siempre la ficha real de Google — `https://maps.app.goo.gl/8U9EbCWF8f1QCgRJ9` (no un iframe de Maps genérico ni una URL de búsqueda por texto)
 - **Teléfono/WhatsApp:** `+34 686 68 33 73` (mismo número en todo el sitio)
-- **Capacidad del barco:** 6 personas (no 7)
+- **Capacidad del barco:** 5 personas + patrón (no 6 ni 7)
 - **Instagram oficial:** `fishing_trips_marbella`
 - **Testimonios:** selección curada y hardcodeada de reseñas reales, no embed en vivo — actualización manual periódica
 - **Idiomas del sitio:** ES y EN únicamente
@@ -884,7 +884,7 @@ Schema, sitemap, robots.txt, meta por idioma, verificación de headings.
 - [ ] Banner de cookies GDPR bloqueando GTM/GA4 hasta consentimiento
 - [ ] Nombre de marca **"Fishing Trips Marbella"** unificado en absolutamente todo el copy
 - [ ] Dirección única en toda la web: "Puerto deportivo Marina La Bajadilla, 29603 Marbella, Málaga" (copy + schema + Google Maps)
-- [ ] Capacidad del barco = **6 personas** en absolutamente todas las menciones (specs, FAQ, cualquier texto)
+- [ ] Capacidad del barco = **5 personas + patrón** en absolutamente todas las menciones (specs, FAQ, cualquier texto)
 - [ ] Instagram = `fishing_trips_marbella` en ambos idiomas, sin excepción
 - [ ] Testimonios: selección curada hardcodeada (no embed en vivo), con nota interna de cuándo actualizarlos
 - [ ] Solo ES y EN — sin residuos de arquitectura pensada para más idiomas

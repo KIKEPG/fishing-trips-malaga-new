@@ -24,25 +24,419 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Fishing Trips Marbella",
-    "image": "https://fishingtripsmarbella.com/images/hero.webp",
-    "telephone": "+34686683373",
-    "priceRange": "€€",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Puerto deportivo Marina La Bajadilla",
-      "addressLocality": "Marbella",
-      "postalCode": "29603",
-      "addressRegion": "Málaga",
-      "addressCountry": "ES"
-    },
-    "url": "https://fishingtripsmarbella.com/en/",
-    "sameAs": [
-      "https://www.instagram.com/fishing_trips_marbella/",
-      "https://www.google.com/maps?cid=11112407875120241665",
-      "https://www.getyourguide.com/marbella-l1217/excursion-de-pesca-en-marbella-con-un-pescador-profesional-t1365620/",
-      "https://www.viator.com/tours/Marbella/Deep-Sea-Fishing-Adventure-in-Marbella/d22304-5670808P1"
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://fishingtripsmarbella.com/#website",
+        "url": "https://fishingtripsmarbella.com/",
+        "name": "Fishing Trips Marbella",
+        "alternateName": [
+          "Excursiones de Pesca Marbella",
+          "Fishing Trips Marbella Charter"
+        ],
+        "inLanguage": [
+          "es",
+          "en"
+        ],
+        "publisher": {
+          "@id": "https://fishingtripsmarbella.com/#business"
+        }
+      },
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://fishingtripsmarbella.com/#business",
+        "name": "Fishing Trips Marbella",
+        "alternateName": "Excursiones de Pesca Marbella",
+        "description": "Boat fishing trips and fishing charters from Marina La Bajadilla in Marbella (Costa del Sol, Spain). Shared trips (pay per seat) and private charters for up to 5 people with an expert local skipper. Bottom fishing, live bait fishing, jigging, squid fishing, trolling and bluefin tuna catch and release. All professional gear, cold drinks, snacks and fuel included. Beginners and kids welcome.",
+        "url": "https://fishingtripsmarbella.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "@id": "https://fishingtripsmarbella.com/#logo",
+          "url": "https://fishingtripsmarbella.com/images/logo.webp",
+          "caption": "Fishing Trips Marbella"
+        },
+        "image": [
+          "https://fishingtripsmarbella.com/images/hero-video-poster.webp",
+          "https://fishingtripsmarbella.com/images/boat-real.webp",
+          "https://fishingtripsmarbella.com/images/nino-denton-marbella.webp",
+          "https://fishingtripsmarbella.com/images/guide.webp"
+        ],
+        "telephone": "+34686683373",
+        "foundingDate": "2023",
+        "knowsLanguage": [
+          "es",
+          "en"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Puerto Deportivo Marina La Bajadilla",
+          "addressLocality": "Marbella",
+          "postalCode": "29603",
+          "addressRegion": "Málaga",
+          "addressCountry": "ES"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 36.5077216,
+          "longitude": -4.8743017
+        },
+        "hasMap": "https://maps.app.goo.gl/8U9EbCWF8f1QCgRJ9",
+        "areaServed": [
+          {
+            "@type": "City",
+            "name": "Marbella"
+          },
+          {
+            "@type": "Place",
+            "name": "Costa del Sol"
+          }
+        ],
+        "knowsAbout": [
+          "Sport fishing",
+          "Deep sea fishing",
+          "Bottom fishing",
+          "Live bait fishing",
+          "Jigging",
+          "Squid fishing",
+          "Trolling",
+          "Bluefin tuna catch and release",
+          "Mediterranean fish species",
+          "Dentex",
+          "Bonito",
+          "Amberjack",
+          "Grouper"
+        ],
+        "amenityFeature": [
+          {
+            "@type": "LocationFeatureSpecification",
+            "name": "Professional fishing equipment included",
+            "value": true
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            "name": "Lures and bait for every technique",
+            "value": true
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            "name": "Lowrance GPS fish finders",
+            "value": true
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            "name": "Two built-in live wells",
+            "value": true
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            "name": "Full safety kit",
+            "value": true
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            "name": "Cold drinks and snacks on board",
+            "value": true
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            "name": "Fuel included",
+            "value": true
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            "name": "Catch cleaned to take home",
+            "value": true
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            "name": "Suitable for beginners and children",
+            "value": true
+          }
+        ],
+        "employee": {
+          "@id": "https://fishingtripsmarbella.com/#skipper"
+        },
+        "sponsor": {
+          "@type": "Organization",
+          "name": "Yamaha Marine España"
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Fishing trips in Marbella",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@id": "https://fishingtripsmarbella.com/en/#shared-trip"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@id": "https://fishingtripsmarbella.com/en/#private-trip"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Bottom fishing in Marbella",
+                "url": "https://fishingtripsmarbella.com/en/bottom-fishing-marbella/"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Live bait fishing in Marbella",
+                "url": "https://fishingtripsmarbella.com/en/live-bait-fishing-marbella/"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Jigging in Marbella",
+                "url": "https://fishingtripsmarbella.com/en/jigging-marbella/"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Squid fishing in Marbella",
+                "url": "https://fishingtripsmarbella.com/en/squid-fishing-marbella/"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Trolling in Marbella",
+                "url": "https://fishingtripsmarbella.com/en/trolling-marbella/"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Tuna fishing in Marbella",
+                "url": "https://fishingtripsmarbella.com/en/tuna-fishing-marbella/"
+              }
+            }
+          ]
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+34686683373",
+          "contactType": "reservations",
+          "availableLanguage": [
+            "Spanish",
+            "English"
+          ],
+          "areaServed": "ES"
+        },
+        "sameAs": [
+          "https://www.instagram.com/fishing_trips_marbella/",
+          "https://share.google/t2Gna9XSgn9SA09nb"
+        ]
+      },
+      {
+        "@type": "Person",
+        "@id": "https://fishingtripsmarbella.com/#skipper",
+        "name": "Arturo",
+        "jobTitle": "Skipper and local fishing guide",
+        "worksFor": {
+          "@id": "https://fishingtripsmarbella.com/#business"
+        },
+        "image": "https://fishingtripsmarbella.com/images/guide.webp",
+        "description": "Skipper with over 20 years of fishing experience in the Mediterranean. Yacht Master, Pro Staff at JLC Fishing and official ambassador for Yamaha Marine España.",
+        "hasCredential": {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Professional license",
+          "name": "Yacht Master"
+        },
+        "knowsAbout": [
+          "Sport fishing",
+          "Costa del Sol fishing spots",
+          "Jigging",
+          "Trolling",
+          "Bluefin tuna fishing"
+        ]
+      },
+      {
+        "@type": "BoatTerminal",
+        "@id": "https://fishingtripsmarbella.com/#marina",
+        "name": "Puerto Deportivo Marina La Bajadilla",
+        "url": "https://puertodeportivo.marbella.es/",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Marbella",
+          "postalCode": "29603",
+          "addressRegion": "Málaga",
+          "addressCountry": "ES"
+        }
+      },
+      {
+        "@type": "TouristTrip",
+        "@id": "https://fishingtripsmarbella.com/en/#shared-trip",
+        "name": "Shared fishing trip in Marbella",
+        "description": "Share the boat with other anglers and pay only for your seat. Perfect if you're travelling solo or as a couple and want a great atmosphere at sea.",
+        "touristType": [
+          "Solo travellers",
+          "Couples",
+          "Beginners",
+          "Experienced anglers"
+        ],
+        "itinerary": {
+          "@id": "https://fishingtripsmarbella.com/#marina"
+        },
+        "provider": {
+          "@id": "https://fishingtripsmarbella.com/#business"
+        }
+      },
+      {
+        "@type": "TouristTrip",
+        "@id": "https://fishingtripsmarbella.com/en/#private-trip",
+        "name": "Private fishing charter in Marbella",
+        "description": "The boat just for your group, up to 5 people. The skipper adapts the technique, spot and pace to you — ideal for families and friends.",
+        "touristType": [
+          "Families",
+          "Groups of friends",
+          "Children",
+          "Beginners",
+          "Experienced anglers"
+        ],
+        "itinerary": {
+          "@id": "https://fishingtripsmarbella.com/#marina"
+        },
+        "provider": {
+          "@id": "https://fishingtripsmarbella.com/#business"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://fishingtripsmarbella.com/en/#webpage",
+        "url": "https://fishingtripsmarbella.com/en/",
+        "name": "Fishing Trips Marbella - Boat Fishing Charter Rental",
+        "inLanguage": "en",
+        "isPartOf": {
+          "@id": "https://fishingtripsmarbella.com/#website"
+        },
+        "about": {
+          "@id": "https://fishingtripsmarbella.com/#business"
+        },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://fishingtripsmarbella.com/images/hero-video-poster.webp"
+        },
+        "mainEntity": {
+          "@id": "https://fishingtripsmarbella.com/en/#faq"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://fishingtripsmarbella.com/en/#faq",
+        "inLanguage": "en",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What's included in the fishing trip in Marbella?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Rods, reels, bait and all the professional fishing gear, plus an expert skipper and local guide throughout the trip."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need previous experience to fish?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No, our trips are designed for beginners and experienced anglers alike. The skipper explains everything you need to know on board."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where does the boat depart from?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "All our fishing trips from Marbella's marina depart from Marina La Bajadilla, 29603 Marbella, Málaga, with daily departures and easy access by car, taxi or on foot."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need a fishing licence to fish in Marbella?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. You don't need to apply for any licence: the trip runs under our boat's fishing authorisation. On every trip you'll also be with our skipper, your local fishing guide in Marbella: over 20 years of experience in the Mediterranean, Yacht Master, Pro Staff at JLC Fishing, knows the best fishing spots on the Costa del Sol, tailors every trip to the season and the species, and is an official ambassador for Yamaha Marine España."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do we need to bring our own food and drink while fishing in Marbella?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No, you don't need to worry about that. All our trips include water, cold drinks and snacks so you stay hydrated and energised throughout the day."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is there any special clothing I should wear to go fishing in Marbella?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Depending on the time of year, we recommend bringing just what you need to stay comfortable. In summer: swimwear, a cap, sunglasses and sunscreen. In winter/spring: a jumper or light jacket. Comfortable, non-slip footwear."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does the fishing trip last?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The total trip lasts between 4 and 5 hours. That's designed to let you enjoy it to the fullest without the experience feeling too long or tiring."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you still go out fishing if the weather conditions are bad?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Our passengers' safety and comfort come first. If we see strong wind, high waves or storms forecast, we'll contact you to reschedule the trip at no extra cost."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens if I get seasick or feel unwell?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We recommend bringing motion-sickness tablets such as Biodramina. If anyone feels unwell, we adjust the pace or head back to the marina if needed."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do we need to bring any fishing gear ourselves?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You don't need to bring anything. We provide all the professional fishing gear you need: rods, reels, bait, lures, hooks and more."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I book my fishing trip in Marbella?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Directly via WhatsApp by tapping \"Book Now\": tell us your available dates, the time and the number of people, and we'll confirm availability."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How many people can join each trip?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The boat takes a maximum of 5 people per trip, plus the skipper."
+            }
+          }
+        ]
+      }
     ]
   }
   </script>

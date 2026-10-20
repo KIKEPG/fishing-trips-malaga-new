@@ -22,25 +22,72 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Fishing Trips Marbella",
-    "image": "https://fishingtripsmarbella.com/images/hero.webp",
-    "telephone": "+34686683373",
-    "priceRange": "€€",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Puerto deportivo Marina La Bajadilla",
-      "addressLocality": "Marbella",
-      "postalCode": "29603",
-      "addressRegion": "Málaga",
-      "addressCountry": "ES"
-    },
-    "url": "https://fishingtripsmarbella.com/contactar/",
-    "sameAs": [
-      "https://www.instagram.com/fishing_trips_marbella/",
-      "https://www.google.com/maps?cid=11112407875120241665",
-      "https://www.getyourguide.com/marbella-l1217/excursion-de-pesca-en-marbella-con-un-pescador-profesional-t1365620/",
-      "https://www.viator.com/tours/Marbella/Deep-Sea-Fishing-Adventure-in-Marbella/d22304-5670808P1"
+    "@graph": [
+      {
+        "@type": "ContactPage",
+        "@id": "https://fishingtripsmarbella.com/contactar/#webpage",
+        "url": "https://fishingtripsmarbella.com/contactar/",
+        "name": "Contacta con Fishing Trips Marbella",
+        "inLanguage": "es",
+        "isPartOf": {
+          "@id": "https://fishingtripsmarbella.com/#website"
+        },
+        "about": {
+          "@id": "https://fishingtripsmarbella.com/#business"
+        },
+        "breadcrumb": {
+          "@id": "https://fishingtripsmarbella.com/contactar/#breadcrumb"
+        }
+      },
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://fishingtripsmarbella.com/#business",
+        "name": "Fishing Trips Marbella",
+        "url": "https://fishingtripsmarbella.com/",
+        "telephone": "+34686683373",
+        "image": "https://fishingtripsmarbella.com/images/boat-real.webp",
+        "hasMap": "https://maps.app.goo.gl/8U9EbCWF8f1QCgRJ9",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Puerto Deportivo Marina La Bajadilla",
+          "addressLocality": "Marbella",
+          "postalCode": "29603",
+          "addressRegion": "Málaga",
+          "addressCountry": "ES"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 36.5077216,
+          "longitude": -4.8743017
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+34686683373",
+          "contactType": "reservations",
+          "availableLanguage": [
+            "Spanish",
+            "English"
+          ]
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://fishingtripsmarbella.com/contactar/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://fishingtripsmarbella.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Contactar",
+            "item": "https://fishingtripsmarbella.com/contactar/"
+          }
+        ]
+      }
     ]
   }
   </script>

@@ -16,146 +16,188 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="stylesheet" href="/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Fishing Trips Marbella",
-  "image": "https://fishingtripsmarbella.com/images/hero.webp",
-  "telephone": "+34686683373",
-  "priceRange": "€€",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Puerto deportivo Marina La Bajadilla",
-    "addressLocality": "Marbella",
-    "postalCode": "29603",
-    "addressRegion": "Málaga",
-    "addressCountry": "ES"
-  },
-  "url": "https://fishingtripsmarbella.com/en/trolling-marbella/",
-  "sameAs": [
-      "https://www.instagram.com/fishing_trips_marbella/",
-      "https://www.google.com/maps?cid=11112407875120241665",
-      "https://www.getyourguide.com/marbella-l1217/excursion-de-pesca-en-marbella-con-un-pescador-profesional-t1365620/",
-      "https://www.viator.com/tours/Marbella/Deep-Sea-Fishing-Adventure-in-Marbella/d22304-5670808P1"
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://fishingtripsmarbella.com/#business",
+        "name": "Fishing Trips Marbella",
+        "url": "https://fishingtripsmarbella.com/",
+        "telephone": "+34686683373",
+        "image": "https://fishingtripsmarbella.com/images/boat-real.webp",
+        "hasMap": "https://maps.app.goo.gl/8U9EbCWF8f1QCgRJ9",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Puerto Deportivo Marina La Bajadilla",
+          "addressLocality": "Marbella",
+          "postalCode": "29603",
+          "addressRegion": "Málaga",
+          "addressCountry": "ES"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 36.5077216,
+          "longitude": -4.8743017
+        }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://fishingtripsmarbella.com/en/trolling-marbella/#service",
+        "name": "Trolling in Marbella",
+        "serviceType": "Trolling",
+        "description": "Trolling boat trip from Marina La Bajadilla, Marbella, pulling lures while cruising the Costa del Sol. Bonito, little tunny, skipjack and leerfish; in season, tuna on catch and release. A comfortable option with no experience needed. Boat, skipper and fishing gear included.",
+        "url": "https://fishingtripsmarbella.com/en/trolling-marbella/",
+        "inLanguage": "en",
+        "provider": {
+          "@id": "https://fishingtripsmarbella.com/#business"
+        },
+        "areaServed": {
+          "@type": "City",
+          "name": "Marbella"
+        },
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "All levels"
+        },
+        "image": "https://fishingtripsmarbella.com/images/catch5.webp"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://fishingtripsmarbella.com/en/trolling-marbella/#webpage",
+        "url": "https://fishingtripsmarbella.com/en/trolling-marbella/",
+        "name": "Trolling in Marbella | Fishing Trips Marbella",
+        "inLanguage": "en",
+        "isPartOf": {
+          "@id": "https://fishingtripsmarbella.com/#website"
+        },
+        "about": {
+          "@id": "https://fishingtripsmarbella.com/en/trolling-marbella/#service"
+        },
+        "breadcrumb": {
+          "@id": "https://fishingtripsmarbella.com/en/trolling-marbella/#breadcrumb"
+        },
+        "mainEntity": {
+          "@id": "https://fishingtripsmarbella.com/en/trolling-marbella/#faq"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://fishingtripsmarbella.com/en/trolling-marbella/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://fishingtripsmarbella.com/en/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Trolling in Marbella",
+            "item": "https://fishingtripsmarbella.com/en/trolling-marbella/"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://fishingtripsmarbella.com/en/trolling-marbella/#faq",
+        "inLanguage": "en",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is trolling?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Trolling means pulling one or more lures behind the boat while it cruises at a moderate speed. Unlike other techniques, there's no constant casting and reeling — the boat's own movement makes the lure swim attractively through the water, imitating a small fleeing fish. The skipper keeps changing the route, the speed and the area based on signs at sea: flocks of birds, swirls on the surface or changes in water colour often point to shoals of baitfish, and behind them, the big predators. When a fish hits the lure, the rod bends over in an instant — it has some of the hardest and most spectacular strikes of any technique."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you have a licence for trolling?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You don't need a fishing licence of your own. The trip runs under the boat's and the skipper's professional licence, so you can come along without any paperwork — just turn up at the marina. On every trip you'll also be with our skipper, your local fishing guide in Marbella: Over 20 years of experience in the Mediterranean; Yacht Master; Pro Staff at JLC Fishing; Knows the best fishing spots on the Costa del Sol; Tailors every trip to the season and the species; Official ambassador for Yamaha Marine España."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What gear do I need to bring?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No fishing gear — rods, reels, lures and all the tackle are included. We just recommend comfortable clothes, non-slip shoes, sunglasses and sunscreen, as trolling trips usually involve more time cruising in the sun."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is trolling for me?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, it's one of the most comfortable styles we offer: it doesn't need constant physical effort or previous technique, as the boat does most of the work. It's perfect if you want to enjoy the cruise and wait calmly for the strike, which, when it comes, is usually one of the most intense because of the size of the species."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where can I go trolling in Marbella?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We set off from Marina La Bajadilla and cruise the waters of the Costa del Sol, following the areas where bonito, little tunny, skipjack and other pelagic species are active — usually wherever there are shoals of small fish, seabirds working the surface or changes in current. The skipper decides the route on the day, depending on what's happening at sea. Marbella's marina is one of the most iconic spots on the Costa del Sol: a lively meeting point for locals and tourists right in the heart of the city. You'll find us at Marina La Bajadilla, 29603 Marbella, Málaga, with easy access by car, taxi or on foot. Beyond your fishing trip, the marina is a destination in itself, with beachfront restaurants, nautical events and beach clubs. Find out more on the official Marbella marina website."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can you catch tuna? Do you have to release it?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, in season you may come across tuna during a trolling trip. Bluefin tuna fishing is subject to official regulations in Spain covering quotas, sizes and catch periods, so outside the permitted season it isn't fished, and within it the usual practice is catch and release: the fish is brought on board or alongside the boat, you enjoy the fight and the photo, and it goes back into the sea in good condition. The skipper will tell you how the season stands on the day of your trip."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I go trolling on a private boat or is it shared?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The trip is private: the boat is just for your group and is never shared with people you don't know. It's just you, up to 5 people, so the experience and the skipper's attention are all yours from start to finish."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What do we do with the fish we catch trolling?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You can take your catch home if you like, always respecting the legal minimum size for each species. If you prefer, we can also release it back into the sea in good condition — you decide on the day, and the skipper will advise you based on what you've caught. With tuna, as explained above, the practice in season is always catch and release."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which species can you catch trolling?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The most common catches are bonito, little tunny, skipjack and leerfish. In season, you can also catch tuna, always on a catch-and-release basis under current regulations."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How many people can join each trip?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A maximum of 5 people per trip, so the skipper can look after the whole group properly and everyone gets their turn on the rod when a fish bites."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What time do the trips depart?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We offer two time slots: 7:30am or 4:00pm. You can choose the one that best suits your day when you book via WhatsApp."
+            }
+          }
+        ]
+      }
     ]
-}
-  </script>
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://fishingtripsmarbella.com/en/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Trolling",
-      "item": "https://fishingtripsmarbella.com/en/trolling-marbella/"
-    }
-  ]
-}
-  </script>
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is trolling?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Trolling means pulling one or more lures behind the boat while it cruises at a moderate speed. Unlike other techniques, there's no constant casting and reeling — the boat's own movement makes the lure swim attractively through the water, imitating a small fleeing fish. The skipper keeps changing the route, the speed and the area based on signs at sea: flocks of birds, swirls on the surface or changes in water colour often point to shoals of baitfish, and behind them, the big predators. When a fish hits the lure, the rod bends over in an instant — it has some of the hardest and most spectacular strikes of any technique."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do you have a licence for trolling?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "You don't need a fishing licence of your own. The trip runs under the boat's and the skipper's professional licence, so you can come along without any paperwork — just turn up at the marina. On every trip you'll also be with our skipper, your local fishing guide in Marbella: Over 20 years of experience in the Mediterranean Yacht Master Pro Staff at JLC Fishing Knows the best fishing spots on the Costa del Sol Tailors every trip to the season and the species Official ambassador for Yamaha Marine España"
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What gear do I need to bring?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No fishing gear — rods, reels, lures and all the tackle are included. We just recommend comfortable clothes, non-slip shoes, sunglasses and sunscreen, as trolling trips usually involve more time cruising in the sun."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is trolling for me?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, it's one of the most comfortable styles we offer: it doesn't need constant physical effort or previous technique, as the boat does most of the work. It's perfect if you want to enjoy the cruise and wait calmly for the strike, which, when it comes, is usually one of the most intense because of the size of the species."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Where can I go trolling in Marbella?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "We set off from Marina La Bajadilla and cruise the waters of the Costa del Sol, following the areas where bonito, little tunny, skipjack and other pelagic species are active — usually wherever there are shoals of small fish, seabirds working the surface or changes in current. The skipper decides the route on the day, depending on what's happening at sea. Marbella's marina is one of the most iconic spots on the Costa del Sol: a lively meeting point for locals and tourists right in the heart of the city. You'll find us at Marina La Bajadilla, 29603 Marbella, Málaga, with easy access by car, taxi or on foot. Beyond your fishing trip, the marina is a destination in itself, with beachfront restaurants, nautical events and beach clubs. Find out more on the official Marbella marina website."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can you catch tuna? Do you have to release it?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, in season you may come across tuna during a trolling trip. Bluefin tuna fishing is subject to official regulations in Spain covering quotas, sizes and catch periods, so outside the permitted season it isn't fished, and within it the usual practice is catch and release: the fish is brought on board or alongside the boat, you enjoy the fight and the photo, and it goes back into the sea in good condition. The skipper will tell you how the season stands on the day of your trip."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I go trolling on a private boat or is it shared?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The trip is private: the boat is just for your group and is never shared with people you don't know. It's just you, up to 5 people, so the experience and the skipper's attention are all yours from start to finish."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What do we do with the fish we catch trolling?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "You can take your catch home if you like, always respecting the legal minimum size for each species. If you prefer, we can also release it back into the sea in good condition — you decide on the day, and the skipper will advise you based on what you've caught. With tuna, as explained above, the practice in season is always catch and release."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Which species can you catch trolling?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The most common catches are bonito, little tunny, skipjack and leerfish. In season, you can also catch tuna, always on a catch-and-release basis under current regulations."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How many people can join each trip?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A maximum of 5 people per trip, so the skipper can look after the whole group properly and everyone gets their turn on the rod when a fish bites."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What time do the trips depart?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "We offer two time slots: 7:30am or 4:00pm. You can choose the one that best suits your day when you book via WhatsApp."
-      }
-    }
-  ]
-}
+  }
   </script>
 </head>
 <body>

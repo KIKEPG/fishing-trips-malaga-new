@@ -22,130 +22,181 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Fishing Trips Marbella",
-    "image": "https://fishingtripsmarbella.com/images/hero.webp",
-    "telephone": "+34686683373",
-    "priceRange": "€€",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Puerto deportivo Marina La Bajadilla",
-      "addressLocality": "Marbella",
-      "postalCode": "29603",
-      "addressRegion": "Málaga",
-      "addressCountry": "ES"
-    },
-    "url": "https://fishingtripsmarbella.com/pesca-del-calamar-marbella/",
-    "sameAs": [
-      "https://www.instagram.com/fishing_trips_marbella/",
-      "https://www.google.com/maps?cid=11112407875120241665",
-      "https://www.getyourguide.com/marbella-l1217/excursion-de-pesca-en-marbella-con-un-pescador-profesional-t1365620/",
-      "https://www.viator.com/tours/Marbella/Deep-Sea-Fishing-Adventure-in-Marbella/d22304-5670808P1"
-    ]
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://fishingtripsmarbella.com/" },
-      { "@type": "ListItem", "position": 2, "name": "Pesca del calamar", "item": "https://fishingtripsmarbella.com/pesca-del-calamar-marbella/" }
-    ]
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
+    "@graph": [
       {
-        "@type": "Question",
-        "name": "¿Dónde se puede hacer pesca del calamar en Marbella?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Salimos desde el Puerto Deportivo Marina La Bajadilla y nos movemos por zonas rocosas y fondos cercanos a la costa de Marbella, que es donde suelen concentrarse calamares, jibias y pulpos. El patrón conoce los puntos que mejor funcionan según la época del año y las condiciones del día."
+        "@type": "LocalBusiness",
+        "@id": "https://fishingtripsmarbella.com/#business",
+        "name": "Fishing Trips Marbella",
+        "url": "https://fishingtripsmarbella.com/",
+        "telephone": "+34686683373",
+        "image": "https://fishingtripsmarbella.com/images/boat-real.webp",
+        "hasMap": "https://maps.app.goo.gl/8U9EbCWF8f1QCgRJ9",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Puerto Deportivo Marina La Bajadilla",
+          "addressLocality": "Marbella",
+          "postalCode": "29603",
+          "addressRegion": "Málaga",
+          "addressCountry": "ES"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 36.5077216,
+          "longitude": -4.8743017
         }
       },
       {
-        "@type": "Question",
-        "name": "¿En qué consiste la pesca del calamar?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Se pesca con poteras y señuelos específicos llamados \"egis\", diseñados para imitar el movimiento de una gamba o un pez pequeño. Se lanza o se deja caer el señuelo, y se le dan pequeños tirones para que se mueva de forma llamativa — ese movimiento es lo que despierta el instinto de caza del calamar, la jibia o el pulpo. Es una pesca de mucha atención al detalle: la picada se nota como un tirón suave, muy distinto al de un pez, y hay que mantener la tensión de la línea sin dar tirones bruscos para no perder la pieza. Cuando el calamar sale del agua, es habitual que suelte su característica tinta — un momento que sorprende (y divierte) especialmente a los más pequeños del grupo."
+        "@type": "Service",
+        "@id": "https://fishingtripsmarbella.com/pesca-del-calamar-marbella/#service",
+        "name": "Pesca del calamar en Marbella",
+        "serviceType": "Pesca del calamar",
+        "description": "Salida de pesca del calamar en barco desde el Puerto deportivo Marina La Bajadilla, Marbella, con poteras y egis en zonas rocosas cercanas a la costa. Calamar, jibia y pulpo. Modalidad accesible, sin experiencia previa, ideal con niños. Barco, patrón y equipo de pesca incluidos.",
+        "url": "https://fishingtripsmarbella.com/pesca-del-calamar-marbella/",
+        "inLanguage": "es",
+        "provider": {
+          "@id": "https://fishingtripsmarbella.com/#business"
+        },
+        "areaServed": {
+          "@type": "City",
+          "name": "Marbella"
+        },
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Familias y niños"
+        },
+        "image": "https://fishingtripsmarbella.com/images/pesca-calamar-marbella.webp"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://fishingtripsmarbella.com/pesca-del-calamar-marbella/#webpage",
+        "url": "https://fishingtripsmarbella.com/pesca-del-calamar-marbella/",
+        "name": "Pesca del Calamar en Marbella | Fishing Trips Marbella",
+        "inLanguage": "es",
+        "isPartOf": {
+          "@id": "https://fishingtripsmarbella.com/#website"
+        },
+        "about": {
+          "@id": "https://fishingtripsmarbella.com/pesca-del-calamar-marbella/#service"
+        },
+        "breadcrumb": {
+          "@id": "https://fishingtripsmarbella.com/pesca-del-calamar-marbella/#breadcrumb"
+        },
+        "mainEntity": {
+          "@id": "https://fishingtripsmarbella.com/pesca-del-calamar-marbella/#faq"
         }
       },
       {
-        "@type": "Question",
-        "name": "¿Es de noche cuando se pesca calamar, o también se puede de día?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Es cierto que el calamar es más activo de noche, pero el amanecer y el atardecer son también momentos de mucha actividad — de hecho, muchos pescadores consideran esas franjas de luz baja tan productivas como la noche cerrada. Por eso nuestras salidas de las 7:30h aprovechan justo las primeras horas de luz, que son de las mejores del día para esta técnica. No hace falta salir de noche para tener una buena jornada de pesca de calamar."
-        }
+        "@type": "BreadcrumbList",
+        "@id": "https://fishingtripsmarbella.com/pesca-del-calamar-marbella/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://fishingtripsmarbella.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Pesca del calamar en Marbella",
+            "item": "https://fishingtripsmarbella.com/pesca-del-calamar-marbella/"
+          }
+        ]
       },
       {
-        "@type": "Question",
-        "name": "¿Puedo pescar calamar en barco privado o es compartido?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "La salida es privada: el barco es solo para tu grupo, no se comparte con otros clientes que no conozcas. Vais vosotros, con un máximo de 5 personas, así que la experiencia y la atención del patrón son solo para vuestro grupo de principio a fin."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Qué hacemos con las capturas de calamar, jibia o pulpo?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Te puedes llevar tu captura a casa si quieres, respetando siempre las tallas mínimas legales de cada especie. Si lo prefieres, también podemos devolver la pieza al mar en buenas condiciones — tú decides el día de la salida, y el patrón te asesora según lo que hayáis pescado."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Tenéis licencia para hacer pesca del calamar?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No necesitas tener licencia de pesca propia. La excursión se organiza bajo la licencia profesional de la embarcación y el patrón, así que puedes venir sin ningún papeleo previo — solo te tienes que presentar en el puerto."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Es la pesca del calamar para mí?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Sí, es una de las modalidades más accesibles y agradables que ofrecemos, ideal si vas con niños o buscas un plan tranquilo pero entretenido. No necesitas fuerza ni experiencia previa — solo un poco de atención al pequeño tirón de la picada. El patrón te enseña la técnica desde el primer minuto."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Qué equipo necesito llevar?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Nada de equipo de pesca — cañas, poteras, señuelos y todos los aparejos están incluidos. Solo te recomendamos traer ropa cómoda que no te importe manchar (los calamares sueltan tinta al sacarlos del agua), calzado antideslizante, gafas de sol y protector solar."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Qué especies se capturan en la pesca del calamar?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Las capturas habituales son calamar, jibia y pulpo — los tres cefalópodos más apreciados de la Costa del Sol, tanto por la diversión de pescarlos como por su calidad en la cocina."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Cuántas personas pueden ir en cada salida?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Un máximo de 5 personas por salida, para que el patrón pueda atender bien a todo el grupo y cada uno tenga su turno con la caña en el momento de la picada."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿A qué hora salen las excursiones?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Ofrecemos dos franjas horarias: a las 7:30h o a las 16:00h. Ambas coinciden con las horas de más actividad para esta técnica. Puedes elegir la que mejor se adapte a tu día al hacer la reserva por WhatsApp."
-        }
+        "@type": "FAQPage",
+        "@id": "https://fishingtripsmarbella.com/pesca-del-calamar-marbella/#faq",
+        "inLanguage": "es",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿En qué consiste la pesca del calamar?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Se pesca con poteras y señuelos específicos llamados \"egis\", diseñados para imitar el movimiento de una gamba o un pez pequeño. Se lanza o se deja caer el señuelo, y se le dan pequeños tirones para que se mueva de forma llamativa — ese movimiento es lo que despierta el instinto de caza del calamar, la jibia o el pulpo. Es una pesca de mucha atención al detalle: la picada se nota como un tirón suave, muy distinto al de un pez, y hay que mantener la tensión de la línea sin dar tirones bruscos para no perder la pieza. Cuando el calamar sale del agua, es habitual que suelte su característica tinta — un momento que sorprende (y divierte) especialmente a los más pequeños del grupo."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Tenéis licencia para hacer pesca del calamar?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No necesitas tener licencia de pesca propia. La excursión se organiza bajo la licencia profesional de la embarcación y el patrón, así que puedes venir sin ningún papeleo previo — solo te tienes que presentar en el puerto. Además, en cada salida irás con nuestro patrón, tu guía de pesca local en Marbella: Más de 20 años de experiencia en el Mediterráneo; Patrón de Yate; Pro Staff de JLC Fishing; Conoce los mejores caladeros de la Costa del Sol; Adapta cada salida a la temporada y las especies; Embajador oficial de Yamaha Marine España."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué equipo necesito llevar?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nada de equipo de pesca — cañas, poteras, señuelos y todos los aparejos están incluidos. Solo te recomendamos traer ropa cómoda que no te importe manchar (los calamares sueltan tinta al sacarlos del agua), calzado antideslizante, gafas de sol y protector solar."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Es la pesca del calamar para mí?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí, es una de las modalidades más accesibles y agradables que ofrecemos, ideal si vas con niños o buscas un plan tranquilo pero entretenido. No necesitas fuerza ni experiencia previa — solo un poco de atención al pequeño tirón de la picada. El patrón te enseña la técnica desde el primer minuto."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Dónde se puede hacer pesca del calamar en Marbella?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Salimos desde el Puerto Deportivo Marina La Bajadilla y nos movemos por zonas rocosas y fondos cercanos a la costa de Marbella, que es donde suelen concentrarse calamares, jibias y pulpos. El patrón conoce los puntos que mejor funcionan según la época del año y las condiciones del día. El puerto deportivo de Marbella es uno de los lugares más emblemáticos de la Costa del Sol: un animado punto de encuentro para locales y turistas en pleno centro de la ciudad. Nos encontrarás en Puerto deportivo Marina La Bajadilla, 29603 Marbella, Málaga, con fácil acceso en coche, taxi o a pie. Más allá de tu excursión, el puerto es un destino en sí mismo, con restaurantes frente al mar, eventos náuticos y clubes de playa. Descubre más en la web oficial del puerto deportivo de Marbella."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Es de noche cuando se pesca calamar, o también se puede de día?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Es cierto que el calamar es más activo de noche, pero el amanecer y el atardecer son también momentos de mucha actividad — de hecho, muchos pescadores consideran esas franjas de luz baja tan productivas como la noche cerrada. Por eso nuestras salidas de las 7:30h aprovechan justo las primeras horas de luz, que son de las mejores del día para esta técnica. No hace falta salir de noche para tener una buena jornada de pesca de calamar."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Puedo pescar calamar en barco privado o es compartido?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La salida es privada: el barco es solo para tu grupo, no se comparte con otros clientes que no conozcas. Vais vosotros, con un máximo de 5 personas, así que la experiencia y la atención del patrón son solo para vuestro grupo de principio a fin."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué hacemos con las capturas de calamar, jibia o pulpo?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Te puedes llevar tu captura a casa si quieres, respetando siempre las tallas mínimas legales de cada especie. Si lo prefieres, también podemos devolver la pieza al mar en buenas condiciones — tú decides el día de la salida, y el patrón te asesora según lo que hayáis pescado."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué especies se capturan en la pesca del calamar?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Las capturas habituales son calamar, jibia y pulpo — los tres cefalópodos más apreciados de la Costa del Sol, tanto por la diversión de pescarlos como por su calidad en la cocina."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuántas personas pueden ir en cada salida?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Un máximo de 5 personas por salida, para que el patrón pueda atender bien a todo el grupo y cada uno tenga su turno con la caña en el momento de la picada."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿A qué hora salen las excursiones?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ofrecemos dos franjas horarias: a las 7:30h o a las 16:00h. Ambas coinciden con las horas de más actividad para esta técnica. Puedes elegir la que mejor se adapte a tu día al hacer la reserva por WhatsApp."
+            }
+          }
+        ]
       }
     ]
   }
