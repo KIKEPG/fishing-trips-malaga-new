@@ -193,7 +193,7 @@
             "name": "¿A qué hora salen las excursiones?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Ofrecemos dos franjas horarias: a las 7:30h o a las 16:00h. Puedes elegir la que mejor se adapte a tu día al hacer la reserva por WhatsApp."
+              "text": "Ofrecemos dos franjas horarias: a las 7:30h o a las 12:00h. Puedes elegir la que mejor se adapte a tu día al hacer la reserva por WhatsApp."
             }
           }
         ]
@@ -335,7 +335,7 @@
       </div>
       <div class="stat-card">
         <span class="stat-icon stat-icon--orange"><svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></span>
-        <strong>Salidas de mañana o tarde</strong>
+        <strong>Salidas a las 7:30h y 12:00h</strong>
       </div>
     </div>
     <div class="stats-dots" id="statsDots" role="tablist" aria-label="Selector de tarjetas">
@@ -883,7 +883,7 @@
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
         </button></h3>
         <div class="faq-answer" id="faq-a-6" role="region" aria-labelledby="faq-q-6">
-          <p>Ofrecemos dos franjas horarias: a las 7:30h o a las 16:00h. Puedes elegir la que mejor se adapte a tu día al hacer la reserva por WhatsApp.</p>
+          <p>Ofrecemos dos franjas horarias: a las 7:30h o a las 12:00h. Puedes elegir la que mejor se adapte a tu día al hacer la reserva por WhatsApp.</p>
         </div>
       </div>
     </div>
@@ -1555,7 +1555,7 @@
       <label data-i18n="labelHora">Hora</label>
       <div class="sf-wa-float__radio-group">
         <label><input type="radio" name="sfHora" value="0730" checked> <span data-i18n="hora0730">7:30h</span></label>
-        <label><input type="radio" name="sfHora" value="1600"> <span data-i18n="hora1600">16:00h</span></label>
+        <label><input type="radio" name="sfHora" value="1200"> <span data-i18n="hora1200">12:00h</span></label>
       </div>
 
       <label data-i18n="labelPersonas" for="sfPersonas">Número de personas</label>
@@ -1618,7 +1618,7 @@
         meses: ["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"],
         diasSemana: ["L","M","X","J","V","S","D"],
         mesesAbrev: ["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"],
-        labelHora: "Hora", hora0730: "7:30h", hora1600: "16:00h",
+        labelHora: "Hora", hora0730: "7:30h", hora1200: "12:00h",
         labelPersonas: "Número de personas", phPersonas: "Ej: 4",
         labelPuerto: "Puerto de salida", puertoMarbella: "Marbella",
         labelDuda: "¿Alguna duda? (opcional)", phDuda: "Ej: ¿incluye el material de pesca?",
@@ -1640,7 +1640,7 @@
         meses: ["January","February","March","April","May","June","July","August","September","October","November","December"],
         diasSemana: ["M","T","W","T","F","S","S"],
         mesesAbrev: ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],
-        labelHora: "Time", hora0730: "7:30am", hora1600: "4:00pm",
+        labelHora: "Time", hora0730: "7:30am", hora1200: "12:00pm",
         labelPersonas: "Number of people", phPersonas: "E.g. 4",
         labelPuerto: "Departure port", puertoMarbella: "Marbella",
         labelDuda: "Any questions? (optional)", phDuda: "E.g. is fishing gear included?",
@@ -1825,7 +1825,7 @@
 
       const horaInput = document.querySelector('input[name="sfHora"]:checked');
       const horaValue = horaInput ? horaInput.value : "0730";
-      const horaLabel = horaValue === "0730" ? t.hora0730 : t.hora1600;
+      const horaLabel = horaValue === "0730" ? t.hora0730 : t.hora1200;
       const personas = document.getElementById("sfPersonas").value;
       const puertoInput = document.querySelector('input[name="sfPuerto"]:checked');
       const puertoValue = puertoInput ? puertoInput.value : "marbella";
