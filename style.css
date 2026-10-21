@@ -1158,8 +1158,16 @@ video.hero-bg { object-position: 50% 38%; }
   border-radius: 4px;
 }
 .faq-question svg {
-  transition: transform 0.3s ease;
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  padding: 7px;
+  margin-left: 16px;
+  border-radius: 50%;
+  background: rgba(252,152,2,0.12);
+  transition: transform 0.3s ease, background 0.3s ease;
 }
+.faq-question:hover svg { background: rgba(252,152,2,0.22); }
 .faq-answer {
   display: none;
   padding-top: 12px;
@@ -2089,4 +2097,18 @@ a.portal-card:hover { transform: translateY(-4px); }
     position: sticky;
     top: 100px;
   }
+}
+
+/* Mobile: fuera las 4 reseñas más largas (demasiado texto en el carrusel) */
+@media (max-width: 768px) {
+  .review-card--long { display: none; }
+}
+
+/* Footer: la descripción de marca no ocupa todo el ancho */
+.footer-brand p {
+  max-width: 320px;
+  line-height: 1.6;
+}
+@media (max-width: 1024px) {
+  .footer-brand p { margin-inline: auto; text-align: center; }
 }

@@ -721,7 +721,7 @@
   <section class="testimonials">
     <div class="h2" style="text-align: center;">What our Málaga anglers say</div>
     <div class="testimonials-grid" id="reviewsGrid">
-      <div class="review-card">
+      <div class="review-card review-card--long">
         <div class="review-header">
           <span class="review-quote">&ldquo;</span>
           <div class="stars" style="color: #FFB020;">
@@ -741,7 +741,7 @@
           </div>
         </div>
       </div>
-      <div class="review-card">
+      <div class="review-card review-card--long">
         <div class="review-header">
           <span class="review-quote">&ldquo;</span>
           <div class="stars" style="color: #FFB020;">
@@ -761,7 +761,7 @@
           </div>
         </div>
       </div>
-      <div class="review-card">
+      <div class="review-card review-card--long">
         <div class="review-header">
           <span class="review-quote">&ldquo;</span>
           <div class="stars" style="color: #FFB020;">
@@ -781,7 +781,7 @@
           </div>
         </div>
       </div>
-      <div class="review-card">
+      <div class="review-card review-card--long">
         <div class="review-header">
           <span class="review-quote">&ldquo;</span>
           <div class="stars" style="color: #FFB020;">
@@ -1972,7 +1972,8 @@
       const grid = document.getElementById(gridId);
       const dotsWrap = document.getElementById(dotsId);
       if (!grid || !dotsWrap) return;
-      const items = Array.from(grid.querySelectorAll(itemSelector));
+      // Solo las tarjetas visibles (en mobile se ocultan algunas reseñas)
+      const items = Array.from(grid.querySelectorAll(itemSelector)).filter(el => getComputedStyle(el).display !== 'none');
       items.forEach((item, i) => {
         const dot = document.createElement('button');
         dot.type = 'button';
