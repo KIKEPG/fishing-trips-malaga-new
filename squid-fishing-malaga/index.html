@@ -3,6 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Tag Manager: el snippet está en el head, pero solo se carga GTM con consentimiento
+       de Estadísticas o Marketing (banner de cookies), con Consent Mode v2 denegado por defecto. -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied' });
+    window.ftLoadGTM = function (consent) {
+      gtag('consent', 'update', {
+        analytics_storage: consent.stats ? 'granted' : 'denied',
+        ad_storage: consent.marketing ? 'granted' : 'denied',
+        ad_user_data: consent.marketing ? 'granted' : 'denied',
+        ad_personalization: consent.marketing ? 'granted' : 'denied'
+      });
+      if (window.ftGTMLoaded || !(consent.stats || consent.marketing)) return;
+      window.ftGTMLoaded = true;
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-MS8PWZ6P');
+    };
+    try {
+      var ftSavedConsent = JSON.parse(localStorage.getItem('ft_cookie_consent'));
+      if (ftSavedConsent) window.ftLoadGTM(ftSavedConsent);
+    } catch (e) {}
+  </script>
+  <!-- End Google Tag Manager -->
   <title>🎣 Squid Fishing in Málaga | Fishing Trips Málaga</title>
   <meta name="description" content="🎣 Squid fishing in Malaga for squid, cuttlefish and octopus. Great with kids, your skipper sets everything up. Book via WhatsApp!">
   <link rel="canonical" href="https://fishingtripsmalaga.com/squid-fishing-malaga/">
@@ -1385,6 +1412,8 @@
     }
 
     function applyConsent(consent) {
+      // Carga GTM (definido en el <head>) solo con consentimiento de Estadísticas o Marketing
+      if (window.ftLoadGTM) window.ftLoadGTM(consent);
       window.ftCookieConsent = consent;
     }
 
