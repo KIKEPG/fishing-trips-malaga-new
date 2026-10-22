@@ -108,10 +108,10 @@ Ver `buyer-persona-marbella.md` (documento completo). Resumen operativo para qui
 
 | # | Sección (diseño) | Qué objeción/deseo del buyer persona resuelve |
 |---|---|---|
-| 1 | Hero (foto full-bleed, H1, párrafo, CTA, trust row GYG/Google/TripAdvisor + estrellas + "+200 pescadores") | "¿Es esto para mí?" + prueba social inmediata |
-| 2 | Charter intro (imagen + bullets con check, badge flotante "+2 años") | Credibilidad de empresa + deseo de pertenencia (amigos/familia) |
+| 1 | Hero (foto full-bleed, H1, párrafo, CTA, trust row GYG/Google/TripAdvisor + estrellas + "+500 pescadores") | "¿Es esto para mí?" + prueba social inmediata |
+| 2 | Charter intro (imagen + bullets con check, badge flotante "+4 años") | Credibilidad de empresa + deseo de pertenencia (amigos/familia) |
 | 3 | Barra de stats (4 iconos: técnicas, equipo, especies, capacidad) sobre fondo navy | Refuerzo rápido de "todo incluido" y variedad |
-| 4 | Banner CTA intermedio (foto full-bleed + overlay cian + "Únete a las +200 personas") | Pertenencia + segundo microcompromiso de WhatsApp |
+| 4 | Banner CTA intermedio (foto full-bleed + overlay cian + "Únete a las +500 personas") | Pertenencia + segundo microcompromiso de WhatsApp |
 | 5 | "¿Cómo reservar?" — 4 pasos numerados | Reduce fricción de "¿en qué me estoy metiendo?" |
 | 6 | "¿Por qué elegir nuestro charter?" — foto + grid 2×2 con 4 razones | "¿Sabéis pescar de verdad?" + credibilidad técnica |
 | 7 | Galería de capturas (grid 3×3) | "Yo quiero hacer eso" — la recompensa psicológica de la captura |
@@ -178,7 +178,7 @@ El siguiente bloque **es el widget completo, real y ya probado en producción** 
 
 **Qué hace (el resto, sin cambios):**
 - Botón flotante circular verde (`#25D366`) fijo abajo-derecha, que abre un panel con mini-formulario
-- Campos: nombre, selector de fechas (calendario propio hecho a mano, sin librería externa tipo Flatpickr — precisamente para evitar el problema ya conocido de Flatpickr cargando sin su CSS), franja horaria (7:30h / 12:00h, radio buttons), número de personas (1-6), puerto de salida (ver aviso arriba), duda opcional
+- Campos: nombre, selector de fechas (calendario propio hecho a mano, sin librería externa tipo Flatpickr — precisamente para evitar el problema ya conocido de Flatpickr cargando sin su CSS), franja horaria (7:30h / 16:00h, radio buttons), número de personas (1-6), puerto de salida (ver aviso arriba), duda opcional
 - Al enviar: genera un mensaje de WhatsApp pre-rellenado y abre `https://api.whatsapp.com/send/?phone=...&text=...`
 - Detecta idioma por la URL: si el path empieza por `/es/` (o es exactamente `/es`), español; en cualquier otro caso, inglés — coherente con la estructura real de rutas (`/` = EN, `/es/` = ES). No usar `includes()`: también casaría con rutas españolas que contengan "/en" o "/es" en otra posición
 - Genera un código de lead único tipo `FTWEB` + fecha (AAMMDD) + 3 dígitos aleatorios (ej. `FTWEB260807482`) — decisión de diseño documentada en el propio código: evita depender de `localStorage` para contadores secuenciales, que no persiste de forma fiable
@@ -375,7 +375,7 @@ El siguiente bloque **es el widget completo, real y ya probado en producción** 
     <label data-i18n="labelHora">Hora</label>
     <div class="sf-wa-float__radio-group">
       <label><input type="radio" name="sfHora" value="0730" checked> <span data-i18n="hora0730">7:30h</span></label>
-      <label><input type="radio" name="sfHora" value="1200"> <span data-i18n="hora1200">12:00h</span></label>
+      <label><input type="radio" name="sfHora" value="1600"> <span data-i18n="hora1600">16:00h</span></label>
     </div>
 
     <label data-i18n="labelPersonas" for="sfPersonas">Número de personas</label>
@@ -439,7 +439,7 @@ El siguiente bloque **es el widget completo, real y ya probado en producción** 
       meses: ["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"],
       diasSemana: ["L","M","X","J","V","S","D"],
       mesesAbrev: ["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"],
-      labelHora: "Hora", hora0730: "7:30h", hora1200: "12:00h",
+      labelHora: "Hora", hora0730: "7:30h", hora1600: "16:00h",
       labelPersonas: "Número de personas", phPersonas: "Ej: 4",
       labelPuerto: "Puerto de salida", puertoMalaga: "Málaga", puertoMarbella: "Marbella",
       labelDuda: "¿Alguna duda? (opcional)", phDuda: "Ej: ¿incluye el material de pesca?",
@@ -461,7 +461,7 @@ El siguiente bloque **es el widget completo, real y ya probado en producción** 
       meses: ["January","February","March","April","May","June","July","August","September","October","November","December"],
       diasSemana: ["M","T","W","T","F","S","S"],
       mesesAbrev: ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],
-      labelHora: "Time", hora0730: "7:30am", hora1200: "12:00pm",
+      labelHora: "Time", hora0730: "7:30am", hora1600: "4:00pm",
       labelPersonas: "Number of people", phPersonas: "E.g. 4",
       labelPuerto: "Departure port", puertoMalaga: "Málaga", puertoMarbella: "Marbella",
       labelDuda: "Any questions? (optional)", phDuda: "E.g. is fishing gear included?",
@@ -646,7 +646,7 @@ El siguiente bloque **es el widget completo, real y ya probado en producción** 
 
     const horaInput = document.querySelector('input[name="sfHora"]:checked');
     const horaValue = horaInput ? horaInput.value : "0730";
-    const horaLabel = horaValue === "0730" ? t.hora0730 : t.hora1200;
+    const horaLabel = horaValue === "0730" ? t.hora0730 : t.hora1600;
     const personas = document.getElementById("sfPersonas").value;
     const puertoInput = document.querySelector('input[name="sfPuerto"]:checked');
     const puertoValue = puertoInput ? puertoInput.value : "malaga";
@@ -807,7 +807,7 @@ Notas:
 
 - Radio de borde 16-24px + sombra suave en todas las fotos de contenido
 - Galería de capturas: grid 3×3, `aspect-ratio: 1/0.82`, `object-fit: cover`
-- Foto de familia en la sección "charter intro" lleva una tarjeta flotante superpuesta ("+2 años ofreciendo salidas de pesca") — patrón a mantener, es un recurso de credibilidad
+- Foto de familia en la sección "charter intro" lleva una tarjeta flotante superpuesta ("+4 años ofreciendo salidas de pesca") — patrón a mantener, es un recurso de credibilidad
 
 ## Layout
 

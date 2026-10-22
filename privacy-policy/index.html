@@ -654,7 +654,7 @@
       <label data-i18n="labelHora">Hora</label>
       <div class="sf-wa-float__radio-group">
         <label><input type="radio" name="sfHora" value="0730" checked> <span data-i18n="hora0730">7:30h</span></label>
-        <label><input type="radio" name="sfHora" value="1200"> <span data-i18n="hora1200">12:00h</span></label>
+        <label><input type="radio" name="sfHora" value="1600"> <span data-i18n="hora1600">16:00h</span></label>
       </div>
 
       <label data-i18n="labelPersonas" for="sfPersonas">Número de personas</label>
@@ -718,7 +718,7 @@
         meses: ["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"],
         diasSemana: ["L","M","X","J","V","S","D"],
         mesesAbrev: ["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"],
-        labelHora: "Hora", hora0730: "7:30h", hora1200: "12:00h",
+        labelHora: "Hora", hora0730: "7:30h", hora1600: "16:00h",
         labelPersonas: "Número de personas", phPersonas: "Ej: 4",
         labelPuerto: "Puerto de salida", puertoMalaga: "Málaga", puertoMarbella: "Marbella",
         labelDuda: "¿Alguna duda? (opcional)", phDuda: "Ej: ¿incluye el material de pesca?",
@@ -740,7 +740,7 @@
         meses: ["January","February","March","April","May","June","July","August","September","October","November","December"],
         diasSemana: ["M","T","W","T","F","S","S"],
         mesesAbrev: ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],
-        labelHora: "Time", hora0730: "7:30am", hora1200: "12:00pm",
+        labelHora: "Time", hora0730: "7:30am", hora1600: "4:00pm",
         labelPersonas: "Number of people", phPersonas: "E.g. 4",
         labelPuerto: "Departure port", puertoMalaga: "Málaga", puertoMarbella: "Marbella",
         labelDuda: "Any questions? (optional)", phDuda: "E.g. is fishing gear included?",
@@ -925,7 +925,7 @@
 
       const horaInput = document.querySelector('input[name="sfHora"]:checked');
       const horaValue = horaInput ? horaInput.value : "0730";
-      const horaLabel = horaValue === "0730" ? t.hora0730 : t.hora1200;
+      const horaLabel = horaValue === "0730" ? t.hora0730 : t.hora1600;
       const personas = document.getElementById("sfPersonas").value;
       const puertoInput = document.querySelector('input[name="sfPuerto"]:checked');
       const puertoValue = puertoInput ? puertoInput.value : "malaga";
