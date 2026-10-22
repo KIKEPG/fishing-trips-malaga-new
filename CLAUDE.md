@@ -6,9 +6,11 @@ Actúa como un **experto en diseño web** (UI/UX + desarrollo frontend) durante 
 
 # Proyecto
 
-Fishing Trips Marbella — reconstrucción de la web actual (WordPress + Elementor, `fishingtripsmarbella.com`) como **HTML5 + CSS + JS de producción**, a partir de un **diseño ya maquetado** (`design/Main.dc.html`), con foco explícito en **conversión a reserva vía WhatsApp**.
+Fishing Trips Málaga (`fishingtripsmalaga.com`) — web en **HTML5 + CSS + JS de producción**, a partir de un **diseño ya maquetado** (`design/Main.dc.html`), con foco explícito en **conversión a reserva vía WhatsApp**.
 
-Este documento sustituye cualquier planteamiento anterior de reconstrucción "1:1 desde el backup de WordPress". El punto de partida ya no es el sitio antiguo, sino el diseño nuevo. El sitio antiguo se usa **solo como banco de contenido real** (textos EN/ES ya redactados) y como registro de bugs a no arrastrar.
+Este documento sustituye cualquier planteamiento anterior de reconstrucción "1:1 desde el backup de WordPress". El punto de partida ya no es el sitio antiguo, sino el diseño nuevo.
+
+> ⚠️ **La marca es SOLO "Fishing Trips Málaga".** Este repo nació como copia de la web de Marbella (`fishingtripsmarbella.com`, un negocio/web aparte). Todo el contenido heredado de Marbella debe **reescribirse con copy propio de Málaga** (no basta con cambiar la palabra "Marbella" por "Málaga") para que Google no lo trate como **contenido duplicado** entre ambos dominios. Kike está migrando el copy desde su web antigua de Málaga mediante pantallazos, sección a sección: ese copy es la fuente de verdad. Cualquier mención a Marbella, a su dirección (Marina La Bajadilla), a su Instagram o a su dominio es un residuo y debe eliminarse.
 
 ---
 
@@ -30,7 +32,7 @@ Objetivo de conversión principal:
 1. Este documento completo, de arriba a abajo
 2. `design/Main.dc.html` — el diseño de referencia visual, ver sección "Cómo tratar el archivo de diseño"
 3. Carpeta `images/` — **aquí están todas las imágenes reales del sitio** (hero, galería de capturas, guía, barco, marina, logos, iconos). Todo `<img src="...">` de producción debe apuntar a un archivo real dentro de esta carpeta (ya optimizado a WebP, ver sección "Rendimiento e imágenes"), nunca a los `.jpg`/`.png` sueltos que trae el export del mockup ni a rutas inventadas
-4. `buyer-persona-marbella.md` — la psicología de conversión que debe guiar el copy y las decisiones de UX que el diseño no resuelve por sí solo
+4. `buyer-persona-marbella.md` (si existe; heredado de Marbella, válido solo como guía psicológica, nunca como copy) — la psicología de conversión que debe guiar el copy y las decisiones de UX que el diseño no resuelve por sí solo
 5. Sección "Contenido real a reutilizar" de este documento (textos EN/ES ya redactados y probados en el sitio actual)
 6. Sección "Bugs conocidos del sitio actual — no replicar" de este documento
 7. Estado actual del repo de destino (si ya hay HTML/CSS/JS generado, qué está hecho y qué falta)
@@ -50,9 +52,9 @@ Objetivo de conversión principal:
 
 | Pregunta | Estado |
 |---|---|
-| ¿Marca definitiva: "Fishing Trips Marbella" o "Fishing Trips Málaga"? | ✅ **Resuelto: "Fishing Trips Marbella".** Cualquier mención a "Málaga" en el copy, el diseño heredado o el sitio antiguo (incluido el bullet que dice "en Málaga") debe corregirse a "Marbella" |
+| ¿Marca definitiva? | ✅ **Resuelto (22/10/2026): solo "Fishing Trips Málaga".** Cualquier mención a "Marbella" heredada de la web de Marbella debe eliminarse y el texto reescribirse con copy propio de Málaga (evitar contenido duplicado) |
 | Dirección canónica del negocio | ✅ **Resuelto.** Ver "Datos ya confirmados", usar en todos lados, incluido schema `LocalBusiness` y Google Maps |
-| Capacidad real del barco | ✅ **Resuelto: 5 personas + patrón** (decisión de Kike, 20/10/2026; antes 6), en todos lados (specs del barco, FAQ, cualquier mención). El diseño actual dice 7 en dos sitios (barra de stats y ficha técnica) — **corregir a 5 + patrón al pasar a producción**, no eran datos correctos |
+| Capacidad real del barco | ✅ **Resuelto: hasta 6 personas** (decisión de Kike, 22/10/2026; antes "5 + patrón"). **No mencionar al patrón en las menciones de capacidad** (ni "+ patrón" ni "más el patrón"), en ningún sitio: specs del barco, stats, FAQ, schema, widget. El diseño dice 7 — corregir a 6 |
 | Instagram oficial | ✅ **Resuelto.** Ver "Datos ya confirmados" |
 | Testimonios: ¿hardcodeados o embed en vivo? | ✅ **Resuelto: hardcodear una selección curada de reseñas reales**, con proceso de actualización manual periódica. No usar plugin/embed en vivo |
 | Idiomas: ¿solo ES/EN o se añaden más? | ✅ **Resuelto: solo ES y EN**, no se añaden más idiomas por ahora |
@@ -65,16 +67,17 @@ Objetivo de conversión principal:
 
 > Estos datos ya están cerrados. Cualquier mención en el diseño, en el sitio antiguo o en contenido previo que los contradiga (ver "Bugs conocidos del sitio actual") **está equivocada y debe corregirse**, no respetarse.
 
-- **Dirección canónica (usar siempre, sin variaciones):** Puerto deportivo Marina La Bajadilla, 29603 Marbella, Málaga
-- **Enlace de la dirección:** siempre la ficha real de Google — `https://maps.app.goo.gl/8U9EbCWF8f1QCgRJ9` (no un iframe de Maps genérico ni una URL de búsqueda por texto)
+- **Dominio:** `fishingtripsmalaga.com`
+- **Dirección canónica (usar siempre, sin variaciones):** Puerto Deportivo El Candado, 29018 Málaga
+- **Enlace de la dirección:** siempre la ficha real de Google — `https://share.google/WLvcuenLzACgzVrgT` (no una URL de búsqueda por texto)
 - **Teléfono/WhatsApp:** `+34 686 68 33 73` (mismo número en todo el sitio)
-- **Capacidad del barco:** 5 personas + patrón (no 6 ni 7)
-- **Instagram oficial:** `fishing_trips_marbella`
+- **Capacidad del barco:** hasta 6 personas, sin mencionar al patrón (no "5 + patrón" ni 7)
+- **Instagram oficial:** `fishingtrips_malaga`
 - **Testimonios:** selección curada y hardcodeada de reseñas reales, no embed en vivo — actualización manual periódica
 - **Idiomas del sitio:** ES y EN únicamente
 - **Presupuesto de imagen:** <100KB por imagen optimizada (no es un límite de peso total de página)
 - **Hosting:** Vercel
-- **Marca:** ✅ **"Fishing Trips Marbella"** — resuelto, ver pregunta de bloqueo #1
+- **Marca:** ✅ **"Fishing Trips Málaga"** (solo Málaga) — ver pregunta de bloqueo #1
 
 ---
 
@@ -125,7 +128,7 @@ Ver `buyer-persona-marbella.md` (documento completo). Resumen operativo para qui
 
 # Bugs conocidos del sitio actual — no replicar
 
-Detectados auditando `fishingtripsmarbella.com` en vivo (EN y ES). Ninguno debe pasar a la versión nueva:
+Detectados auditando la web de Marbella (`fishingtripsmarbella.com`), de la que se copió este repo. Se conservan como lista de errores a no arrastrar; las direcciones/Instagram de Marbella que aparecen aquí **no** son datos de este proyecto:
 
 - **CTA roto a dominio de plantilla**: los botones "Contáctanos" / "Make a appointment" apuntan a `themetechmount.com/wordpress/aqovo/...` (el dominio de la plantilla original de Elementor), no a un destino real.
 - **Enlace de Google Maps roto con placeholder literal sin resolver**: en la versión ES, el enlace "Google Maps" apunta a `http://LUGAR PUERTO DEPORTIVO DE MARBELLA VIRGEN DEL CARMEN, S-N, 29602 Marbella, Málaga` — un placeholder de texto que nunca se sustituyó por una URL real.
@@ -141,7 +144,7 @@ Detectados auditando `fishingtripsmarbella.com` en vivo (EN y ES). Ninguno debe 
 
 > El copy del diseño está abreviado para maquetar. El copy final de producción debe partir del contenido real ya redactado y probado en el sitio actual (más completo, ya en tono correcto), ajustado con lo aprendido del buyer persona — no del texto corto del mockup.
 
-Fuente: contenido en vivo de `fishingtripsmarbella.com` (EN) y `fishingtripsmarbella.com/es/` (ES), ya auditado. Incluye textos completos de: hero, "Tu charter de pesca", los 4 pasos de reserva, "Todo incluido" (4 bloques), sección de guía local (biografía completa del patrón, Yamaha/JLC Fishing), especificaciones técnicas del barco, y las 9-10 preguntas frecuentes completas por idioma (comida/bebida, ropa, duración, mal tiempo, mareo, material, qué hacer con la pesca, capacidad, licencia/precio).
+Fuente prioritaria: los pantallazos de la web antigua de Málaga que Kike va pasando sección a sección. El contenido de `fishingtripsmarbella.com` solo sirve como referencia de estructura, **nunca se copia literal** (contenido duplicado). Incluye textos completos de: hero, "Tu charter de pesca", los 4 pasos de reserva, "Todo incluido" (4 bloques), sección de guía local (biografía completa del patrón, Yamaha/JLC Fishing), especificaciones técnicas del barco, y las 9-10 preguntas frecuentes completas por idioma (comida/bebida, ropa, duración, mal tiempo, mareo, material, qué hacer con la pesca, capacidad, licencia/precio).
 
 **Nota importante:** el listado de preguntas frecuentes **no es idéntico** entre EN y ES — EN incluye una pregunta sobre licencia de pesca que ES no tiene, y ES incluye una pregunta sobre precio que EN no tiene. Decidir si se unifica un único set de FAQ para ambos idiomas (recomendado, más fácil de mantener y evita contradicciones como la de la capacidad) o si se mantiene la diferencia intencionadamente.
 
@@ -153,7 +156,7 @@ El diseño es estático (HTML con estilos inline). Nada de esto existe todavía 
 
 1. **Widget de WhatsApp real** en lugar de los 15 `href="#"` de los botones "Reservar Pesca" — ver sección dedicada "Widget de WhatsApp (código real ya construido)" más abajo. El código ya existe, completo y probado — no se reescribe desde cero, se integra tal cual
 2. **Acordeón funcional de FAQ** — en el diseño, cada fila de FAQ solo tiene una flecha decorativa (`<svg>` con `polyline`), sin JS de expandir/colapsar ni contenido de respuesta oculto.
-3. **Selector de idioma funcional** — en el diseño, "ES/EN" es solo texto estático en el header; hay que enlazarlo a las rutas reales (`/` y `/es/`, o al revés según lo que se confirme, ver Multi-idioma).
+3. **Selector de idioma funcional** — en el diseño, "ES/EN" es solo texto estático en el header; enlazado a la página equivalente del otro idioma (estructura de rutas: ver Multi-idioma).
 4. **Banner de cookies GDPR** — no existe en el diseño (es un mockup de la página, no incluye overlays de consentimiento). Ver sección dedicada abajo.
 5. **Botón "Ver más reseñas"** — decidir si pagina más testimonios hardcodeados o enlaza directamente a la ficha de Google.
 6. **Enlaces reales del footer y de la sección del puerto deportivo** (Google Maps, política de privacidad, política de cookies, enlace al puerto deportivo).
@@ -167,17 +170,17 @@ El siguiente bloque **es el widget completo, real y ya probado en producción** 
 
 **Número de WhatsApp:** `+34 686 68 33 73` → ya está correctamente puesto en el código como `NUMERO_WHATSAPP = "34686683373"` (formato internacional sin `+`). **Verificado, no requiere cambio.**
 
-**⚠️ Pendiente de decisión — campo "Puerto de salida" (Málaga/Marbella):** el formulario tiene un selector con dos opciones reales, `Málaga` y `Marbella` (`name="sfPuerto"`, valores `malaga`/`marbella`), pensado para cuando el negocio operaba desde dos puertos distintos. Ahora que la dirección canónica es un único puerto (Marina La Bajadilla, Marbella), este campo probablemente ya no tiene sentido tal cual — **no es una simple sustitución de texto** (no se puede poner "Marbella" en las dos opciones, quedarían duplicadas y rotas). Antes de publicar, confirmar con Kike si:
+**⚠️ Pendiente de decisión — campo "Puerto de salida" (Málaga/Marbella):** el formulario tiene un selector con dos opciones reales, `Málaga` y `Marbella` (`name="sfPuerto"`, valores `malaga`/`marbella`), pensado para cuando el negocio operaba desde dos puertos distintos. Ahora que la marca es solo Málaga y la dirección canónica es un único puerto (El Candado, Málaga), este campo probablemente ya no tiene sentido tal cual — **no es una simple sustitución de texto** (no se puede poner "Marbella" en las dos opciones, quedarían duplicadas y rotas). Antes de publicar, confirmar con Kike si:
   - (a) el negocio sigue saliendo realmente desde dos puertos → se deja el campo tal cual, ambos nombres son correctos porque describen ubicaciones reales distintas, o
-  - (b) solo se opera desde Marbella → se elimina el campo `sfPuerto` por completo (el `<div class="sf-wa-float__radio-group">` del puerto, su `<label>`, y las referencias a `puertoValue`/`puertoLabel`/`puertoMalaga`/`puertoMarbella` en el JS y en `I18N`)
+  - (b) solo se opera desde Málaga → se elimina el campo `sfPuerto` por completo (el `<div class="sf-wa-float__radio-group">` del puerto, su `<label>`, y las referencias a `puertoValue`/`puertoLabel`/`puertoMalaga`/`puertoMarbella` en el JS y en `I18N`)
 
-  Mientras no se confirme, **no eliminar el campo por iniciativa propia** — es la única mención real a "Málaga" que queda en todo el proyecto y podría ser un dato operativo legítimo, no un residuo de marca a corregir.
+  Mientras no se confirme, **no eliminar el campo por iniciativa propia** — la opción "Marbella" podría ser un dato operativo legítimo, no un residuo de marca.
 
 **Qué hace (el resto, sin cambios):**
 - Botón flotante circular verde (`#25D366`) fijo abajo-derecha, que abre un panel con mini-formulario
-- Campos: nombre, selector de fechas (calendario propio hecho a mano, sin librería externa tipo Flatpickr — precisamente para evitar el problema ya conocido de Flatpickr cargando sin su CSS), franja horaria (7:30h / 12:00h, radio buttons), número de personas (1-5), puerto de salida (ver aviso arriba), duda opcional
+- Campos: nombre, selector de fechas (calendario propio hecho a mano, sin librería externa tipo Flatpickr — precisamente para evitar el problema ya conocido de Flatpickr cargando sin su CSS), franja horaria (7:30h / 12:00h, radio buttons), número de personas (1-6), puerto de salida (ver aviso arriba), duda opcional
 - Al enviar: genera un mensaje de WhatsApp pre-rellenado y abre `https://api.whatsapp.com/send/?phone=...&text=...`
-- Detecta idioma por la URL: si el path empieza por `/en/` (o es exactamente `/en`), inglés; en cualquier otro caso, español — coherente con la estructura real de rutas (`/` = ES, `/en/` = EN). No usar `includes()`: también casaría con rutas españolas que contengan "/en" o "/es" en otra posición
+- Detecta idioma por la URL: si el path empieza por `/es/` (o es exactamente `/es`), español; en cualquier otro caso, inglés — coherente con la estructura real de rutas (`/` = EN, `/es/` = ES). No usar `includes()`: también casaría con rutas españolas que contengan "/en" o "/es" en otra posición
 - Genera un código de lead único tipo `FTWEB` + fecha (AAMMDD) + 3 dígitos aleatorios (ej. `FTWEB260807482`) — decisión de diseño documentada en el propio código: evita depender de `localStorage` para contadores secuenciales, que no persiste de forma fiable
 - Captura y persiste UTMs de campañas (`utm_source`, `utm_medium`, `utm_campaign`, `utm_term`, `utm_content`) en `localStorage`, y los añade al mensaje de WhatsApp y al evento de analítica si existen
 - Dispara `window.dataLayer.push({ event: "whatsapp_lead", ... })` con todos los datos del lead — el `dataLayer.push` no requiere que GTM esté instalado para no fallar (es solo un array), así que puede quedar activo aunque GTM esté aparcado por ahora (ver preguntas de bloqueo)
@@ -192,7 +195,7 @@ El siguiente bloque **es el widget completo, real y ya probado en producción** 
 
 ```html
 <!--
-  Botón flotante + mini-formulario de WhatsApp para FishingTripsMarbella.com
+  Botón flotante + mini-formulario de WhatsApp para FishingTripsMalaga.com
   Textos en ES/EN según si el path de la página contiene "/es".
   Insertar UNA VEZ, a nivel de todo el sitio (footer global).
 -->
@@ -376,7 +379,7 @@ El siguiente bloque **es el widget completo, real y ya probado en producción** 
     </div>
 
     <label data-i18n="labelPersonas" for="sfPersonas">Número de personas</label>
-    <input type="number" id="sfPersonas" min="1" max="5" step="1" required data-i18n-ph="phPersonas" placeholder="Ej: 4">
+    <input type="number" id="sfPersonas" min="1" max="6" step="1" required data-i18n-ph="phPersonas" placeholder="Ej: 4">
 
     <label data-i18n="labelPuerto">Puerto de salida</label>
     <div class="sf-wa-float__radio-group">
@@ -400,7 +403,7 @@ El siguiente bloque **es el widget completo, real y ya probado en producción** 
 (function () {
   const NUMERO_WHATSAPP = "34686683373";
 
-  const isEN = /^\/en(\/|$)/.test(window.location.pathname);
+  const isEN = !/^\/es(\/|$)/.test(window.location.pathname);
 
   (function capturarUTMs() {
     const params = new URLSearchParams(window.location.search);
@@ -715,7 +718,11 @@ El siguiente bloque **es el widget completo, real y ya probado en producción** 
 
 ## 3. Sitio multi-idioma
 
-- Mínimo confirmado: **ES y EN**, replicando la estructura actual (`/` y `/es/`, o la que se confirme como definitiva).
+- Mínimo confirmado: **ES y EN**.
+- ✅ **Estructura de rutas cerrada (22/10/2026): la misma que la web publicada en WordPress**, para conservar las URLs ya indexadas:
+  - **Inglés en la raíz**: `/`, `/contact-us/`, `/privacy-policy/`, `/cookie-policies/`, técnicas en `/<tecnica>-malaga/` (p. ej. `/bottom-fishing-malaga/`)
+  - **Español en `/es/`**: `/es/`, `/es/contactar/`, `/es/politica-de-privacidad/`, `/es/politicas-de-cookies/`, técnicas en `/es/pesca-<tecnica>-malaga/`
+  - `x-default` = versión inglesa (raíz). Redirecciones de rutas antiguas/intermedias en `vercel.json`. **No** usar `/en/` (redirige a la raíz).
 - `hreflang` recíproco entre ambas versiones + `x-default`.
 - Selector de idioma en el header (ya está maquetado visualmente en el diseño) debe enlazar de verdad a la URL equivalente en el otro idioma — no a la home del otro idioma a secas, para no romper la experiencia si el usuario está navegando otra página.
 - Contenido **no es traducción automática**: cada idioma tiene su propio copy ya redactado (ver "Contenido real a reutilizar") — mantener esa práctica, no generar ES a partir de EN por traducción literal.
@@ -737,7 +744,7 @@ El siguiente bloque **es el widget completo, real y ya probado en producción** 
 ## 5. Enlaces de teléfono y de dirección
 
 - **Todo número de teléfono visible en la web** (footer, sección de contacto, cualquier mención de `+34 686 68 33 73`) debe ser un enlace real para llamar: `<a href="tel:+34686683373">+34 686 68 33 73</a>` — nunca texto plano sin enlazar.
-- **Toda mención o enlace de la dirección del negocio** debe apuntar a la ficha real de Google del negocio: `https://maps.app.goo.gl/8U9EbCWF8f1QCgRJ9` — no a una URL de búsqueda genérica de Google Maps construida a partir del texto de la dirección, ni a un iframe embed distinto. Esto incluye el texto de la dirección en el footer, la sección del puerto deportivo, y cualquier botón "Cómo llegar" o similar.
+- **Toda mención o enlace de la dirección del negocio** debe apuntar a la ficha real de Google del negocio: `https://share.google/WLvcuenLzACgzVrgT` — no a una URL de búsqueda genérica de Google Maps construida a partir del texto de la dirección, ni a un iframe embed distinto. Esto incluye el texto de la dirección en el footer, la sección del puerto deportivo, y cualquier botón "Cómo llegar" o similar.
 - Si se usa un mapa embebido (`<iframe>`) en la sección del puerto deportivo, puede coexistir con el enlace de texto a la ficha de Google — pero el enlace de texto/botón siempre debe ser esa URL concreta, no una genérica.
 
 ---
@@ -775,7 +782,7 @@ Notas:
 - Cargar **Poppins** desde Google Fonts (pesos 400/600/800 como mínimo, para cubrir cuerpo/H2-H3/H1) — sustituye al `<link>` de Playfair Display + Work Sans que trae el `<head>` del mockup.
 - El resto de propiedades tipográficas del mockup que **no** entran en conflicto con esta tabla (line-height, letter-spacing del eyebrow/kicker, mayúsculas, etc.) sí se mantienen — el override es de familia/peso/tamaño en `p`, `h1`, `h2`, `h3`, no de todo el sistema tipográfico.
 - **No está especificado el tamaño/peso de `h4`/`h5`/`h6`** (el diseño usa H3 para las tarjetas de pasos/features, así que probablemente no haga falta más profundidad, pero si aparece algún subtítulo de nivel inferior, definir por consistencia visual con esta misma escala — Poppins, peso 600, un escalón por debajo de `h3` — y confirmarlo con Kike si se da el caso).
-- Revisar contraste y legibilidad del H1 en el extremo inferior del `clamp()` (50px) en pantallas pequeñas, ya que Poppins en negrita (800) a ese tamaño ocupa más ancho que Playfair Display — puede que el texto del H1 actual ("Excursiones de Pesca en Marbella") necesite un salto de línea distinto al del mockup en mobile.
+- Revisar contraste y legibilidad del H1 en el extremo inferior del `clamp()` (50px) en pantallas pequeñas, ya que Poppins en negrita (800) a ese tamaño ocupa más ancho que Playfair Display — puede que el texto del H1 actual ("Excursiones de Pesca en Málaga") necesite un salto de línea distinto al del mockup en mobile.
 
 ## Botones
 
@@ -816,9 +823,9 @@ Notas:
 - Meta title/description y Open Graph únicos por idioma.
 - `hreflang` ES/EN recíproco + `x-default`.
 - URLs limpias y en minúsculas.
-- Schema `LocalBusiness` con la dirección canónica: "Puerto deportivo Marina La Bajadilla, 29603 Marbella, Málaga" + `FAQPage` sobre la sección de preguntas frecuentes + `Review`/`AggregateRating` sobre los testimonios curados.
+- Schema `LocalBusiness` con la dirección canónica: "Puerto Deportivo El Candado, 29018 Málaga" + `FAQPage` sobre la sección de preguntas frecuentes + `Review`/`AggregateRating` sobre los testimonios curados.
 - Sitemap.xml y robots.txt revisados antes de publicar.
-- No publicar hasta resolver el nombre de marca definitivo (única pregunta de bloqueo que sigue abierta).
+- Evitar contenido duplicado con `fishingtripsmarbella.com`: ningún texto, title, meta description ni alt copiado literal de la web de Marbella.
 
 ---
 
@@ -835,7 +842,7 @@ Notas:
 # Fases de construcción
 
 ## Fase 0 — Resolver el único bloqueante que queda
-Todos los datos operativos ya están cerrados (ver "Datos ya confirmados por Kike"). Lo único que falta antes de dar el copy final por bueno es el **nombre de marca** (Marbella vs. Málaga). Se puede avanzar en paralelo con estructura, CSS y maquetación sin esperar a esto — solo el copy definitivo y el schema quedan bloqueados por esta decisión.
+Todos los datos operativos ya están cerrados (ver "Datos ya confirmados por Kike"). Marca resuelta: **solo "Fishing Trips Málaga"**. Lo que queda es sustituir el copy heredado de Marbella por el copy propio de Málaga (migración por pantallazos).
 
 ## Fase 1 — Sistema de diseño y estructura base
 Variables CSS (colores, espaciados) extraídas del canvas + tipografía Poppins (override del cliente, no la del mockup). Grid/layout responsive de cada sección de la Home (el canvas es solo desktop 1440px — definir comportamiento mobile/tablet). Favicon integrado en el `<head>`.
@@ -865,7 +872,7 @@ Schema, sitemap, robots.txt, meta por idioma, verificación de headings.
 
 - Repositorio en GitHub conectado a Vercel; cada push genera una URL de preview antes de promocionar a producción
 - Al ser HTML5/CSS/JS estático sin backend, el deploy en Vercel es directo (sin build step complejo), salvo que se introduzca algún pipeline de optimización de imágenes como paso de build (ver "Rendimiento e imágenes")
-- Configurar el dominio `fishingtripsmarbella.com` en Vercel cuando se vaya a sustituir el hosting actual — coordinar la ventana de corte con Kike para no dejar el dominio apuntando a un sitio a medio construir
+- Configurar el dominio `fishingtripsmalaga.com` en Vercel cuando se vaya a sustituir el hosting actual — coordinar la ventana de corte con Kike para no dejar el dominio apuntando a un sitio a medio construir
 - Variables de entorno (si las hay, p. ej. alguna clave de servicio) se gestionan desde el panel de Vercel, nunca hardcodeadas en el repo
 
 ---
@@ -874,18 +881,19 @@ Schema, sitemap, robots.txt, meta por idioma, verificación de headings.
 
 - [ ] Todos los `href="#"` del diseño resueltos a destinos reales
 - [ ] Widget de WhatsApp (código embebido en este `CLAUDE.md`, sección dedicada) integrado una sola vez a nivel de sitio, con `NUMERO_WHATSAPP = "34686683373"` verificado, y los 15 CTAs "Reservar Pesca" enlazados vía `sf-wa-trigger`/`sfAbrirFormularioWhatsApp()`
-- [ ] Decisión tomada sobre el campo "Puerto de salida" del widget (mantener Málaga/Marbella si son dos puertos reales, o eliminarlo si solo se opera desde Marbella)
+- [ ] Decisión tomada sobre el campo "Puerto de salida" del widget (mantener Málaga/Marbella si son dos puertos reales, o eliminarlo si solo se opera desde Málaga)
 - [ ] Todos los teléfonos como `<a href="tel:+34686683373">`
-- [ ] Todos los enlaces/menciones de dirección apuntando a `https://maps.app.goo.gl/8U9EbCWF8f1QCgRJ9`
+- [ ] Todos los enlaces/menciones de dirección apuntando a `https://share.google/WLvcuenLzACgzVrgT`
 - [ ] Tipografía Poppins aplicada en `p`/`h1`/`h2`/`h3` según la tabla de "Sistema de diseño" (no Playfair Display/Work Sans del mockup)
 - [ ] Favicon completo (`.ico` + PNGs de varios tamaños + `apple-touch-icon`) referenciado en el `<head>`, público y no bloqueado por `robots.txt`
 - [ ] Acordeón de FAQ funcional con ARIA
 - [ ] Selector de idioma funcional, enlazando a la página equivalente real
 - [ ] Banner de cookies GDPR bloqueando GTM/GA4 hasta consentimiento
-- [ ] Nombre de marca **"Fishing Trips Marbella"** unificado en absolutamente todo el copy
-- [ ] Dirección única en toda la web: "Puerto deportivo Marina La Bajadilla, 29603 Marbella, Málaga" (copy + schema + Google Maps)
-- [ ] Capacidad del barco = **5 personas + patrón** en absolutamente todas las menciones (specs, FAQ, cualquier texto)
-- [ ] Instagram = `fishing_trips_marbella` en ambos idiomas, sin excepción
+- [ ] Nombre de marca **"Fishing Trips Málaga"** unificado en absolutamente todo el copy, sin restos de Marbella
+- [ ] Todo el copy heredado de Marbella reescrito con copy propio de Málaga (sin contenido duplicado)
+- [ ] Dirección única en toda la web: "Puerto Deportivo El Candado, 29018 Málaga" (copy + schema + Google Maps)
+- [ ] Capacidad del barco = **hasta 6 personas** (sin "+ patrón") en absolutamente todas las menciones (specs, FAQ, schema, widget)
+- [ ] Instagram = `fishingtrips_malaga` en ambos idiomas, sin excepción
 - [ ] Testimonios: selección curada hardcodeada (no embed en vivo), con nota interna de cuándo actualizarlos
 - [ ] Solo ES y EN — sin residuos de arquitectura pensada para más idiomas
 - [ ] Imágenes en WebP, optimizadas por debajo de 100KB por imagen, con `srcset` y `loading="lazy"`

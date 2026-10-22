@@ -2,130 +2,130 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://fishingtripsmalaga.com/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://fishingtripsmalaga.com/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fishingtripsmalaga.com/en/"/>
+    <loc>https://fishingtripsmalaga.com/es/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://fishingtripsmalaga.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fishingtripsmalaga.com/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://fishingtripsmalaga.com/"/>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://fishingtripsmalaga.com/en/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://fishingtripsmalaga.com/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fishingtripsmalaga.com/en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://fishingtripsmalaga.com/en/"/>
+    <loc>https://fishingtripsmalaga.com/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://fishingtripsmalaga.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fishingtripsmalaga.com/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fishingtripsmalaga.com/"/>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://fishingtripsmalaga.com/pesca-de-fondo-malaga/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://fishingtripsmalaga.com/pesca-de-fondo-malaga/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fishingtripsmalaga.com/en/bottom-fishing-malaga/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://fishingtripsmalaga.com/pesca-de-fondo-malaga/"/>
+    <loc>https://fishingtripsmalaga.com/es/pesca-de-fondo-malaga/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://fishingtripsmalaga.com/es/pesca-de-fondo-malaga/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fishingtripsmalaga.com/bottom-fishing-malaga/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fishingtripsmalaga.com/bottom-fishing-malaga/"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fishingtripsmalaga.com/en/bottom-fishing-malaga/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://fishingtripsmalaga.com/pesca-de-fondo-malaga/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fishingtripsmalaga.com/en/bottom-fishing-malaga/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://fishingtripsmalaga.com/pesca-de-fondo-malaga/"/>
+    <loc>https://fishingtripsmalaga.com/bottom-fishing-malaga/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://fishingtripsmalaga.com/es/pesca-de-fondo-malaga/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fishingtripsmalaga.com/bottom-fishing-malaga/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fishingtripsmalaga.com/bottom-fishing-malaga/"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fishingtripsmalaga.com/pesca-al-vivo-malaga/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://fishingtripsmalaga.com/pesca-al-vivo-malaga/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fishingtripsmalaga.com/en/live-bait-fishing-malaga/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://fishingtripsmalaga.com/pesca-al-vivo-malaga/"/>
+    <loc>https://fishingtripsmalaga.com/es/pesca-al-vivo-malaga/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://fishingtripsmalaga.com/es/pesca-al-vivo-malaga/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fishingtripsmalaga.com/live-bait-fishing-malaga/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fishingtripsmalaga.com/live-bait-fishing-malaga/"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fishingtripsmalaga.com/en/live-bait-fishing-malaga/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://fishingtripsmalaga.com/pesca-al-vivo-malaga/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fishingtripsmalaga.com/en/live-bait-fishing-malaga/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://fishingtripsmalaga.com/pesca-al-vivo-malaga/"/>
+    <loc>https://fishingtripsmalaga.com/live-bait-fishing-malaga/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://fishingtripsmalaga.com/es/pesca-al-vivo-malaga/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fishingtripsmalaga.com/live-bait-fishing-malaga/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fishingtripsmalaga.com/live-bait-fishing-malaga/"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fishingtripsmalaga.com/pesca-al-jigging-malaga/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://fishingtripsmalaga.com/pesca-al-jigging-malaga/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fishingtripsmalaga.com/en/jigging-malaga/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://fishingtripsmalaga.com/pesca-al-jigging-malaga/"/>
+    <loc>https://fishingtripsmalaga.com/es/pesca-al-jigging-malaga/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://fishingtripsmalaga.com/es/pesca-al-jigging-malaga/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fishingtripsmalaga.com/jigging-malaga/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fishingtripsmalaga.com/jigging-malaga/"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fishingtripsmalaga.com/en/jigging-malaga/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://fishingtripsmalaga.com/pesca-al-jigging-malaga/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fishingtripsmalaga.com/en/jigging-malaga/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://fishingtripsmalaga.com/pesca-al-jigging-malaga/"/>
+    <loc>https://fishingtripsmalaga.com/jigging-malaga/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://fishingtripsmalaga.com/es/pesca-al-jigging-malaga/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fishingtripsmalaga.com/jigging-malaga/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fishingtripsmalaga.com/jigging-malaga/"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fishingtripsmalaga.com/pesca-del-calamar-malaga/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://fishingtripsmalaga.com/pesca-del-calamar-malaga/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fishingtripsmalaga.com/en/squid-fishing-malaga/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://fishingtripsmalaga.com/pesca-del-calamar-malaga/"/>
+    <loc>https://fishingtripsmalaga.com/es/pesca-del-calamar-malaga/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://fishingtripsmalaga.com/es/pesca-del-calamar-malaga/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fishingtripsmalaga.com/squid-fishing-malaga/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fishingtripsmalaga.com/squid-fishing-malaga/"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fishingtripsmalaga.com/en/squid-fishing-malaga/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://fishingtripsmalaga.com/pesca-del-calamar-malaga/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fishingtripsmalaga.com/en/squid-fishing-malaga/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://fishingtripsmalaga.com/pesca-del-calamar-malaga/"/>
+    <loc>https://fishingtripsmalaga.com/squid-fishing-malaga/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://fishingtripsmalaga.com/es/pesca-del-calamar-malaga/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fishingtripsmalaga.com/squid-fishing-malaga/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fishingtripsmalaga.com/squid-fishing-malaga/"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fishingtripsmalaga.com/pesca-al-currican-malaga/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://fishingtripsmalaga.com/pesca-al-currican-malaga/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fishingtripsmalaga.com/en/trolling-malaga/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://fishingtripsmalaga.com/pesca-al-currican-malaga/"/>
+    <loc>https://fishingtripsmalaga.com/es/pesca-al-currican-malaga/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://fishingtripsmalaga.com/es/pesca-al-currican-malaga/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fishingtripsmalaga.com/trolling-malaga/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fishingtripsmalaga.com/trolling-malaga/"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fishingtripsmalaga.com/en/trolling-malaga/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://fishingtripsmalaga.com/pesca-al-currican-malaga/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fishingtripsmalaga.com/en/trolling-malaga/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://fishingtripsmalaga.com/pesca-al-currican-malaga/"/>
+    <loc>https://fishingtripsmalaga.com/trolling-malaga/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://fishingtripsmalaga.com/es/pesca-al-currican-malaga/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fishingtripsmalaga.com/trolling-malaga/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fishingtripsmalaga.com/trolling-malaga/"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fishingtripsmalaga.com/pesca-del-atun-malaga/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://fishingtripsmalaga.com/pesca-del-atun-malaga/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fishingtripsmalaga.com/en/tuna-fishing-malaga/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://fishingtripsmalaga.com/pesca-del-atun-malaga/"/>
+    <loc>https://fishingtripsmalaga.com/es/pesca-del-atun-malaga/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://fishingtripsmalaga.com/es/pesca-del-atun-malaga/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fishingtripsmalaga.com/tuna-fishing-malaga/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fishingtripsmalaga.com/tuna-fishing-malaga/"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fishingtripsmalaga.com/en/tuna-fishing-malaga/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://fishingtripsmalaga.com/pesca-del-atun-malaga/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fishingtripsmalaga.com/en/tuna-fishing-malaga/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://fishingtripsmalaga.com/pesca-del-atun-malaga/"/>
+    <loc>https://fishingtripsmalaga.com/tuna-fishing-malaga/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://fishingtripsmalaga.com/es/pesca-del-atun-malaga/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fishingtripsmalaga.com/tuna-fishing-malaga/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fishingtripsmalaga.com/tuna-fishing-malaga/"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fishingtripsmalaga.com/contactar/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://fishingtripsmalaga.com/contactar/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fishingtripsmalaga.com/en/contact/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://fishingtripsmalaga.com/contactar/"/>
+    <loc>https://fishingtripsmalaga.com/es/contactar/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://fishingtripsmalaga.com/es/contactar/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fishingtripsmalaga.com/contact-us/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fishingtripsmalaga.com/contact-us/"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://fishingtripsmalaga.com/en/contact/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://fishingtripsmalaga.com/contactar/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fishingtripsmalaga.com/en/contact/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://fishingtripsmalaga.com/en/contact/"/>
+    <loc>https://fishingtripsmalaga.com/contact-us/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://fishingtripsmalaga.com/es/contactar/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fishingtripsmalaga.com/contact-us/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fishingtripsmalaga.com/contact-us/"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

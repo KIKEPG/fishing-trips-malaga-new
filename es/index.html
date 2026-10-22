@@ -3,18 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>🎣 Pesca del Calamar en Málaga | Fishing Trips Málaga</title>
-  <meta name="description" content="🎣 Pesca del calamar en Málaga: calamar, jibia y pulpo con poteras desde nuestro barco privado con patrón experto. Ideal con niños. ¡Reserva por WhatsApp!">
-  <link rel="canonical" href="https://fishingtripsmalaga.com/pesca-del-calamar-malaga/">
-  <link rel="alternate" hreflang="es" href="https://fishingtripsmalaga.com/pesca-del-calamar-malaga/">
-  <link rel="alternate" hreflang="en" href="https://fishingtripsmalaga.com/en/squid-fishing-malaga/">
-  <link rel="alternate" hreflang="x-default" href="https://fishingtripsmalaga.com/pesca-del-calamar-malaga/">
+  <title>🎣 Excursión Pesca Málaga - Alquiler Barco de pesca</title>
+  <meta name="description" content="🎣 Excursiones de pesca guiadas en Málaga desde el puerto El Candado. Patrón local experto, equipo incluido, hasta 6 personas. Mañana o tarde. Reserva por WhatsApp">
+  <link rel="canonical" href="https://fishingtripsmalaga.com/es/">
+  <link rel="alternate" hreflang="es" href="https://fishingtripsmalaga.com/es/">
+  <link rel="alternate" hreflang="en" href="https://fishingtripsmalaga.com/">
+  <link rel="alternate" hreflang="x-default" href="https://fishingtripsmalaga.com/">
 
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+  <link rel="preload" as="image" href="/images/hero-video-poster.webp" fetchpriority="high">
 
   <link rel="stylesheet" href="/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -24,13 +26,47 @@
     "@context": "https://schema.org",
     "@graph": [
       {
+        "@type": "WebSite",
+        "@id": "https://fishingtripsmalaga.com/#website",
+        "url": "https://fishingtripsmalaga.com/",
+        "name": "Fishing Trips Málaga",
+        "alternateName": [
+          "Excursiones de Pesca Málaga",
+          "Fishing Trips Málaga Charter"
+        ],
+        "inLanguage": [
+          "es",
+          "en"
+        ],
+        "publisher": {
+          "@id": "https://fishingtripsmalaga.com/#business"
+        }
+      },
+      {
         "@type": "LocalBusiness",
         "@id": "https://fishingtripsmalaga.com/#business",
         "name": "Fishing Trips Málaga",
+        "alternateName": "Excursiones de Pesca Málaga",
+        "description": "Excursiones de pesca en barco y alquiler de barco de pesca con patrón desde el Puerto Deportivo El Candado de Málaga (Costa del Sol). Salidas compartidas (pagas solo tu plaza) y privadas para hasta 6 personas con guía local experto. Pesca de fondo, pesca al vivo, jigging, pesca del calamar, curricán y captura y suelta de atún rojo. Equipo profesional, bebidas frías, snacks y combustible incluidos. Apto para principiantes y niños.",
         "url": "https://fishingtripsmalaga.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "@id": "https://fishingtripsmalaga.com/#logo",
+          "url": "https://fishingtripsmalaga.com/images/logo-fishing-trips-malaga.webp",
+          "caption": "Fishing Trips Málaga"
+        },
+        "image": [
+          "https://fishingtripsmalaga.com/images/hero-video-poster.webp",
+          "https://fishingtripsmalaga.com/images/barco-pesca-fishing-trips-malaga.webp",
+          "https://fishingtripsmalaga.com/images/nino-pescando-malaga.webp",
+          "https://fishingtripsmalaga.com/images/guide.webp"
+        ],
         "telephone": "+34686683373",
-        "image": "https://fishingtripsmalaga.com/images/barco-pesca-fishing-trips-malaga.webp",
-        "hasMap": "https://share.google/WLvcuenLzACgzVrgT",
+        "foundingDate": "2023",
+        "knowsLanguage": [
+          "es",
+          "en"
+        ],
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Puerto Deportivo El Candado",
@@ -38,141 +74,355 @@
           "postalCode": "29018",
           "addressRegion": "Málaga",
           "addressCountry": "ES"
+        },
+        "hasMap": "https://share.google/WLvcuenLzACgzVrgT",
+        "areaServed": [
+          {
+            "@type": "City",
+            "name": "Málaga"
+          },
+          {
+            "@type": "Place",
+            "name": "Costa del Sol"
+          }
+        ],
+        "knowsAbout": [
+          "Pesca deportiva",
+          "Pesca de altura",
+          "Pesca de fondo",
+          "Pesca al vivo",
+          "Jigging",
+          "Pesca del calamar",
+          "Pesca al curricán",
+          "Captura y suelta de atún rojo",
+          "Especies del Mediterráneo",
+          "Dentón",
+          "Bonito",
+          "Pez limón",
+          "Mero"
+        ],
+        "amenityFeature": [
+          {
+            "@type": "LocationFeatureSpecification",
+            "name": "Equipo de pesca profesional incluido",
+            "value": true
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            "name": "Señuelos y cebos para cada técnica",
+            "value": true
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            "name": "GPS Garmin y sondas Lowrance",
+            "value": true
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            "name": "Dos viveros integrados",
+            "value": true
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            "name": "Equipo de seguridad completo",
+            "value": true
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            "name": "Bebidas frías y snacks a bordo",
+            "value": true
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            "name": "Combustible incluido",
+            "value": true
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            "name": "Pescado limpio para llevar a casa",
+            "value": true
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            "name": "Apto para principiantes y niños",
+            "value": true
+          }
+        ],
+        "employee": {
+          "@id": "https://fishingtripsmalaga.com/#skipper"
+        },
+        "sponsor": {
+          "@type": "Organization",
+          "name": "Yamaha Marine España"
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Excursiones de pesca en Málaga",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@id": "https://fishingtripsmalaga.com/es/#salida-compartida"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@id": "https://fishingtripsmalaga.com/es/#salida-privada"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Pesca de fondo en Málaga",
+                "url": "https://fishingtripsmalaga.com/es/pesca-de-fondo-malaga/"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Pesca al vivo en Málaga",
+                "url": "https://fishingtripsmalaga.com/es/pesca-al-vivo-malaga/"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Pesca al jigging en Málaga",
+                "url": "https://fishingtripsmalaga.com/es/pesca-al-jigging-malaga/"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Pesca del calamar en Málaga",
+                "url": "https://fishingtripsmalaga.com/es/pesca-del-calamar-malaga/"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Pesca al curricán en Málaga",
+                "url": "https://fishingtripsmalaga.com/es/pesca-al-currican-malaga/"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Pesca del atún en Málaga",
+                "url": "https://fishingtripsmalaga.com/es/pesca-del-atun-malaga/"
+              }
+            }
+          ]
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+34686683373",
+          "contactType": "reservations",
+          "availableLanguage": [
+            "Spanish",
+            "English"
+          ],
+          "areaServed": "ES"
+        },
+        "sameAs": [
+          "https://www.instagram.com/fishingtrips_malaga/",
+          "https://share.google/WLvcuenLzACgzVrgT",
+          "https://www.tripadvisor.es/AttractionProductReview-g187438-d34329318-Malaga_Fishing_Experience_with_Equipment_Food_and_Drinks_Included-Malaga_Costa_del.html",
+          "https://www.getyourguide.com/-s683072",
+          "https://fishingbooker.com/charters/view/48559",
+          "https://www.viator.com/tours/Malaga/Fishing-Trips-Malaga-with-equipment-food-and-drinks-included/d956-5649015P3"
+        ]
+      },
+      {
+        "@type": "Person",
+        "@id": "https://fishingtripsmalaga.com/#skipper",
+        "name": "Arturo",
+        "jobTitle": "Patrón y guía de pesca local",
+        "worksFor": {
+          "@id": "https://fishingtripsmalaga.com/#business"
+        },
+        "image": "https://fishingtripsmalaga.com/images/guide.webp",
+        "description": "Patrón con más de 20 años de experiencia de pesca en el Mediterráneo. Patrón de Yate, Pro Staff de JLC Fishing y embajador oficial de Yamaha Marine España.",
+        "hasCredential": {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Titulación náutica profesional",
+          "name": "Patrón de Yate"
+        },
+        "knowsAbout": [
+          "Pesca deportiva",
+          "Caladeros de la Costa del Sol",
+          "Jigging",
+          "Curricán",
+          "Pesca del atún rojo"
+        ]
+      },
+      {
+        "@type": "BoatTerminal",
+        "@id": "https://fishingtripsmalaga.com/#marina",
+        "name": "Puerto Deportivo El Candado",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Málaga",
+          "postalCode": "29018",
+          "addressRegion": "Málaga",
+          "addressCountry": "ES"
         }
       },
       {
-        "@type": "Service",
-        "@id": "https://fishingtripsmalaga.com/pesca-del-calamar-malaga/#service",
-        "name": "Pesca del calamar en Málaga",
-        "serviceType": "Pesca del calamar",
-        "description": "Salida de pesca del calamar en barco desde el Puerto Deportivo El Candado, en Málaga, con poteras y egis en zonas rocosas cercanas a la costa. Calamar, jibia y pulpo. Modalidad accesible, sin experiencia previa, ideal con niños. Barco, patrón y equipo de pesca incluidos.",
-        "url": "https://fishingtripsmalaga.com/pesca-del-calamar-malaga/",
-        "inLanguage": "es",
+        "@type": "TouristTrip",
+        "@id": "https://fishingtripsmalaga.com/es/#salida-compartida",
+        "name": "Excursión de pesca compartida en Málaga",
+        "description": "Reserva solo tu plaza y sal a pescar con otros aficionados. Pensada para quien viene solo o en pareja y quiere una jornada en el mar con buen ambiente y a mejor precio.",
+        "touristType": [
+          "Viajeros solos",
+          "Parejas",
+          "Principiantes",
+          "Pescadores con experiencia"
+        ],
+        "itinerary": {
+          "@id": "https://fishingtripsmalaga.com/#marina"
+        },
         "provider": {
           "@id": "https://fishingtripsmalaga.com/#business"
+        }
+      },
+      {
+        "@type": "TouristTrip",
+        "@id": "https://fishingtripsmalaga.com/es/#salida-privada",
+        "name": "Excursión de pesca privada en Málaga",
+        "description": "Barco en exclusiva para tu grupo, hasta 6 personas. Adaptamos zona, técnica y ritmo a lo que buscáis: perfecta para familias, amigos o celebraciones.",
+        "touristType": [
+          "Familias",
+          "Grupos de amigos",
+          "Niños",
+          "Principiantes",
+          "Pescadores con experiencia"
+        ],
+        "itinerary": {
+          "@id": "https://fishingtripsmalaga.com/#marina"
         },
-        "areaServed": {
-          "@type": "City",
-          "name": "Málaga"
-        },
-        "audience": {
-          "@type": "Audience",
-          "audienceType": "Familias y niños"
-        },
-        "image": "https://fishingtripsmalaga.com/images/pesca-calamar-malaga.webp"
+        "provider": {
+          "@id": "https://fishingtripsmalaga.com/#business"
+        }
       },
       {
         "@type": "WebPage",
-        "@id": "https://fishingtripsmalaga.com/pesca-del-calamar-malaga/#webpage",
-        "url": "https://fishingtripsmalaga.com/pesca-del-calamar-malaga/",
-        "name": "Pesca del Calamar en Málaga | Fishing Trips Málaga",
+        "@id": "https://fishingtripsmalaga.com/es/#webpage",
+        "url": "https://fishingtripsmalaga.com/es/",
+        "name": "Excursión Pesca Málaga - Alquiler Barco de pesca",
         "inLanguage": "es",
         "isPartOf": {
           "@id": "https://fishingtripsmalaga.com/#website"
         },
         "about": {
-          "@id": "https://fishingtripsmalaga.com/pesca-del-calamar-malaga/#service"
+          "@id": "https://fishingtripsmalaga.com/#business"
         },
-        "breadcrumb": {
-          "@id": "https://fishingtripsmalaga.com/pesca-del-calamar-malaga/#breadcrumb"
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://fishingtripsmalaga.com/images/hero-video-poster.webp"
         },
         "mainEntity": {
-          "@id": "https://fishingtripsmalaga.com/pesca-del-calamar-malaga/#faq"
+          "@id": "https://fishingtripsmalaga.com/es/#faq"
         }
       },
       {
-        "@type": "BreadcrumbList",
-        "@id": "https://fishingtripsmalaga.com/pesca-del-calamar-malaga/#breadcrumb",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Inicio",
-            "item": "https://fishingtripsmalaga.com/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Pesca del calamar en Málaga",
-            "item": "https://fishingtripsmalaga.com/pesca-del-calamar-malaga/"
-          }
-        ]
-      },
-      {
         "@type": "FAQPage",
-        "@id": "https://fishingtripsmalaga.com/pesca-del-calamar-malaga/#faq",
+        "@id": "https://fishingtripsmalaga.com/es/#faq",
         "inLanguage": "es",
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "¿En qué consiste la pesca del calamar?",
+            "name": "¿Qué incluye la excursión de pesca en Málaga?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Se pesca con poteras y señuelos específicos llamados \"egis\", diseñados para imitar el movimiento de una gamba o un pez pequeño. Se lanza o se deja caer el señuelo, y se le dan pequeños tirones para que se mueva de forma llamativa — ese movimiento es lo que despierta el instinto de caza del calamar, la jibia o el pulpo. Es una pesca de mucha atención al detalle: la picada se nota como un tirón suave, muy distinto al de un pez, y hay que mantener la tensión de la línea sin dar tirones bruscos para no perder la pieza. Cuando el calamar sale del agua, es habitual que suelte su característica tinta — un momento que sorprende (y divierte) especialmente a los más pequeños del grupo."
+              "text": "Cañas, carretes, cebos y todo el equipo de pesca profesional, además de patrón experto y guía local durante toda la salida."
             }
           },
           {
             "@type": "Question",
-            "name": "¿Tenéis licencia para hacer pesca del calamar?",
+            "name": "¿Necesito experiencia previa para pescar?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "No necesitas tener licencia de pesca propia. La excursión se organiza bajo la licencia profesional de la embarcación y el patrón, así que puedes venir sin ningún papeleo previo — solo te tienes que presentar en el puerto. Además, en cada salida irás con nuestro patrón, tu guía de pesca local en Málaga: Más de 20 años de experiencia en el Mediterráneo; Patrón de Yate; Pro Staff de JLC Fishing; Conoce los mejores caladeros de la Costa del Sol; Adapta cada salida a la temporada y las especies; Embajador oficial de Yamaha Marine España."
+              "text": "No, nuestras excursiones están pensadas tanto para principiantes como para pescadores con experiencia. El patrón te explica todo lo necesario a bordo."
             }
           },
           {
             "@type": "Question",
-            "name": "¿Qué equipo necesito llevar?",
+            "name": "¿Desde dónde sale el barco?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Nada de equipo de pesca — cañas, poteras, señuelos y todos los aparejos están incluidos. Solo te recomendamos traer ropa cómoda que no te importe manchar (los calamares sueltan tinta al sacarlos del agua), calzado antideslizante, gafas de sol y protector solar."
+              "text": "Todas nuestras salidas de pesca zarpan desde el Puerto Deportivo El Candado, 29018 Málaga, con salidas diarias y fácil acceso en coche, taxi o a pie."
             }
           },
           {
             "@type": "Question",
-            "name": "¿Es la pesca del calamar para mí?",
+            "name": "¿Necesito licencia de pesca para pescar en Málaga?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Sí, es una de las modalidades más accesibles y agradables que ofrecemos, ideal si vas con niños o buscas un plan tranquilo pero entretenido. No necesitas fuerza ni experiencia previa — solo un poco de atención al pequeño tirón de la picada. El patrón te enseña la técnica desde el primer minuto."
+              "text": "No. No necesitas tramitar ninguna licencia: la salida se realiza con la autorización de pesca de nuestra embarcación. Además, en cada salida irás con nuestro patrón, tu guía de pesca local en Málaga: más de 20 años de experiencia en el Mediterráneo, Patrón de Yate, Pro Staff de JLC Fishing, conoce los mejores caladeros de la Costa del Sol, adapta cada salida a la temporada y las especies, y es embajador oficial de Yamaha Marine España."
             }
           },
           {
             "@type": "Question",
-            "name": "¿Dónde se puede hacer pesca del calamar en Málaga?",
+            "name": "¿Tenemos que llevarnos comida y bebida durante la pesca en Málaga?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Salimos desde el Puerto Deportivo El Candado y nos movemos por zonas rocosas y fondos cercanos a la costa de Málaga, que es donde suelen concentrarse calamares, jibias y pulpos. El patrón conoce los puntos que mejor funcionan según la época del año y las condiciones del día. El Puerto Deportivo El Candado, en la zona este de Málaga (El Palo), es un puerto tranquilo y de fácil acceso, a pocos minutos del centro de la ciudad. Nos encontrarás en Puerto Deportivo El Candado, 29018 Málaga, con fácil acceso en coche, taxi o a pie. Más allá de tu excursión, el puerto es un destino en sí mismo, con restaurantes frente al mar, eventos náuticos y clubes de playa. Descubre más en la web oficial del puerto deportivo de Málaga."
+              "text": "No, no necesitas preocuparte por eso. Todas nuestras excursiones incluyen agua, refrescos fríos y snacks para que estés hidratado y con energía durante toda la jornada."
             }
           },
           {
             "@type": "Question",
-            "name": "¿Es de noche cuando se pesca calamar, o también se puede de día?",
+            "name": "¿Es aconsejable llevar algún tipo de ropa especial para pescar en Málaga?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Es cierto que el calamar es más activo de noche, pero el amanecer y el atardecer son también momentos de mucha actividad — de hecho, muchos pescadores consideran esas franjas de luz baja tan productivas como la noche cerrada. Por eso nuestras salidas de las 7:30h aprovechan justo las primeras horas de luz, que son de las mejores del día para esta técnica. No hace falta salir de noche para tener una buena jornada de pesca de calamar."
+              "text": "Dependiendo de la época del año, te recomendamos traer lo justo para estar cómodo. En verano: bañador, gorra, gafas de sol, protector solar. En invierno/primavera: sudadera o chaqueta ligera. Calzado cómodo y antideslizante."
             }
           },
           {
             "@type": "Question",
-            "name": "¿Puedo pescar calamar en barco privado o es compartido?",
+            "name": "¿Cuánto tiempo dura la excursión de pesca?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "La salida es privada: el barco es solo para tu grupo, no se comparte con otros clientes que no conozcas. Vais vosotros, con un máximo de 5 personas, así que la experiencia y la atención del patrón son solo para vuestro grupo de principio a fin."
+              "text": "La duración total de la salida de pesca está entre las 4 y 5 horas. Este tiempo está pensado para que puedas disfrutar al máximo sin que la experiencia se haga larga o cansada."
             }
           },
           {
             "@type": "Question",
-            "name": "¿Qué hacemos con las capturas de calamar, jibia o pulpo?",
+            "name": "¿Salimos de pesca aunque las condiciones climáticas sean adversas?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Te puedes llevar tu captura a casa si quieres, respetando siempre las tallas mínimas legales de cada especie. Si lo prefieres, también podemos devolver la pieza al mar en buenas condiciones — tú decides el día de la salida, y el patrón te asesora según lo que hayáis pescado."
+              "text": "No. La seguridad y la comodidad de nuestros pasajeros son lo más importante. Si detectamos viento fuerte, oleaje elevado o previsión de tormentas, nos pondremos en contacto contigo para reprogramar la excursión de pesca sin coste alguno."
             }
           },
           {
             "@type": "Question",
-            "name": "¿Qué especies se capturan en la pesca del calamar?",
+            "name": "En caso de mareo o malestar general, ¿qué se hace?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Las capturas habituales son calamar, jibia y pulpo — los tres cefalópodos más apreciados de la Costa del Sol, tanto por la diversión de pescarlos como por su calidad en la cocina."
+              "text": "Recomendamos traer pastillas antimareo como Biodramina. Si alguien no se encuentra bien, adaptamos el ritmo o volvemos al puerto si es necesario."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Hace falta llevarnos algún tipo de material de pesca?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No es necesario traer nada. Ponemos a tu disposición todo el material de pesca profesional que necesitas: cañas, carretes, cebos, señuelos, anzuelos, etc."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cómo reservo mi salida de pesca en Málaga?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Contacta directamente por WhatsApp: selecciona tus fechas disponibles, la hora y el número de personas, y te confirmamos la disponibilidad. Se hará un pago del 20% sobre la reserva y el resto el mismo día antes de la salida de pesca."
             }
           },
           {
@@ -180,15 +430,7 @@
             "name": "¿Cuántas personas pueden ir en cada salida?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Un máximo de 5 personas por salida, para que el patrón pueda atender bien a todo el grupo y cada uno tenga su turno con la caña en el momento de la picada."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "¿A qué hora salen las excursiones?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Ofrecemos dos franjas horarias: a las 7:30h o a las 12:00h. Para el calamar, la de las 7:30h es la más productiva, porque aprovecha las primeras horas de luz. Puedes elegir la que mejor se adapte a tu día al hacer la reserva por WhatsApp."
+              "text": "El barco admite un máximo de 6 personas por salida."
             }
           }
         ]
@@ -200,9 +442,9 @@
 <body>
 
   <!-- Header -->
-  <header class="header header-solid" id="siteHeader">
+  <header class="header" id="siteHeader">
     <div class="logo-container">
-      <a href="/"><img src="/images/logo-fishing-trips-malaga.webp" alt="Fishing Trips Málaga" width="84" height="84"></a>
+      <a href="/es/"><img src="/images/logo-fishing-trips-malaga.webp" alt="Fishing Trips Málaga" width="84" height="84"></a>
     </div>
 
     <button type="button" class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="primaryNav">
@@ -213,26 +455,26 @@
       <button type="button" class="nav-close" id="navClose" aria-label="Cerrar menú">
         <i class="fa-solid fa-xmark"></i>
       </button>
-      <a href="/">Inicio</a>
+      <a href="/es/">Inicio</a>
       <div class="nav-dropdown" id="navDropdownTipos">
         <button type="button" class="nav-dropdown-toggle" aria-expanded="false" aria-controls="navDropdownMenuTipos">
           Tipos de Pesca
           <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
         </button>
         <div class="nav-dropdown-menu" id="navDropdownMenuTipos">
-          <a href="/pesca-de-fondo-malaga/">Pesca de fondo</a>
-          <a href="/pesca-al-vivo-malaga/">Pesca al vivo</a>
-          <a href="/pesca-al-jigging-malaga/">Pesca al jigging</a>
-          <a href="/pesca-del-calamar-malaga/" style="color: var(--accent) !important;">Pesca del calamar</a>
-          <a href="/pesca-al-currican-malaga/">Pesca al curricán</a>
-          <a href="/pesca-del-atun-malaga/">Pesca del atún</a>
+          <a href="/es/pesca-de-fondo-malaga/">Pesca de fondo</a>
+          <a href="/es/pesca-al-vivo-malaga/">Pesca al vivo</a>
+          <a href="/es/pesca-al-jigging-malaga/">Pesca al jigging</a>
+          <a href="/es/pesca-del-calamar-malaga/">Pesca del calamar</a>
+          <a href="/es/pesca-al-currican-malaga/">Pesca al curricán</a>
+          <a href="/es/pesca-del-atun-malaga/">Pesca del atún</a>
         </div>
       </div>
-      <a href="/contactar/">Contactar</a>
+      <a href="/es/contactar/">Contactar</a>
       <div class="lang-switch">
-        <a href="/pesca-del-calamar-malaga/" class="lang-active">ES</a>
+        <a href="/es/" class="lang-active">ES</a>
         <span style="opacity:0.4;">/</span>
-        <a href="/en/squid-fishing-malaga/" style="opacity:0.55;">EN</a>
+        <a href="/" style="opacity:0.55;">EN</a>
       </div>
       <a href="#" class="btn-outline sf-wa-trigger">
         <i class="fa-brands fa-whatsapp"></i>
@@ -242,25 +484,70 @@
     <div class="nav-backdrop" id="navBackdrop"></div>
   </header>
 
-  <!-- Charter de pesca del calamar (misma estructura que la Intro Charter Section de la home) -->
+  <!-- Hero Section -->
+  <section class="hero">
+    <video class="hero-bg" id="heroVideo" autoplay muted loop playsinline preload="auto" poster="/images/hero-video-poster.webp" width="480" height="848" aria-hidden="true">
+      <source src="/images/hero-video.webm" type="video/webm">
+      <source src="/images/hero-video.mp4" type="video/mp4">
+      <img src="/images/hero-video-poster.webp" alt="Cliente de Fishing Trips Málaga mostrando su captura durante una excursión de pesca en Málaga" class="hero-bg" width="480" height="848">
+    </video>
+    <div class="hero-overlay"></div>
+    
+    <div class="hero-content">
+      <h1 class="eyebrow">Excursiones de pesca en Málaga</h1>
+      <div class="h1">La mejor experiencia de pesca en Málaga</div>
+      
+      <p>Sumérgete en una aventura de pesca en Málaga. Vive la emoción de capturar especies en la Costa del Sol con tus familiares o amigos. Sin saber pescar, sin preocupaciones y con todo incluido.</p>
+      
+      <div style="margin-top: 10px;">
+        <button class="btn-primary sf-wa-trigger">
+          <span class="btn-icon">
+            <i class="fa-brands fa-whatsapp"></i>
+          </span>
+          Reservar Pesca
+        </button>
+      </div>
+
+      <div class="trust-row">
+        <span class="trust-caption">Aparecemos en los principales portales</span>
+        <div class="trust-badges">
+          <a href="https://www.getyourguide.com/-s683072" target="_blank" rel="noopener"><img src="/images/badge-getyourguide.webp" alt="Listados en GetYourGuide" class="badge-gyg" width="36" height="27" loading="lazy"></a>
+          <img src="/images/badge-google.webp" alt="Reseñas de Google" style="background:#fff;" width="36" height="36" loading="lazy">
+          <a href="https://www.tripadvisor.es/AttractionProductReview-g187438-d34329318-Malaga_Fishing_Experience_with_Equipment_Food_and_Drinks_Included-Malaga_Costa_del.html" target="_blank" rel="noopener"><img src="/images/badge-tripadvisor.webp" alt="Reseñas de TripAdvisor" width="36" height="36" loading="lazy"></a>
+          <a href="https://fishingbooker.com/charters/view/48559?utm_source=share_charter&amp;utm_medium=copy_link" target="_blank" rel="noopener"><img src="/images/badge-fishingbooker.webp" alt="Listados en FishingBooker" width="36" height="36" loading="lazy"></a>
+          <a href="https://www.viator.com/tours/Malaga/Fishing-Trips-Malaga-with-equipment-food-and-drinks-included/d956-5649015P3" target="_blank" rel="noopener"><img src="/images/badge-viator.webp" alt="Listados en Viator" width="36" height="36" loading="lazy"></a>
+        </div>
+        <div class="trust-rating">
+          <div class="why-proof">
+            <img src="/images/nino-pescando-malaga.webp" alt="Niño sacando sus primeras capturas junto a su padre en una excursión de pesca en Málaga" width="44" height="44" loading="lazy">
+            <img src="/images/pescador-pargo-fishing-trips-malaga.webp" alt="Pescador sentado a bordo mostrando un pargo capturado con Fishing Trips Málaga" width="44" height="44" loading="lazy">
+            <img src="/images/padre-hijos-pargo-pesca-malaga.webp" alt="Padre e hijos posando con un pargo capturado en una excursión de pesca en familia en Málaga" width="44" height="44" loading="lazy">
+          </div>
+          <span class="trust-text">Más de 200 pescadores satisfechos</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Intro Charter Section -->
   <section class="section section-light intro-charter">
     <div class="intro-image-wrapper">
-      <div class="intro-carousel" id="calamarCarousel">
-        <img src="/images/pesca-calamar-malaga.webp" alt="Joven sonriente mostrando un calamar recién pescado a bordo durante una excursión de pesca del calamar en Málaga" width="700" height="933" loading="lazy" class="intro-slide active">
-        <img src="/images/pescador-pargo-costa-malaga.webp" alt="Pescador mostrando un pargo recién capturado frente a la costa de Málaga" width="700" height="933" loading="lazy" class="intro-slide">
-        <img src="/images/catch7.webp" alt="Atardecer sobre el mar con una caña de pescar preparada a bordo durante una salida de pesca en Málaga" width="500" height="667" loading="lazy" class="intro-slide">
-        <img src="/images/catch2.webp" alt="Niña sonriente mostrando dos peces capturados en una excursión de pesca en Málaga" width="500" height="667" loading="lazy" class="intro-slide">
+      <div class="intro-carousel" id="introCarousel">
+        <img src="/images/family.webp" alt="Padre e hijo mostrando su captura en una excursión de pesca en Málaga" width="800" height="1067" loading="lazy" class="intro-slide active">
+        <img src="/images/familia-atardecer-barco-pesca-malaga.webp" alt="Familia disfrutando del atardecer a bordo del barco de pesca en Málaga" width="700" height="933" loading="lazy" class="intro-slide">
+        <img src="/images/padre-hijos-pargo-pesca-malaga.webp" alt="Padre e hijos posando con un pargo capturado en una excursión de pesca en familia en Málaga" width="700" height="933" loading="lazy" class="intro-slide">
+        <img src="/images/nino-pescando-malaga.webp" alt="Niño sacando sus primeras capturas junto a su padre en una excursión de pesca en Málaga" width="700" height="933" loading="lazy" class="intro-slide">
       </div>
       <div class="badge-years">
         <strong>+2</strong>
         <span>años ofreciendo<br>salidas de pesca</span>
       </div>
     </div>
-
+    
     <div class="intro-content">
-      <p class="eyebrow">Charter de pesca del calamar</p>
-      <h1 class="h2">Pesca del Calamar en Málaga</h1>
-      <p>La pesca del calamar es una de las modalidades más entretenidas y accesibles que existen — perfecta para ir con niños o para quien busca algo distinto a la pesca de peces. Usamos poteras y señuelos específicos (egis) que imitan el movimiento de una gamba o un pequeño pez, y vamos a las zonas donde se concentran calamares, jibias y pulpos. El amanecer y el atardecer son los momentos de mayor actividad, así que nuestra salida de las 7:30h está pensada para aprovechar las primeras horas de luz.</p>
+      <p class="eyebrow">Charter de pesca en Málaga</p>
+      <h2 class="h2">Disfruta de nuestro barco de pesca en Málaga</h2>
+      <p>En Fishing Trips Málaga llevamos dos años ofreciendo excursiones de pesca en barco en uno de los mejores enclaves de la Costa del Sol. La excursión de pesca es ideal tanto si es tu primera vez que vas a pescar como si tienes experiencia.</p>
 
       <div class="benefits-list">
         <div class="benefit-item">
@@ -307,31 +594,31 @@
     </div>
   </section>
 
-  <!-- ¿Qué vais a pescar? (misma estructura que la Stats Section de la home: header + stats-grid con dots + FAQ en acordeón) -->
+  <!-- Stats Section -->
   <section class="section section-dark stats-section">
     <img src="/images/stats-bg.webp" alt="" class="stats-bg" width="1200" height="1600" loading="lazy" aria-hidden="true">
     <div class="stats-overlay" aria-hidden="true"></div>
     <div class="stats-header">
-      <p class="eyebrow" style="color: #ffffff;">¿Qué vais a pescar?</p>
-      <p style="color: #ffffff;">Con esta técnica vamos a por cefalópodos: calamar, jibia y pulpo, tres de las capturas más valoradas en la cocina mediterránea. Es una pesca muy visual y entretenida — cuando pica, notarás un tirón particular y verás cómo el calamar suelta su característica tinta al sacarlo del agua, uno de los momentos que más gustan a los más pequeños del grupo.</p>
+      <h2 class="eyebrow" style="color: #ffffff;">Todo sobre las salidas de pesca en Málaga</h2>
+      <p style="color: #ffffff;">Salimos varias millas mar adentro desde el puerto deportivo de Málaga, en busca de las mejores capturas del Mediterráneo.</p>
     </div>
-
+    
     <div class="stats-grid" id="statsGrid">
       <div class="stat-card">
-        <span class="stat-icon stat-icon--orange"><svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v14M12 3l7 10H5l7-10z"/><path d="M4 19h16"/></svg></span>
-        <strong>Equipo de pesca incluido</strong>
-      </div>
-      <div class="stat-card">
-        <span class="stat-icon stat-icon--orange"><svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12c4-5 10-7 16-4-2 2-2 6 0 8-6 3-12 1-16-4z"/><circle cx="16.2" cy="10.2" r="0.6" fill="#ffffff"/></svg></span>
-        <strong>Calamar, jibia y pulpo</strong>
-      </div>
-      <div class="stat-card">
-        <span class="stat-icon stat-icon--orange"><svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M2 21v-1a6 6 0 016-6h2a6 6 0 016 6v1"/><circle cx="18" cy="9" r="2.5"/><path d="M16 21v-1a4.5 4.5 0 015-4.5"/></svg></span>
-        <strong>Grupos de hasta 5 personas</strong>
-      </div>
-      <div class="stat-card">
-        <span class="stat-icon stat-icon--orange"><svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></span>
+        <span class="stat-icon stat-icon--orange"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
         <strong>Salidas a las 7:30h y 12:00h</strong>
+      </div>
+      <div class="stat-card">
+        <span class="stat-icon stat-icon--orange"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3v18"/><path d="M5 3c5 2 8 6 8 11"/><path d="M13 14v3"/><path d="M17 3v6a2 2 0 002 2v10"/><path d="M21 3v6a2 2 0 01-2 2"/></svg></span>
+        <strong>Equipo de pesca, comida y bebida incluidos</strong>
+      </div>
+      <div class="stat-card">
+        <span class="stat-icon stat-icon--amber"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h12M6 22h12"/><path d="M7 2c0 5 10 5 10 10S7 17 7 22"/><path d="M17 2c0 5-10 5-10 10s10 5 10 10"/></svg></span>
+        <strong>Excursión de pesca de 4 horas</strong>
+      </div>
+      <div class="stat-card">
+        <span class="stat-icon stat-icon--orange"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M2 21v-1a6 6 0 016-6h2a6 6 0 016 6v1"/><circle cx="18" cy="9" r="2.5"/><path d="M16 21v-1a4.5 4.5 0 015-4.5"/></svg></span>
+        <strong>Hasta 6 personas</strong>
       </div>
     </div>
     <div class="stats-dots" id="statsDots" role="tablist" aria-label="Selector de tarjetas">
@@ -342,320 +629,109 @@
     </div>
 
     <div class="stats-faq">
-      <h2 class="stats-faq-title">Todo sobre la pesca del calamar</h2>
       <div class="faq-list">
         <div class="faq-item">
-          <h3 class="faq-question-heading"><button class="faq-question" id="sfaq-q-1" aria-expanded="false" aria-controls="sfaq-a-1">
-            <span>¿En qué consiste la pesca del calamar?</span>
+          <h3 class="faq-question-heading"><button class="faq-question" id="xfaq-q-1" aria-expanded="false" aria-controls="xfaq-a-1">
+            <span>¿Qué incluye la excursión de pesca en Málaga?</span>
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
           </button></h3>
-          <div class="faq-answer" id="sfaq-a-1" role="region" aria-labelledby="sfaq-q-1">
-            <p>Se pesca con poteras y señuelos específicos llamados "egis", diseñados para imitar el movimiento de una gamba o un pez pequeño. Se lanza o se deja caer el señuelo, y se le dan pequeños tirones para que se mueva de forma llamativa — ese movimiento es lo que despierta el instinto de caza del calamar, la jibia o el pulpo.</p>
-            <p>Es una pesca de mucha atención al detalle: la picada se nota como un tirón suave, muy distinto al de un pez, y hay que mantener la tensión de la línea sin dar tirones bruscos para no perder la pieza. Cuando el calamar sale del agua, es habitual que suelte su característica tinta — un momento que sorprende (y divierte) especialmente a los más pequeños del grupo.</p>
+          <div class="faq-answer" id="xfaq-a-1" role="region" aria-labelledby="xfaq-q-1">
+            Cañas, carretes, cebos y todo el equipo de pesca profesional, además de patrón experto y guía local durante toda la salida.
           </div>
         </div>
         <div class="faq-item">
-          <h3 class="faq-question-heading"><button class="faq-question" id="sfaq-q-2" aria-expanded="false" aria-controls="sfaq-a-2">
-            <span>¿Tenéis licencia para hacer pesca del calamar?</span>
+          <h3 class="faq-question-heading"><button class="faq-question" id="xfaq-q-2" aria-expanded="false" aria-controls="xfaq-a-2">
+            <span>¿Necesito experiencia previa para pescar?</span>
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
           </button></h3>
-          <div class="faq-answer" id="sfaq-a-2" role="region" aria-labelledby="sfaq-q-2">
+          <div class="faq-answer" id="xfaq-a-2" role="region" aria-labelledby="xfaq-q-2">
+            No, nuestras excursiones están pensadas tanto para principiantes como para pescadores con experiencia. El patrón te explica todo lo necesario a bordo.
+          </div>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question-heading"><button class="faq-question" id="xfaq-q-3" aria-expanded="false" aria-controls="xfaq-a-3">
+            <span>¿Desde dónde sale el barco?</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </button></h3>
+          <div class="faq-answer" id="xfaq-a-3" role="region" aria-labelledby="xfaq-q-3">
+            <p>Todas nuestras salidas de pesca zarpan desde el <a href="https://share.google/WLvcuenLzACgzVrgT" target="_blank" rel="noopener">Puerto Deportivo El Candado, 29018 Málaga</a>, con salidas diarias y fácil acceso en coche, taxi o a pie.</p>
+            <p>El Puerto Deportivo El Candado, en la zona este de Málaga (El Palo), es un puerto tranquilo y de fácil acceso, a pocos minutos del centro de la ciudad. Es desde aquí desde donde zarpan cada día nuestras excursiones de pesca en Málaga, llevándote a las cristalinas aguas del Mediterráneo.</p>
+            <p>Más allá de tu excursión, la zona de El Palo y Pedregalejo es conocida por sus chiringuitos y restaurantes frente al mar, perfectos para rematar el día.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question-heading"><button class="faq-question" id="xfaq-q-4" aria-expanded="false" aria-controls="xfaq-a-4">
+            <span>¿Necesito licencia de pesca para pescar en Málaga?</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </button></h3>
+          <div class="faq-answer" id="xfaq-a-4" role="region" aria-labelledby="xfaq-q-4">
             <div class="faq-answer-media">
               <img src="/images/guide.webp" alt="Patrón y guía de pesca local de Fishing Trips Málaga" width="800" height="866" loading="lazy">
               <div class="faq-answer-text">
-                <p>No necesitas tener licencia de pesca propia. La excursión se organiza bajo la licencia profesional de la embarcación y el patrón, así que puedes venir sin ningún papeleo previo — solo te tienes que presentar en el puerto.</p><p>Además, en cada salida irás con nuestro patrón, tu guía de pesca local en Málaga:</p><ul class="faq-answer-list"><li>Más de 20 años de experiencia en el Mediterráneo</li><li>Patrón de Yate</li><li>Pro Staff de JLC Fishing</li><li>Conoce los mejores caladeros de la Costa del Sol</li><li>Adapta cada salida a la temporada y las especies</li><li>Embajador oficial de Yamaha Marine España</li></ul>
+                <p>No. No necesitas tramitar ninguna licencia: la salida se realiza con la autorización de pesca de nuestra embarcación. Además, en cada salida irás con nuestro patrón, tu guía de pesca local en Málaga:</p>
+                <ul class="faq-answer-list">
+                    <li>Más de 20 años de experiencia en el Mediterráneo</li>
+                    <li>Patrón de Yate</li>
+                    <li>Pro Staff de JLC Fishing</li>
+                    <li>Conoce los mejores caladeros de la Costa del Sol</li>
+                    <li>Adapta cada salida a la temporada y las especies</li>
+                    <li>Embajador oficial de Yamaha Marine España</li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
         <div class="faq-item">
-          <h3 class="faq-question-heading"><button class="faq-question" id="sfaq-q-3" aria-expanded="false" aria-controls="sfaq-a-3">
-            <span>¿Qué equipo necesito llevar?</span>
+          <h3 class="faq-question-heading"><button class="faq-question" id="xfaq-q-5" aria-expanded="false" aria-controls="xfaq-a-5">
+            <span>¿Cómo reservo mi salida de pesca en Málaga?</span>
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
           </button></h3>
-          <div class="faq-answer" id="sfaq-a-3" role="region" aria-labelledby="sfaq-q-3">
-            <p>Nada de equipo de pesca — cañas, poteras, señuelos y todos los aparejos están incluidos. Solo te recomendamos traer ropa cómoda que no te importe manchar (los calamares sueltan tinta al sacarlos del agua), calzado antideslizante, gafas de sol y protector solar.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <h3 class="faq-question-heading"><button class="faq-question" id="sfaq-q-4" aria-expanded="false" aria-controls="sfaq-a-4">
-            <span>¿Es la pesca del calamar para mí?</span>
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
-          </button></h3>
-          <div class="faq-answer" id="sfaq-a-4" role="region" aria-labelledby="sfaq-q-4">
-            <p>Sí, es una de las modalidades más accesibles y agradables que ofrecemos, ideal si vas con niños o buscas un plan tranquilo pero entretenido. No necesitas fuerza ni experiencia previa — solo un poco de atención al pequeño tirón de la picada. El patrón te enseña la técnica desde el primer minuto.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <h3 class="faq-question-heading"><button class="faq-question" id="sfaq-q-5" aria-expanded="false" aria-controls="sfaq-a-5">
-            <span>¿Dónde se puede hacer pesca del calamar en Málaga?</span>
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
-          </button></h3>
-          <div class="faq-answer" id="sfaq-a-5" role="region" aria-labelledby="sfaq-q-5">
-            <div class="faq-answer-media">
-              <img src="/images/marina.webp" alt="Puerto Deportivo El Candado, en Málaga" width="380" height="460" loading="lazy">
-              <div class="faq-answer-text">
-                <p>Salimos desde el Puerto Deportivo El Candado y nos movemos por zonas rocosas y fondos cercanos a la costa de Málaga, que es donde suelen concentrarse calamares, jibias y pulpos. El patrón conoce los puntos que mejor funcionan según la época del año y las condiciones del día.</p><p>El Puerto Deportivo El Candado, en la zona este de Málaga (El Palo), es un puerto tranquilo y de fácil acceso, a pocos minutos del centro de la ciudad. Nos encontrarás en <a href="https://share.google/WLvcuenLzACgzVrgT" target="_blank" rel="noopener">Puerto Deportivo El Candado, 29018 Málaga</a>, con fácil acceso en coche, taxi o a pie.</p><p>Más allá de tu excursión, el puerto es un destino en sí mismo, con restaurantes frente al mar, eventos náuticos y clubes de playa. Descubre más en la <a href="https://puertodeportivo.malaga.es/" target="_blank" rel="noopener">web oficial del puerto deportivo de Málaga</a>.</p>
-              </div>
-            </div>
+          <div class="faq-answer" id="xfaq-a-5" role="region" aria-labelledby="xfaq-q-5">
+            <p>Contacta directamente por <a href="#" class="sf-wa-trigger">WhatsApp</a>: selecciona tus fechas disponibles, la hora y el número de personas, y te confirmamos la disponibilidad.</p>
+            <p>Se hará un pago del 20% sobre la reserva y el resto el mismo día antes de la salida de pesca.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Booking Steps -->
-  <section class="section section-light booking-steps">
-    <div class="booking-header">
-      <h2 class="h2">¿Cómo reservar tu excursión de pesca en Málaga?</h2>
-      <p>Reservar una salida de pesca en barco en Málaga es muy sencillo. Alquila tu barco de pesca con patrón en cuestión de minutos.</p>
+  <!-- Fishing Types (shared / private) -->
+  <section class="fishing-types fishing-modes">
+    <div class="fishing-types-header">
+      <h2 class="eyebrow">Tipos de pesca en Málaga</h2>
+      <div class="h2">¿Prefieres pesca compartida o privada?</div>
+      <p class="fishing-types-intro">Dos formas de salir a pescar en Málaga: elige la que mejor encaja con tu plan.</p>
     </div>
-
-    <div class="booking-grid" id="bookingGrid">
-      <div class="step-card">
-        <div class="step-header">
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 01-4.5 7.5 8.5 8.5 0 01-8 0L4 21l1.5-4.5a8.38 8.38 0 01-1-4A8.5 8.5 0 0113 4h.5a8.48 8.48 0 018 8v-.5z"/></svg>
-          <span class="step-num">01</span>
-        </div>
-        <h3 class="step-title">Contacta con el Equipo</h3>
-        <p class="step-text">Cuéntanos qué tipo de pesca te interesa y nos adaptamos a ti.</p>
-      </div>
-      <div class="step-card">
-        <div class="step-header">
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 015 0c0 1.7-2.5 2.2-2.5 4"/><line x1="12" y1="16.8" x2="12" y2="17"/></svg>
-          <span class="step-num">02</span>
-        </div>
-        <h3 class="step-title">Resolvemos tus dudas</h3>
-        <p class="step-text">Técnicas, qué traer y qué esperar de tu día de pesca.</p>
-      </div>
-      <div class="step-card">
-        <div class="step-header">
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><line x1="16" y1="3" x2="16" y2="7"/><line x1="8" y1="3" x2="8" y2="7"/><line x1="3" y1="11" x2="21" y2="11"/><path d="M9 16l2 2 4-4"/></svg>
-          <span class="step-num">03</span>
-        </div>
-        <h3 class="step-title">Reserva tu salida</h3>
-        <p class="step-text">Fecha ideal confirmada. Sin pagos ocultos.</p>
-      </div>
-      <div class="step-card">
-        <div class="step-header">
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          <span class="step-num">04</span>
-        </div>
-        <h3 class="step-title">Disfruta la experiencia</h3>
-        <p class="step-text">Subes al barco y vives una aventura que no olvidarás.</p>
-      </div>
-    </div>
-    <div class="gallery-dots steps-dots" id="bookingDots" aria-label="Selector de pasos de reserva"></div>
-  </section>
-
-  <!-- Why Choose Us -->
-  <section class="why-choose">
-    <img src="/images/pescador-cabracho-malaga.webp" alt="Pescador sosteniendo un cabracho recién capturado en una salida de pesca en Málaga" class="why-bg" width="700" height="933" loading="lazy">
-    <div class="why-overlay"></div>
-    <div class="why-text">
-      <p class="eyebrow">Salidas de pesca del calamar Málaga</p>
-      <h2 class="h2 h2-light">¿Por qué elegir nuestro charter de pesca del calamar?</h2>
-      <p>El alquiler de un barco de pesca en Málaga con patrón es la mejor opción para vivir una experiencia de pesca deportiva real, ya sea de fondo, curricán o altura.</p>
-      <div class="why-proof">
-        <img src="/images/nino-pescando-malaga.webp" alt="Niño sacando sus primeras capturas junto a su padre en una excursión de pesca en Málaga" width="56" height="56" loading="lazy">
-        <img src="/images/pescador-pargo-fishing-trips-malaga.webp" alt="Pescador sentado a bordo mostrando un pargo capturado con Fishing Trips Málaga" width="56" height="56" loading="lazy">
-        <img src="/images/padre-hijos-pargo-pesca-malaga.webp" alt="Padre e hijos posando con un pargo capturado en una excursión de pesca en familia en Málaga" width="56" height="56" loading="lazy">
-        <span class="why-proof-text">Clientes reales, capturas reales</span>
-      </div>
-    </div>
-    <div class="why-bar">
-      <div class="why-bar-stripe"></div>
-      <div class="why-bar-grid" id="whyGrid">
-        <div class="why-grid-item">
-          <div class="why-icon">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3v18M6 3l12 6-12 6"/></svg>
+    <div class="fishing-types-grid fishing-modes-grid" id="modesGrid">
+      <article class="fishing-type-card">
+        <img src="/images/pescador-pargo-costa-malaga.webp" alt="Pescador mostrando un pargo recién capturado frente a la costa de Málaga" width="700" height="933" loading="lazy" style="object-position: 50% 0%;">
+        <div class="fishing-type-body">
+          <h3 class="fishing-type-title">Pesca compartida</h3>
+          <p class="fishing-type-text">Reserva solo tu plaza y sal a pescar con otros aficionados. Pensada para quien viene solo o en pareja y quiere una jornada en el mar con buen ambiente y a mejor precio.</p>
+          <div class="fishing-type-actions">
+            <button type="button" class="fishing-type-book sf-wa-trigger" aria-label="Reservar pesca – Pesca compartida">
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+              Reservar pesca
+            </button>
           </div>
-          <h3 class="why-item-title">Equipo Incluido</h3>
-          <p class="why-item-text">Cañas, cebos y chalecos listos para usar.</p>
         </div>
-        <div class="why-grid-item">
-          <div class="why-icon">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l3-9h12l3 9"/><path d="M5 17h14v3H5z"/><circle cx="8" cy="20" r="1"/><circle cx="16" cy="20" r="1"/></svg>
+      </article>
+      <article class="fishing-type-card">
+        <img src="/images/familia-atardecer-barco-pesca-malaga.webp" alt="Familia disfrutando del atardecer a bordo del barco de pesca en Málaga" width="700" height="933" loading="lazy">
+        <div class="fishing-type-body">
+          <h3 class="fishing-type-title">Pesca privada</h3>
+          <p class="fishing-type-text">Barco en exclusiva para tu grupo, hasta 6 personas. Adaptamos zona, técnica y ritmo a lo que buscáis: perfecta para familias, amigos o celebraciones.</p>
+          <div class="fishing-type-actions">
+            <button type="button" class="fishing-type-book sf-wa-trigger" aria-label="Reservar pesca – Pesca privada">
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+              Reservar pesca
+            </button>
           </div>
-          <h3 class="why-item-title">El mejor Barco</h3>
-          <p class="why-item-text">Embarcación moderna y segura.</p>
         </div>
-        <div class="why-grid-item">
-          <div class="why-icon">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          </div>
-          <h3 class="why-item-title">Pescador Local</h3>
-          <p class="why-item-text">Conoce los mejores caladeros.</p>
-        </div>
-        <div class="why-grid-item">
-          <div class="why-icon">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
-          </div>
-          <h3 class="why-item-title">Todo Incluido</h3>
-          <p class="why-item-text">Gasolina, guía y limpieza del pescado.</p>
-        </div>
-      </div>
-      <div class="stats-dots why-dots" id="whyDots" aria-label="Selector de tarjetas"></div>
+      </article>
     </div>
+    <div class="gallery-dots types-dots" id="modesDots" aria-label="Selector de tipos de pesca"></div>
   </section>
-
-  <!-- Boat Features -->
-  <section class="boat-listing">
-    <div class="boat-listing-inner">
-      <div class="boat-listing-photo">
-        <img src="/images/barco-pesca-fishing-trips-malaga.webp" alt="Barco de pesca de Fishing Trips Málaga amarrado en el Puerto Deportivo El Candado, en Málaga" width="900" height="1196" loading="lazy">
-      </div>
-
-      <div class="boat-listing-head">
-        <div class="boat-tags">
-          <span class="boat-tag boat-tag-accent">Pesca</span>
-          <span class="boat-tag boat-tag-blue">Patrón incluido</span>
-        </div>
-        <h2 class="h2">Nuestro barco de pesca en el Puerto Deportivo El Candado</h2>
-        <div class="boat-meta">
-          <a href="https://share.google/WLvcuenLzACgzVrgT" target="_blank" rel="noopener">
-            <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2"/><path d="M12 7v14M5 13a7 7 0 0014 0M8 11h8"/></svg>
-            Puerto El Candado, Málaga
-          </a>
-          <span>
-            <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="#FFB020"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
-            <strong>+200</strong> pescadores a bordo
-          </span>
-        </div>
-      </div>
-
-      <div class="boat-facts">
-          <div class="boat-fact"><span>Eslora</span><strong>6 m</strong></div>
-          <div class="boat-fact"><span>Manga</span><strong>2,2 m</strong></div>
-          <div class="boat-fact"><span>Capacidad</span><strong>5 + patrón</strong></div>
-          <div class="boat-fact"><span>Motor</span><strong>Mercury 115 EFI</strong></div>
-          <div class="boat-fact"><span>Salida</span><strong>4 horas</strong></div>
-      </div>
-
-      <div class="boat-skipper">
-        <img src="/images/guide.webp" alt="Patrón y guía de pesca de Fishing Trips Málaga" width="60" height="60" loading="lazy">
-        <div>
-          <strong>Tu patrón y guía de pesca</strong>
-          <span>Más de 15 años pescando en la Costa del Sol. Te enseña la técnica antes de lanzar.</span>
-        </div>
-      </div>
-
-      <div class="boat-onboard">
-        <div class="h3">Qué hay a bordo</div>
-        <ul>
-          <li><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3v3M12 18v3M21 12h-3M6 12H3"/><circle cx="12" cy="12" r="2"/></svg>GPS Garmin y 2 sondas Lowrance</li>
-          <li><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10h18v8a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><path d="M3 14c2-1.5 4-1.5 6 0s4 1.5 6 0 4-1.5 6 0"/></svg>Dos viveros incorporados</li>
-          <li><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 3v6c0 5-3.5 8.5-8 11-4.5-2.5-8-6-8-11V5l8-3z"/></svg>Kit de seguridad completo</li>
-          <li><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20L18 6M18 6V2M18 6h4M4 20c0-3 2-4 4-4"/></svg>Equipamiento profesional de pesca</li>
-          <li><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12c3-5 9-7 14-4l4-3v14l-4-3c-5 3-11 1-14-4z"/></svg>Señuelos y cebos para cada técnica</li>
-          <li><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h10l-1 18H8z"/><path d="M7.5 9h9"/></svg>Bebidas frías a bordo</li>
-          <li><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 22V6l6-4 6 4v16"/><path d="M15 10h3l3 3v9h-6"/></svg>Gasolina incluida</li>
-          <li><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Te limpiamos la captura para llevártela</li>
-        </ul>
-      </div>
-
-      <div class="boat-listing-cta">
-        <button class="btn-primary sf-wa-trigger">
-          <span class="btn-icon"><i class="fa-brands fa-whatsapp"></i></span>
-          Reservar Pesca
-        </button>
-      </div>
-    </div>
-  </section>
-
-  <!-- Booking Platforms -->
-  <section class="portals">
-    <img src="/images/pescador-dos-pargos-malaga.webp" alt="" aria-hidden="true" class="portals-bg" width="700" height="933" loading="lazy">
-    <div class="portals-overlay" aria-hidden="true"></div>
-    <div class="portals-inner">
-      <h2 class="eyebrow">Reserva en las mejores plataformas de pesca en Málaga</h2>
-      <div class="h2 h2-light">Fishing Trips Málaga está en las plataformas en las que ya confías</div>
-      <div class="portals-grid" id="portalsGrid">
-        <a class="portal-card" href="https://www.getyourguide.com/-s683072" target="_blank" rel="noopener">
-          <span class="portal-logo"><img src="/images/badge-getyourguide.webp" alt="Logo de GetYourGuide" width="260" height="195" loading="lazy"></span>
-          <h3 class="portal-name">GetYourGuide</h3>
-          <span class="portal-stars" role="img" aria-label="Valoración de 5 estrellas"><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg></span>
-          <span class="portal-cta">Ver el portal de pesca <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-        </a>
-        <a class="portal-card" href="https://www.viator.com/tours/Malaga/Fishing-Trips-Malaga-with-equipment-food-and-drinks-included/d956-5649015P3" target="_blank" rel="noopener">
-          <span class="portal-logo"><img src="/images/badge-viator.webp" alt="Logo de Viator" width="120" height="120" loading="lazy"></span>
-          <h3 class="portal-name">Viator</h3>
-          <span class="portal-stars" role="img" aria-label="Valoración de 5 estrellas"><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg></span>
-          <span class="portal-cta">Ver el portal de pesca <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-        </a>
-        <a class="portal-card" href="https://fishingbooker.com/charters/view/48559?utm_source=share_charter&amp;utm_medium=copy_link" target="_blank" rel="noopener">
-          <span class="portal-logo"><img src="/images/badge-fishingbooker.webp" alt="Logo de FishingBooker" width="160" height="160" loading="lazy"></span>
-          <h3 class="portal-name">FishingBooker</h3>
-          <span class="portal-stars" role="img" aria-label="Valoración de 5 estrellas"><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg></span>
-          <span class="portal-cta">Ver el portal de pesca <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-        </a>
-        <a class="portal-card" href="https://www.tripadvisor.es/AttractionProductReview-g187438-d34329318-Malaga_Fishing_Experience_with_Equipment_Food_and_Drinks_Included-Malaga_Costa_del.html" target="_blank" rel="noopener">
-          <span class="portal-logo"><img src="/images/badge-tripadvisor.webp" alt="Logo de Tripadvisor" width="160" height="160" loading="lazy"></span>
-          <h3 class="portal-name">Tripadvisor</h3>
-          <span class="portal-stars" role="img" aria-label="Valoración de 5 estrellas"><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg></span>
-          <span class="portal-cta">Ver el portal de pesca <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-        </a>
-        <a class="portal-card" href="https://share.google/WLvcuenLzACgzVrgT" target="_blank" rel="noopener">
-          <span class="portal-logo"><img src="/images/badge-google.webp" alt="Logo de Google" width="160" height="89" loading="lazy"></span>
-          <h3 class="portal-name">Google</h3>
-          <span class="portal-stars" role="img" aria-label="Valoración de 5 estrellas"><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg></span>
-          <span class="portal-cta">Leer reseñas <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-        </a>
-      </div>
-      <div class="stats-dots portals-dots" id="portalsDots" aria-label="Selector de plataformas"></div>
-      <p class="portals-text">Lee lo que dicen otros pescadores y reserva tu salida directamente con nosotros. Mismo barco, mismo patrón, sin intermediarios.</p>
-      <button class="btn-primary sf-wa-trigger">
-        <span class="btn-icon"><i class="fa-brands fa-whatsapp"></i></span>
-        Reservar Pesca
-      </button>
-    </div>
-  </section>
-
-  <!-- Galería (misma que la home) -->
-  <section class="gallery">
-    <div class="gallery-header">
-      <div class="h2">Pescar en Málaga no solo es para expertos</div>
-      <p>Con nuestro mini curso tú también puedes pescar como un experto. Así pescan nuestros clientes.</p>
-    </div>
-    <div class="gallery-grid" id="galleryGrid">
-      <button type="button" class="gallery-item" data-full="images/pescador-atun-nocturno-malaga.webp"><img src="/images/pescador-atun-nocturno-malaga.webp" alt="Pescador sujetando un atún capturado de noche durante una salida de pesca del atún en Málaga" width="700" height="525" loading="lazy"></button>
-      <button type="button" class="gallery-item" data-full="images/captura-atun-fishing-trips-malaga.webp"><img src="/images/captura-atun-fishing-trips-malaga.webp" alt="Pescador levantando un atún recién capturado a bordo de Fishing Trips Málaga" width="602" height="697" loading="lazy"></button>
-      <button type="button" class="gallery-item" data-full="images/nino-pulpo-pesca-malaga.webp"><img src="/images/nino-pulpo-pesca-malaga.webp" alt="Niño mostrando un pulpo capturado durante una excursión de pesca en Málaga" width="511" height="689" loading="lazy"></button>
-      <button type="button" class="gallery-item" data-full="images/padre-hijos-pargo-pesca-malaga.webp"><img src="/images/padre-hijos-pargo-pesca-malaga.webp" alt="Padre e hijos posando con un pargo capturado en una excursión de pesca en familia en Málaga" width="700" height="933" loading="lazy"></button>
-      <button type="button" class="gallery-item" data-full="images/pescador-cabracho-malaga.webp"><img src="/images/pescador-cabracho-malaga.webp" alt="Pescador sosteniendo un cabracho recién capturado en una salida de pesca en Málaga" width="700" height="933" loading="lazy"></button>
-      <button type="button" class="gallery-item" data-full="images/pescador-dos-pargos-malaga.webp"><img src="/images/pescador-dos-pargos-malaga.webp" alt="Pescador mostrando dos pargos capturados en una excursión de pesca en Málaga" width="700" height="933" loading="lazy"></button>
-      <button type="button" class="gallery-item" data-full="images/pescador-congrio-malaga.webp"><img src="/images/pescador-congrio-malaga.webp" alt="Pescador levantando un congrio capturado en una salida de pesca de fondo en Málaga" width="700" height="933" loading="lazy"></button>
-      <button type="button" class="gallery-item" data-full="images/pescador-pargo-grande-malaga.webp"><img src="/images/pescador-pargo-grande-malaga.webp" alt="Pescador sonriente sujetando un pargo grande capturado en aguas de Málaga" width="700" height="1149" loading="lazy"></button>
-      <button type="button" class="gallery-item" data-full="images/grupo-amigos-excursion-pesca-malaga.webp"><img src="/images/grupo-amigos-excursion-pesca-malaga.webp" alt="Grupo de amigos y familia a bordo del barco durante una excursión de pesca en Málaga" width="516" height="657" loading="lazy"></button>
-      <button type="button" class="gallery-item" data-full="images/cabracho-fishing-trips-malaga.webp"><img src="/images/cabracho-fishing-trips-malaga.webp" alt="Pescador mostrando un cabracho capturado a bordo del barco de Fishing Trips Málaga" width="700" height="933" loading="lazy"></button>
-      <button type="button" class="gallery-item" data-full="images/pescador-pargo-malaga.webp"><img src="/images/pescador-pargo-malaga.webp" alt="Pescador sujetando un pargo capturado en una excursión de pesca en Málaga" width="523" height="699" loading="lazy"></button>
-      <button type="button" class="gallery-item" data-full="images/familia-atardecer-barco-pesca-malaga.webp"><img src="/images/familia-atardecer-barco-pesca-malaga.webp" alt="Familia disfrutando del atardecer a bordo del barco de pesca en Málaga" width="700" height="933" loading="lazy"></button>
-      <button type="button" class="gallery-item" data-full="images/pescador-gran-captura-malaga.webp"><img src="/images/pescador-gran-captura-malaga.webp" alt="Pescador sonriente mostrando una gran captura en una salida de pesca en Málaga" width="700" height="933" loading="lazy"></button>
-      <button type="button" class="gallery-item" data-full="images/nino-pescando-malaga.webp"><img src="/images/nino-pescando-malaga.webp" alt="Niño sacando sus primeras capturas junto a su padre en una excursión de pesca en Málaga" width="700" height="933" loading="lazy"></button>
-      <button type="button" class="gallery-item" data-full="images/pescador-cabracho-captura-malaga.webp"><img src="/images/pescador-cabracho-captura-malaga.webp" alt="Pescador sosteniendo un cabracho capturado en una excursión de pesca en Málaga" width="700" height="933" loading="lazy"></button>
-      <button type="button" class="gallery-item" data-full="images/pescador-pargo-fishing-trips-malaga.webp"><img src="/images/pescador-pargo-fishing-trips-malaga.webp" alt="Pescador sentado a bordo mostrando un pargo capturado con Fishing Trips Málaga" width="700" height="933" loading="lazy"></button>
-      <button type="button" class="gallery-item" data-full="images/pescador-congrio-fishing-trips-malaga.webp"><img src="/images/pescador-congrio-fishing-trips-malaga.webp" alt="Pescador mostrando un congrio capturado a bordo de Fishing Trips Málaga" width="700" height="933" loading="lazy"></button>
-      <button type="button" class="gallery-item" data-full="images/pescador-cana-barco-pesca-malaga.webp"><img src="/images/pescador-cana-barco-pesca-malaga.webp" alt="Pescador recogiendo una captura con la caña doblada a bordo del barco de pesca en Málaga" width="700" height="933" loading="lazy"></button>
-      <button type="button" class="gallery-item" data-full="images/pescador-pargo-costa-malaga.webp"><img src="/images/pescador-pargo-costa-malaga.webp" alt="Pescador mostrando un pargo recién capturado frente a la costa de Málaga" width="700" height="933" loading="lazy"></button>
-      <button type="button" class="gallery-item" data-full="images/amigos-barco-pesca-malaga.webp"><img src="/images/amigos-barco-pesca-malaga.webp" alt="Amigos disfrutando de una bebida a bordo durante una excursión de pesca en Málaga" width="518" height="694" loading="lazy"></button>
-      <button type="button" class="gallery-item" data-full="images/pescador-congrio-capturas-malaga.webp"><img src="/images/pescador-congrio-capturas-malaga.webp" alt="Pescador levantando un congrio capturado en una salida de pesca en Málaga" width="700" height="933" loading="lazy"></button>
-      <button type="button" class="gallery-item" data-full="images/pescador-captura-fondo-malaga.webp"><img src="/images/pescador-captura-fondo-malaga.webp" alt="Pescador mostrando una captura de pesca de fondo a bordo del barco en Málaga" width="700" height="933" loading="lazy"></button>
-      <button type="button" class="gallery-item" data-full="images/pescadores-fishing-trips-malaga.webp"><img src="/images/pescadores-fishing-trips-malaga.webp" alt="Pescador sonriente mostrando su captura con la caña en Fishing Trips Málaga" width="525" height="700" loading="lazy"></button>
-      <button type="button" class="gallery-item" data-full="images/capturas-peces-malaga.webp"><img src="/images/capturas-peces-malaga.webp" alt="Pescador mostrando una gran captura mientras su compañero sigue pescando en Málaga" width="700" height="933" loading="lazy"></button>
-      <button type="button" class="gallery-item" data-full="images/pescadores-en-malaga.webp"><img src="/images/pescadores-en-malaga.webp" alt="Pescadores a bordo mostrando una captura durante una excursión de pesca en Málaga" width="700" height="933" loading="lazy"></button>
-      <button type="button" class="gallery-item" data-full="images/pescador-capturas-pesca-malaga.webp"><img src="/images/pescador-capturas-pesca-malaga.webp" alt="Pescador mostrando su captura a bordo durante una salida de pesca en Málaga" width="700" height="933" loading="lazy"></button>
-      <button type="button" class="gallery-item" data-full="images/pesca-en-barco-malaga.webp"><img src="/images/pesca-en-barco-malaga.webp" alt="Pescador con la caña doblada luchando con un pez en una salida de pesca en barco en Málaga" width="700" height="933" loading="lazy"></button>
-    </div>
-    <div class="gallery-dots" id="galleryDots"></div>
-  </section>
-
-  <!-- Lightbox de la galería -->
-  <div class="lightbox" id="galleryLightbox" role="dialog" aria-modal="true" aria-label="Imagen ampliada" hidden>
-    <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Cerrar imagen">
-      <i class="fa-solid fa-xmark"></i>
-    </button>
-    <img src="" alt="" id="lightboxImg">
-  </div>
 
   <!-- Testimonials -->
   <section class="testimonials">
@@ -1082,69 +1158,444 @@
     </a>
   </section>
 
+  <!-- Booking Platforms -->
+  <section class="portals">
+    <img src="/images/pescador-dos-pargos-malaga.webp" alt="" aria-hidden="true" class="portals-bg" width="700" height="933" loading="lazy">
+    <div class="portals-overlay" aria-hidden="true"></div>
+    <div class="portals-inner">
+      <h2 class="eyebrow">Reserva en las mejores plataformas de pesca en Málaga</h2>
+      <div class="h2 h2-light">Fishing Trips Málaga está en las plataformas en las que ya confías</div>
+      <div class="portals-grid" id="portalsGrid">
+        <a class="portal-card" href="https://www.getyourguide.com/-s683072" target="_blank" rel="noopener">
+          <span class="portal-logo"><img src="/images/badge-getyourguide.webp" alt="Logo de GetYourGuide" width="260" height="195" loading="lazy"></span>
+          <h3 class="portal-name">GetYourGuide</h3>
+          <span class="portal-stars" role="img" aria-label="Valoración de 5 estrellas"><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg></span>
+          <span class="portal-cta">Ver el portal de pesca <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+        <a class="portal-card" href="https://www.viator.com/tours/Malaga/Fishing-Trips-Malaga-with-equipment-food-and-drinks-included/d956-5649015P3" target="_blank" rel="noopener">
+          <span class="portal-logo"><img src="/images/badge-viator.webp" alt="Logo de Viator" width="120" height="120" loading="lazy"></span>
+          <h3 class="portal-name">Viator</h3>
+          <span class="portal-stars" role="img" aria-label="Valoración de 5 estrellas"><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg></span>
+          <span class="portal-cta">Ver el portal de pesca <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+        <a class="portal-card" href="https://fishingbooker.com/charters/view/48559?utm_source=share_charter&amp;utm_medium=copy_link" target="_blank" rel="noopener">
+          <span class="portal-logo"><img src="/images/badge-fishingbooker.webp" alt="Logo de FishingBooker" width="160" height="160" loading="lazy"></span>
+          <h3 class="portal-name">FishingBooker</h3>
+          <span class="portal-stars" role="img" aria-label="Valoración de 5 estrellas"><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg></span>
+          <span class="portal-cta">Ver el portal de pesca <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+        <a class="portal-card" href="https://www.tripadvisor.es/AttractionProductReview-g187438-d34329318-Malaga_Fishing_Experience_with_Equipment_Food_and_Drinks_Included-Malaga_Costa_del.html" target="_blank" rel="noopener">
+          <span class="portal-logo"><img src="/images/badge-tripadvisor.webp" alt="Logo de Tripadvisor" width="160" height="160" loading="lazy"></span>
+          <h3 class="portal-name">Tripadvisor</h3>
+          <span class="portal-stars" role="img" aria-label="Valoración de 5 estrellas"><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg></span>
+          <span class="portal-cta">Ver el portal de pesca <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+        <a class="portal-card" href="https://share.google/WLvcuenLzACgzVrgT" target="_blank" rel="noopener">
+          <span class="portal-logo"><img src="/images/badge-google.webp" alt="Logo de Google" width="160" height="89" loading="lazy"></span>
+          <h3 class="portal-name">Google</h3>
+          <span class="portal-stars" role="img" aria-label="Valoración de 5 estrellas"><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg></span>
+          <span class="portal-cta">Leer reseñas <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+      </div>
+      <div class="stats-dots portals-dots" id="portalsDots" aria-label="Selector de plataformas"></div>
+      <p class="portals-text">Lee lo que dicen otros pescadores y reserva tu salida directamente con nosotros. Mismo barco, mismo patrón, sin intermediarios.</p>
+      <button class="btn-primary sf-wa-trigger">
+        <span class="btn-icon"><i class="fa-brands fa-whatsapp"></i></span>
+        Reservar Pesca
+      </button>
+    </div>
+  </section>
+
+  <!-- Boat Features -->
+  <section class="boat-listing">
+    <div class="boat-listing-inner">
+      <div class="boat-listing-photo">
+        <img src="/images/barco-pesca-fishing-trips-malaga.webp" alt="Barco de pesca de Fishing Trips Málaga amarrado en el Puerto Deportivo El Candado, en Málaga" width="900" height="1196" loading="lazy">
+      </div>
+
+      <div class="boat-listing-head">
+        <div class="boat-tags">
+          <span class="boat-tag boat-tag-accent">Pesca</span>
+          <span class="boat-tag boat-tag-blue">Patrón incluido</span>
+        </div>
+        <h2 class="h2">Nuestro barco de pesca en el Puerto Deportivo El Candado</h2>
+        <div class="boat-meta">
+          <a href="https://share.google/WLvcuenLzACgzVrgT" target="_blank" rel="noopener">
+            <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2"/><path d="M12 7v14M5 13a7 7 0 0014 0M8 11h8"/></svg>
+            Puerto El Candado, Málaga
+          </a>
+          <span>
+            <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="#FFB020"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <strong>+200</strong> pescadores a bordo
+          </span>
+        </div>
+      </div>
+
+      <div class="boat-facts">
+          <div class="boat-fact"><span>Eslora</span><strong>6 m</strong></div>
+          <div class="boat-fact"><span>Manga</span><strong>2,2 m</strong></div>
+          <div class="boat-fact"><span>Capacidad</span><strong>Hasta 6 personas</strong></div>
+          <div class="boat-fact"><span>Motor</span><strong>Mercury 115 EFI</strong></div>
+          <div class="boat-fact"><span>Salida</span><strong>4 horas</strong></div>
+      </div>
+
+      <div class="boat-skipper">
+        <img src="/images/guide.webp" alt="Patrón y guía de pesca de Fishing Trips Málaga" width="60" height="60" loading="lazy">
+        <div>
+          <strong>Tu patrón y guía de pesca</strong>
+          <span>Más de 15 años pescando en la Costa del Sol. Te enseña la técnica antes de lanzar.</span>
+        </div>
+      </div>
+
+      <div class="boat-onboard">
+        <div class="h3">Qué hay a bordo</div>
+        <ul>
+          <li><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3v3M12 18v3M21 12h-3M6 12H3"/><circle cx="12" cy="12" r="2"/></svg>GPS Garmin y 2 sondas Lowrance</li>
+          <li><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10h18v8a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><path d="M3 14c2-1.5 4-1.5 6 0s4 1.5 6 0 4-1.5 6 0"/></svg>Dos viveros incorporados</li>
+          <li><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 3v6c0 5-3.5 8.5-8 11-4.5-2.5-8-6-8-11V5l8-3z"/></svg>Kit de seguridad completo</li>
+          <li><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20L18 6M18 6V2M18 6h4M4 20c0-3 2-4 4-4"/></svg>Equipamiento profesional de pesca</li>
+          <li><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12c3-5 9-7 14-4l4-3v14l-4-3c-5 3-11 1-14-4z"/></svg>Señuelos y cebos para cada técnica</li>
+          <li><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h10l-1 18H8z"/><path d="M7.5 9h9"/></svg>Bebidas frías a bordo</li>
+          <li><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 22V6l6-4 6 4v16"/><path d="M15 10h3l3 3v9h-6"/></svg>Gasolina incluida</li>
+          <li><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Te limpiamos la captura para llevártela</li>
+        </ul>
+      </div>
+
+      <div class="boat-listing-cta">
+        <button class="btn-primary sf-wa-trigger">
+          <span class="btn-icon"><i class="fa-brands fa-whatsapp"></i></span>
+          Reservar Pesca
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="why-choose">
+    <img src="/images/pescador-cabracho-malaga.webp" alt="Pescador sosteniendo un cabracho recién capturado en una salida de pesca en Málaga" class="why-bg" width="700" height="933" loading="lazy">
+    <div class="why-overlay"></div>
+    <div class="why-text">
+      <h2 class="h2 h2-light">¿Por qué alquilar el barco de pesca en Fishing Trips?</h2>
+      <p>¿Estás de vacaciones en Málaga y buscas un plan diferente, divertido y auténtico? El alquiler de un barco de pesca en Málaga es la mejor opción para quienes desean vivir una auténtica experiencia de pesca en plena Costa del Sol, sin complicaciones ni requisitos previos.</p>
+      <div class="why-proof">
+        <img src="/images/nino-pescando-malaga.webp" alt="Niño sacando sus primeras capturas junto a su padre en una excursión de pesca en Málaga" width="56" height="56" loading="lazy">
+        <img src="/images/pescador-pargo-fishing-trips-malaga.webp" alt="Pescador sentado a bordo mostrando un pargo capturado con Fishing Trips Málaga" width="56" height="56" loading="lazy">
+        <img src="/images/padre-hijos-pargo-pesca-malaga.webp" alt="Padre e hijos posando con un pargo capturado en una excursión de pesca en familia en Málaga" width="56" height="56" loading="lazy">
+        <span class="why-proof-text">Clientes reales, capturas reales</span>
+      </div>
+    </div>
+    <div class="why-bar">
+      <div class="why-bar-stripe"></div>
+      <div class="why-bar-grid" id="whyGrid">
+        <div class="why-grid-item">
+          <div class="why-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3v18M6 3l12 6-12 6"/></svg>
+          </div>
+          <h3 class="why-item-title">Equipo de pesca incluido</h3>
+          <p class="why-item-text">Cañas, carretes, cebos, señuelos, chalecos... Trae solo las ganas de pescar. El material es profesional y está listo para usar.</p>
+        </div>
+        <div class="why-grid-item">
+          <div class="why-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l3-9h12l3 9"/><path d="M5 17h14v3H5z"/><circle cx="8" cy="20" r="1"/><circle cx="16" cy="20" r="1"/></svg>
+          </div>
+          <h3 class="why-item-title">El mejor barco de pesca</h3>
+          <p class="why-item-text">Saldrás al mar en una embarcación moderna, con toda la tecnología necesaria para disfrutar y pescar con comodidad y seguridad.</p>
+        </div>
+        <div class="why-grid-item">
+          <div class="why-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <h3 class="why-item-title">Pescadores expertos</h3>
+          <p class="why-item-text">Nuestros pescadores tienen más de 10 años de experiencia. Te darán la mini formación necesaria para que puedas pescar por tu cuenta durante la excursión.</p>
+        </div>
+        <div class="why-grid-item">
+          <div class="why-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+          </div>
+          <h3 class="why-item-title">Todo incluido</h3>
+          <p class="why-item-text">Planificación, equipo, gasolina, guía, limpieza de pescado... ¡Hasta bebida fría a bordo! Tú solo preocúpate de disfrutar el mar y vivir el momento.</p>
+        </div>
+      </div>
+      <div class="stats-dots why-dots" id="whyDots" aria-label="Selector de tarjetas"></div>
+    </div>
+  </section>
+
+  <!-- Booking Steps -->
+  <section class="section section-light booking-steps">
+    <div class="booking-header">
+      <h2 class="h2">¿Cómo reservar tu excursión de pesca en Málaga?</h2>
+      <p>Reservar una salida de pesca en barco en Málaga es muy sencillo. Alquila tu barco de pesca con patrón en cuestión de minutos.</p>
+    </div>
+    
+    <div class="booking-grid" id="bookingGrid">
+      <div class="step-card">
+        <div class="step-header">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 01-4.5 7.5 8.5 8.5 0 01-8 0L4 21l1.5-4.5a8.38 8.38 0 01-1-4A8.5 8.5 0 0113 4h.5a8.48 8.48 0 018 8v-.5z"/></svg>
+          <span class="step-num">01</span>
+        </div>
+        <h3 class="step-title">Contacta con el Equipo</h3>
+        <p class="step-text">Cuéntanos qué tipo de pesca te interesa y nos adaptamos a ti.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-header">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 015 0c0 1.7-2.5 2.2-2.5 4"/><line x1="12" y1="16.8" x2="12" y2="17"/></svg>
+          <span class="step-num">02</span>
+        </div>
+        <h3 class="step-title">Resolvemos tus dudas</h3>
+        <p class="step-text">Técnicas, qué traer y qué esperar de tu día de pesca.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-header">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><line x1="16" y1="3" x2="16" y2="7"/><line x1="8" y1="3" x2="8" y2="7"/><line x1="3" y1="11" x2="21" y2="11"/><path d="M9 16l2 2 4-4"/></svg>
+          <span class="step-num">03</span>
+        </div>
+        <h3 class="step-title">Reserva tu salida</h3>
+        <p class="step-text">Fecha ideal confirmada. Sin pagos ocultos.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-header">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span class="step-num">04</span>
+        </div>
+        <h3 class="step-title">Disfruta la experiencia</h3>
+        <p class="step-text">Subes al barco y vives una aventura que no olvidarás.</p>
+      </div>
+    </div>
+    <div class="gallery-dots steps-dots" id="bookingDots" aria-label="Selector de pasos de reserva"></div>
+  </section>
+
+  <!-- Galería -->
+  <section class="gallery">
+    <div class="gallery-header">
+      <div class="h2">Pescar en Málaga no solo es para expertos</div>
+      <p>Con nuestro mini curso tú también puedes pescar como un experto. Así pescan nuestros clientes.</p>
+    </div>
+    <div class="gallery-grid" id="galleryGrid">
+      <button type="button" class="gallery-item" data-full="/images/pescador-atun-nocturno-malaga.webp"><img src="/images/pescador-atun-nocturno-malaga.webp" alt="Pescador sujetando un atún capturado de noche durante una salida de pesca del atún en Málaga" width="700" height="525" loading="lazy"></button>
+      <button type="button" class="gallery-item" data-full="/images/captura-atun-fishing-trips-malaga.webp"><img src="/images/captura-atun-fishing-trips-malaga.webp" alt="Pescador levantando un atún recién capturado a bordo de Fishing Trips Málaga" width="602" height="697" loading="lazy"></button>
+      <button type="button" class="gallery-item" data-full="/images/nino-pulpo-pesca-malaga.webp"><img src="/images/nino-pulpo-pesca-malaga.webp" alt="Niño mostrando un pulpo capturado durante una excursión de pesca en Málaga" width="511" height="689" loading="lazy"></button>
+      <button type="button" class="gallery-item" data-full="/images/padre-hijos-pargo-pesca-malaga.webp"><img src="/images/padre-hijos-pargo-pesca-malaga.webp" alt="Padre e hijos posando con un pargo capturado en una excursión de pesca en familia en Málaga" width="700" height="933" loading="lazy"></button>
+      <button type="button" class="gallery-item" data-full="/images/pescador-cabracho-malaga.webp"><img src="/images/pescador-cabracho-malaga.webp" alt="Pescador sosteniendo un cabracho recién capturado en una salida de pesca en Málaga" width="700" height="933" loading="lazy"></button>
+      <button type="button" class="gallery-item" data-full="/images/pescador-dos-pargos-malaga.webp"><img src="/images/pescador-dos-pargos-malaga.webp" alt="Pescador mostrando dos pargos capturados en una excursión de pesca en Málaga" width="700" height="933" loading="lazy"></button>
+      <button type="button" class="gallery-item" data-full="/images/pescador-congrio-malaga.webp"><img src="/images/pescador-congrio-malaga.webp" alt="Pescador levantando un congrio capturado en una salida de pesca de fondo en Málaga" width="700" height="933" loading="lazy"></button>
+      <button type="button" class="gallery-item" data-full="/images/pescador-pargo-grande-malaga.webp"><img src="/images/pescador-pargo-grande-malaga.webp" alt="Pescador sonriente sujetando un pargo grande capturado en aguas de Málaga" width="700" height="1149" loading="lazy"></button>
+      <button type="button" class="gallery-item" data-full="/images/grupo-amigos-excursion-pesca-malaga.webp"><img src="/images/grupo-amigos-excursion-pesca-malaga.webp" alt="Grupo de amigos y familia a bordo del barco durante una excursión de pesca en Málaga" width="516" height="657" loading="lazy"></button>
+      <button type="button" class="gallery-item" data-full="/images/cabracho-fishing-trips-malaga.webp"><img src="/images/cabracho-fishing-trips-malaga.webp" alt="Pescador mostrando un cabracho capturado a bordo del barco de Fishing Trips Málaga" width="700" height="933" loading="lazy"></button>
+      <button type="button" class="gallery-item" data-full="/images/pescador-pargo-malaga.webp"><img src="/images/pescador-pargo-malaga.webp" alt="Pescador sujetando un pargo capturado en una excursión de pesca en Málaga" width="523" height="699" loading="lazy"></button>
+      <button type="button" class="gallery-item" data-full="/images/familia-atardecer-barco-pesca-malaga.webp"><img src="/images/familia-atardecer-barco-pesca-malaga.webp" alt="Familia disfrutando del atardecer a bordo del barco de pesca en Málaga" width="700" height="933" loading="lazy"></button>
+      <button type="button" class="gallery-item" data-full="/images/pescador-gran-captura-malaga.webp"><img src="/images/pescador-gran-captura-malaga.webp" alt="Pescador sonriente mostrando una gran captura en una salida de pesca en Málaga" width="700" height="933" loading="lazy"></button>
+      <button type="button" class="gallery-item" data-full="/images/nino-pescando-malaga.webp"><img src="/images/nino-pescando-malaga.webp" alt="Niño sacando sus primeras capturas junto a su padre en una excursión de pesca en Málaga" width="700" height="933" loading="lazy"></button>
+      <button type="button" class="gallery-item" data-full="/images/pescador-cabracho-captura-malaga.webp"><img src="/images/pescador-cabracho-captura-malaga.webp" alt="Pescador sosteniendo un cabracho capturado en una excursión de pesca en Málaga" width="700" height="933" loading="lazy"></button>
+      <button type="button" class="gallery-item" data-full="/images/pescador-pargo-fishing-trips-malaga.webp"><img src="/images/pescador-pargo-fishing-trips-malaga.webp" alt="Pescador sentado a bordo mostrando un pargo capturado con Fishing Trips Málaga" width="700" height="933" loading="lazy"></button>
+      <button type="button" class="gallery-item" data-full="/images/pescador-congrio-fishing-trips-malaga.webp"><img src="/images/pescador-congrio-fishing-trips-malaga.webp" alt="Pescador mostrando un congrio capturado a bordo de Fishing Trips Málaga" width="700" height="933" loading="lazy"></button>
+      <button type="button" class="gallery-item" data-full="/images/pescador-cana-barco-pesca-malaga.webp"><img src="/images/pescador-cana-barco-pesca-malaga.webp" alt="Pescador recogiendo una captura con la caña doblada a bordo del barco de pesca en Málaga" width="700" height="933" loading="lazy"></button>
+      <button type="button" class="gallery-item" data-full="/images/pescador-pargo-costa-malaga.webp"><img src="/images/pescador-pargo-costa-malaga.webp" alt="Pescador mostrando un pargo recién capturado frente a la costa de Málaga" width="700" height="933" loading="lazy"></button>
+      <button type="button" class="gallery-item" data-full="/images/amigos-barco-pesca-malaga.webp"><img src="/images/amigos-barco-pesca-malaga.webp" alt="Amigos disfrutando de una bebida a bordo durante una excursión de pesca en Málaga" width="518" height="694" loading="lazy"></button>
+      <button type="button" class="gallery-item" data-full="/images/pescador-congrio-capturas-malaga.webp"><img src="/images/pescador-congrio-capturas-malaga.webp" alt="Pescador levantando un congrio capturado en una salida de pesca en Málaga" width="700" height="933" loading="lazy"></button>
+      <button type="button" class="gallery-item" data-full="/images/pescador-captura-fondo-malaga.webp"><img src="/images/pescador-captura-fondo-malaga.webp" alt="Pescador mostrando una captura de pesca de fondo a bordo del barco en Málaga" width="700" height="933" loading="lazy"></button>
+      <button type="button" class="gallery-item" data-full="/images/pescadores-fishing-trips-malaga.webp"><img src="/images/pescadores-fishing-trips-malaga.webp" alt="Pescador sonriente mostrando su captura con la caña en Fishing Trips Málaga" width="525" height="700" loading="lazy"></button>
+      <button type="button" class="gallery-item" data-full="/images/capturas-peces-malaga.webp"><img src="/images/capturas-peces-malaga.webp" alt="Pescador mostrando una gran captura mientras su compañero sigue pescando en Málaga" width="700" height="933" loading="lazy"></button>
+      <button type="button" class="gallery-item" data-full="/images/pescadores-en-malaga.webp"><img src="/images/pescadores-en-malaga.webp" alt="Pescadores a bordo mostrando una captura durante una excursión de pesca en Málaga" width="700" height="933" loading="lazy"></button>
+      <button type="button" class="gallery-item" data-full="/images/pescador-capturas-pesca-malaga.webp"><img src="/images/pescador-capturas-pesca-malaga.webp" alt="Pescador mostrando su captura a bordo durante una salida de pesca en Málaga" width="700" height="933" loading="lazy"></button>
+      <button type="button" class="gallery-item" data-full="/images/pesca-en-barco-malaga.webp"><img src="/images/pesca-en-barco-malaga.webp" alt="Pescador con la caña doblada luchando con un pez en una salida de pesca en barco en Málaga" width="700" height="933" loading="lazy"></button>
+    </div>
+    <div class="gallery-dots" id="galleryDots"></div>
+  </section>
+
+  <!-- Lightbox de la galería -->
+  <div class="lightbox" id="galleryLightbox" role="dialog" aria-modal="true" aria-label="Imagen ampliada" hidden>
+    <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Cerrar imagen">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <img src="" alt="" id="lightboxImg">
+  </div>
+
+  <!-- Fishing Techniques -->
+  <section class="fishing-types">
+    <div class="fishing-types-header">
+      <p class="eyebrow">Elige tu técnica</p>
+      <h2 class="h2">Técnicas de pesca en Málaga</h2>
+      <p class="fishing-types-intro">Seis maneras de pescar en el Mediterráneo desde un mismo barco, con un guía local que te explica todo paso a paso. Escoge la que más te atraiga o pregúntanos cuál rinde mejor en cada temporada.</p>
+    </div>
+    <div class="fishing-types-grid" id="typesGrid">
+      <article class="fishing-type-card">
+        <img src="/images/nino-pulpo-pesca-malaga.webp" alt="Niño mostrando un pulpo capturado durante una excursión de pesca en Málaga" width="511" height="689" loading="lazy">
+        <div class="fishing-type-body">
+          <h3 class="fishing-type-title">Pesca de fondo</h3>
+          <p class="fishing-type-text">Doradas, sargos y meros junto al fondo marino. La técnica más fácil de aprender, perfecta si es tu primera vez o vienes con niños.</p>
+          <div class="fishing-type-actions">
+            <a href="/es/pesca-de-fondo-malaga/" class="fishing-type-more">
+              Ver más
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <button type="button" class="fishing-type-book sf-wa-trigger" aria-label="Reservar – Pesca de fondo">
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+              Reservar
+            </button>
+          </div>
+        </div>
+      </article>
+      <article class="fishing-type-card">
+        <img src="/images/pescador-pargo-fishing-trips-malaga.webp" alt="Pescador sentado a bordo mostrando un pargo capturado con Fishing Trips Málaga" width="700" height="933" loading="lazy">
+        <div class="fishing-type-body">
+          <h3 class="fishing-type-title">Pesca al vivo</h3>
+          <p class="fishing-type-text">Cebo vivo para pargos, dentones y peces limón. Requiere algo de paciencia, pero la recompensa son ejemplares de gran tamaño.</p>
+          <div class="fishing-type-actions">
+            <a href="/es/pesca-al-vivo-malaga/" class="fishing-type-more">
+              Ver más
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <button type="button" class="fishing-type-book sf-wa-trigger" aria-label="Reservar – Pesca al vivo">
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+              Reservar
+            </button>
+          </div>
+        </div>
+      </article>
+      <article class="fishing-type-card">
+        <img src="/images/pescador-pargo-grande-malaga.webp" alt="Pescador sonriente sujetando un pargo grande capturado en aguas de Málaga" width="700" height="1149" loading="lazy">
+        <div class="fishing-type-body">
+          <h3 class="fishing-type-title">Pesca al jigging</h3>
+          <p class="fishing-type-text">Señuelos metálicos para jureles, serviolas y dentones. Una técnica dinámica, con movimiento y emoción en cada bajada.</p>
+          <div class="fishing-type-actions">
+            <a href="/es/pesca-al-jigging-malaga/" class="fishing-type-more">
+              Ver más
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <button type="button" class="fishing-type-book sf-wa-trigger" aria-label="Reservar – Pesca al jigging">
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+              Reservar
+            </button>
+          </div>
+        </div>
+      </article>
+      <article class="fishing-type-card">
+        <img src="/images/pesca-calamar-malaga.webp" alt="Joven sonriente mostrando un calamar recién pescado a bordo durante una excursión de pesca del calamar en Málaga" width="700" height="933" loading="lazy">
+        <div class="fishing-type-body">
+          <h3 class="fishing-type-title">Pesca del calamar</h3>
+          <p class="fishing-type-text">Calamares, sepias y pulpos con poteras. Una salida relajada y entretenida, ideal para disfrutar en familia.</p>
+          <div class="fishing-type-actions">
+            <a href="/es/pesca-del-calamar-malaga/" class="fishing-type-more">
+              Ver más
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <button type="button" class="fishing-type-book sf-wa-trigger" aria-label="Reservar – Pesca del calamar">
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+              Reservar
+            </button>
+          </div>
+        </div>
+      </article>
+      <article class="fishing-type-card">
+        <img src="/images/catch5.webp" alt="Pescador con chaqueta azul sujetando un pez capturado junto a una caña curvada en una excursión de pesca en Málaga" width="500" height="667" loading="lazy">
+        <div class="fishing-type-body">
+          <h3 class="fishing-type-title">Pesca al curricán</h3>
+          <p class="fishing-type-text">Señuelos al arrastre mientras navegamos la costa de Málaga, en busca de bonitos, bacoretas y palometones.</p>
+          <div class="fishing-type-actions">
+            <a href="/es/pesca-al-currican-malaga/" class="fishing-type-more">
+              Ver más
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <button type="button" class="fishing-type-book sf-wa-trigger" aria-label="Reservar – Pesca al curricán">
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+              Reservar
+            </button>
+          </div>
+        </div>
+      </article>
+      <article class="fishing-type-card">
+        <img src="/images/captura-atun-fishing-trips-malaga.webp" alt="Pescador levantando un atún recién capturado a bordo de Fishing Trips Málaga" width="602" height="697" loading="lazy">
+        <div class="fishing-type-body">
+          <h3 class="fishing-type-title">Pesca del atún</h3>
+          <p class="fishing-type-text">Captura y suelta de atún rojo con material de gran resistencia. El desafío más exigente, disponible solo en temporada.</p>
+          <div class="fishing-type-actions">
+            <a href="/es/pesca-del-atun-malaga/" class="fishing-type-more">
+              Ver más
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <button type="button" class="fishing-type-book sf-wa-trigger" aria-label="Reservar – Pesca del atún">
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+              Reservar
+            </button>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div class="gallery-dots types-dots" id="typesDots" aria-label="Selector de técnicas de pesca"></div>
+  </section>
+
   <!-- FAQ Section -->
   <section class="faq-section">
     <img src="/images/catch7.webp" alt="" class="faq-bg" width="500" height="667" loading="lazy" aria-hidden="true">
     <div class="faq-overlay" aria-hidden="true"></div>
     <div class="faq-text">
       <p class="eyebrow" style="color: var(--accent);">FAQ</p>
-      <h2 class="h2 h2-light">Preguntas frecuentes sobre la pesca del calamar</h2>
-      <p style="color: rgba(255,255,255,0.85);">Resuelve todas tus dudas antes de reservar tu excursión de pesca del calamar en Málaga. Si tienes alguna pregunta sobre las salidas, el barco o las especies, contáctanos.</p>
+      <h2 class="h2 h2-light">Preguntas frecuentes sobre la pesca en barco</h2>
+      <p style="color: rgba(255,255,255,0.85);">Resuelve todas tus dudas antes de reservar tu excursión de pesca en Málaga. Si tienes alguna pregunta sobre las salidas, el barco o las especies, contáctanos.</p>
     </div>
-
+    
     <div class="faq-list">
       <div class="faq-item">
         <h3 class="faq-question-heading"><button class="faq-question" id="faq-q-1" aria-expanded="false" aria-controls="faq-a-1">
-          <span>¿Es de noche cuando se pesca calamar, o también se puede de día?</span>
+          <span>¿Tenemos que llevarnos comida y bebida durante la pesca en Málaga?</span>
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
         </button></h3>
         <div class="faq-answer" id="faq-a-1" role="region" aria-labelledby="faq-q-1">
-          <p>Es cierto que el calamar es más activo de noche, pero el amanecer y el atardecer son también momentos de mucha actividad — de hecho, muchos pescadores consideran esas franjas de luz baja tan productivas como la noche cerrada. Por eso nuestras salidas de las 7:30h aprovechan justo las primeras horas de luz, que son de las mejores del día para esta técnica. No hace falta salir de noche para tener una buena jornada de pesca de calamar.</p>
+          No, no necesitas preocuparte por eso. Todas nuestras excursiones incluyen agua, refrescos fríos y snacks para que estés hidratado y con energía durante toda la jornada.
         </div>
       </div>
       <div class="faq-item">
         <h3 class="faq-question-heading"><button class="faq-question" id="faq-q-2" aria-expanded="false" aria-controls="faq-a-2">
-          <span>¿Puedo pescar calamar en barco privado o es compartido?</span>
+          <span>¿Es aconsejable llevar algún tipo de ropa especial para pescar en Málaga?</span>
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
         </button></h3>
         <div class="faq-answer" id="faq-a-2" role="region" aria-labelledby="faq-q-2">
-          <p>La salida es privada: el barco es solo para tu grupo, no se comparte con otros clientes que no conozcas. Vais vosotros, con un máximo de 5 personas, así que la experiencia y la atención del patrón son solo para vuestro grupo de principio a fin.</p>
+          Dependiendo de la época del año, te recomendamos traer lo justo para estar cómodo. En verano: bañador, gorra, gafas de sol, protector solar. En invierno/primavera: sudadera o chaqueta ligera. Calzado cómodo y antideslizante.
         </div>
       </div>
       <div class="faq-item">
         <h3 class="faq-question-heading"><button class="faq-question" id="faq-q-3" aria-expanded="false" aria-controls="faq-a-3">
-          <span>¿Qué hacemos con las capturas de calamar, jibia o pulpo?</span>
+          <span>¿Cuánto tiempo dura la excursión de pesca?</span>
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
         </button></h3>
         <div class="faq-answer" id="faq-a-3" role="region" aria-labelledby="faq-q-3">
-          <p>Te puedes llevar tu captura a casa si quieres, respetando siempre las tallas mínimas legales de cada especie. Si lo prefieres, también podemos devolver la pieza al mar en buenas condiciones — tú decides el día de la salida, y el patrón te asesora según lo que hayáis pescado.</p>
+          La duración total de la salida de pesca está entre las 4 y 5 horas. Este tiempo está pensado para que puedas disfrutar al máximo sin que la experiencia se haga larga o cansada.
         </div>
       </div>
       <div class="faq-item">
         <h3 class="faq-question-heading"><button class="faq-question" id="faq-q-4" aria-expanded="false" aria-controls="faq-a-4">
-          <span>¿Qué especies se capturan en la pesca del calamar?</span>
+          <span>¿Salimos de pesca aunque las condiciones climáticas sean adversas?</span>
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
         </button></h3>
         <div class="faq-answer" id="faq-a-4" role="region" aria-labelledby="faq-q-4">
-          <p>Las capturas habituales son calamar, jibia y pulpo — los tres cefalópodos más apreciados de la Costa del Sol, tanto por la diversión de pescarlos como por su calidad en la cocina.</p>
+          No. La seguridad y la comodidad de nuestros pasajeros son lo más importante. Si detectamos viento fuerte, oleaje elevado o previsión de tormentas, nos pondremos en contacto contigo para reprogramar la excursión de pesca sin coste alguno.
         </div>
       </div>
       <div class="faq-item">
         <h3 class="faq-question-heading"><button class="faq-question" id="faq-q-5" aria-expanded="false" aria-controls="faq-a-5">
-          <span>¿Cuántas personas pueden ir en cada salida?</span>
+          <span>En caso de mareo o malestar general, ¿qué se hace?</span>
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
         </button></h3>
         <div class="faq-answer" id="faq-a-5" role="region" aria-labelledby="faq-q-5">
-          <p>Un máximo de 5 personas por salida, para que el patrón pueda atender bien a todo el grupo y cada uno tenga su turno con la caña en el momento de la picada.</p>
+          Recomendamos traer pastillas antimareo como Biodramina. Si alguien no se encuentra bien, adaptamos el ritmo o volvemos al puerto si es necesario.
         </div>
       </div>
       <div class="faq-item">
         <h3 class="faq-question-heading"><button class="faq-question" id="faq-q-6" aria-expanded="false" aria-controls="faq-a-6">
-          <span>¿A qué hora salen las excursiones?</span>
+          <span>¿Hace falta llevarnos algún tipo de material de pesca?</span>
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
         </button></h3>
         <div class="faq-answer" id="faq-a-6" role="region" aria-labelledby="faq-q-6">
-          <p>Ofrecemos dos franjas horarias: a las 7:30h o a las 12:00h. Para el calamar, la de las 7:30h es la más productiva, porque aprovecha las primeras horas de luz. Puedes elegir la que mejor se adapte a tu día al hacer la reserva por WhatsApp.</p>
+          No es necesario traer nada. Ponemos a tu disposición todo el material de pesca profesional que necesitas: cañas, carretes, cebos, señuelos, anzuelos, etc.
+        </div>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-question-heading"><button class="faq-question" id="faq-q-8" aria-expanded="false" aria-controls="faq-a-8">
+          <span>¿Cuántas personas pueden ir en cada salida?</span>
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </button></h3>
+        <div class="faq-answer" id="faq-a-8" role="region" aria-labelledby="faq-q-8">
+          El barco admite un máximo de 6 personas por salida.
         </div>
       </div>
     </div>
@@ -1174,21 +1625,15 @@
           </a>
         </div>
       </div>
-
+      
       <div class="footer-links" style="width:200px;">
         <span style="font-size:14px;font-weight:700;letter-spacing:2px;color:#ffffff;">ENLACES</span>
-        <a href="/">Inicio</a>
-        <a href="/pesca-de-fondo-malaga/">Pesca de fondo</a>
-        <a href="/pesca-al-vivo-malaga/">Pesca al vivo</a>
-        <a href="/pesca-al-jigging-malaga/">Pesca al jigging</a>
-        <a href="/pesca-del-calamar-malaga/">Pesca del calamar</a>
-        <a href="/pesca-al-currican-malaga/">Pesca al curricán</a>
-        <a href="/pesca-del-atun-malaga/">Pesca del atún</a>
-        <a href="/contactar/">Contactar</a>
-        <a href="/politica-de-privacidad/">Política de Privacidad</a>
-        <a href="/politicas-de-cookies/">Política de Cookies</a>
+        <a href="/es/">Inicio</a>
+        <a href="/es/contactar/">Contactar</a>
+        <a href="/es/politica-de-privacidad/">Política de Privacidad</a>
+        <a href="/es/politicas-de-cookies/">Política de Cookies</a>
       </div>
-
+      
       <div class="footer-links" style="flex:1;">
         <span style="font-size:14px;font-weight:700;letter-spacing:2px;color:#ffffff;">CONTÁCTANOS</span>
         <div class="footer-contact-row" style="display:flex;align-items:flex-start;gap:12px;">
@@ -1207,12 +1652,12 @@
         </div>
       </div>
     </div>
-
+    
     <div class="footer-bottom">
       <span style="font-size:14px;color:rgba(255,255,255,0.85);">© 2026 Fishing Trips Málaga</span>
       <div class="footer-legal">
-        <a href="/politica-de-privacidad/" style="font-size:14px;color:rgba(255,255,255,0.9);text-decoration:none;">Privacidad</a>
-        <a href="/politicas-de-cookies/" style="font-size:14px;color:rgba(255,255,255,0.9);text-decoration:none;">Cookies</a>
+        <a href="/es/politica-de-privacidad/" style="font-size:14px;color:rgba(255,255,255,0.9);text-decoration:none;">Privacidad</a>
+        <a href="/es/politicas-de-cookies/" style="font-size:14px;color:rgba(255,255,255,0.9);text-decoration:none;">Cookies</a>
         <button id="manage-cookies" style="font-size:14px;color:rgba(255,255,255,0.9);background:none;border:none;text-decoration:underline;cursor:pointer;font-family:inherit;padding:0;">Gestionar cookies</button>
       </div>
     </div>
@@ -1251,7 +1696,7 @@
     <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:24px;">
       <div style="max-width:640px; display:flex; flex-direction:column; gap:8px;">
         <div style="margin:0; font-size:1.15rem; font-weight:700; color:var(--text-dark);">Tu privacidad nos importa</div>
-        <p style="margin:0; font-size:14px; line-height:1.55; color:var(--text-gray);">Usamos cookies propias necesarias para que la web funcione. Con tu permiso, también nos gustaría usar cookies de análisis para entender cómo mejorar tu visita. Puedes aceptarlas, rechazarlas o configurarlas cuando quieras. Más información en nuestra <a href="/politicas-de-cookies/" style="color:var(--accent2); text-decoration:underline;">Política de Cookies</a>.</p>
+        <p style="margin:0; font-size:14px; line-height:1.55; color:var(--text-gray);">Usamos cookies propias necesarias para que la web funcione. Con tu permiso, también nos gustaría usar cookies de análisis para entender cómo mejorar tu visita. Puedes aceptarlas, rechazarlas o configurarlas cuando quieras. Más información en nuestra <a href="/es/politicas-de-cookies/" style="color:var(--accent2); text-decoration:underline;">Política de Cookies</a>.</p>
       </div>
       <div style="display:flex; align-items:center; gap:22px; flex-wrap:wrap;">
         <button id="cookies-prefs-toggle" style="background:none; border:none; padding:0; font-family:inherit; font-size:13.5px; font-weight:600; color:var(--text-dark); text-decoration:underline; cursor:pointer;" aria-expanded="false" aria-controls="cookie-prefs-panel">Configurar</button>
@@ -1279,13 +1724,20 @@
       </label>
       <div style="display:flex; gap:12px; align-items:center;">
         <button id="cookies-save-prefs" class="btn-primary" style="padding:9px 18px; font-size:13.5px; align-self:flex-start;">Guardar preferencias</button>
-        <a href="/politicas-de-cookies/" style="font-size:13px; color:var(--text-light-gray); text-decoration:underline;">Política de Cookies</a>
+        <a href="/es/politicas-de-cookies/" style="font-size:13px; color:var(--text-light-gray); text-decoration:underline;">Política de Cookies</a>
       </div>
     </div>
   </div>
 
   <!-- Scripts -->
   <script>
+    // ---- Vídeo del hero: respeta "reducir movimiento" ----
+    const heroVideo = document.getElementById('heroVideo');
+    if (heroVideo && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      heroVideo.pause();
+      heroVideo.removeAttribute('autoplay');
+    }
+
     // ---- Sticky header (fondo sólido al hacer scroll) ----
     const siteHeader = document.getElementById('siteHeader');
     function updateHeaderScrolled() {
@@ -1343,10 +1795,6 @@
       });
     });
 
-    primaryNav.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', closeNav);
-    });
-
     // ---- Aparición dinámica de las secciones al hacer scroll ----
     (function () {
       const sections = document.querySelectorAll('section');
@@ -1368,9 +1816,9 @@
       });
     })();
 
-    // ---- Carrusel automático de la foto de "¿En qué consiste?" (sin dots ni controles) ----
+    // ---- Carrusel automático de la foto de "Tu Charter de Pesca" (sin dots ni controles) ----
     (function () {
-      const carousel = document.getElementById('calamarCarousel');
+      const carousel = document.getElementById('introCarousel');
       if (!carousel) return;
       const slides = Array.from(carousel.querySelectorAll('.intro-slide'));
       if (slides.length < 2) return;
@@ -1381,6 +1829,9 @@
         slides[current].classList.add('active');
       }, 4000);
     })();
+    primaryNav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', closeNav);
+    });
 
     // ---- Cookies Banner Logic (Funcional / Preferencias / Estadísticas / Marketing) ----
     const COOKIE_KEY = 'ft_cookie_consent';
@@ -1396,6 +1847,9 @@
     }
 
     function applyConsent(consent) {
+      // Punto de enganche para cuando GTM/GA4 se reincorpore (aparcado por ahora, ver CLAUDE.md):
+      // if (consent.stats) { /* cargar GA4 */ }
+      // if (consent.marketing) { /* cargar píxeles de marketing */ }
       window.ftCookieConsent = consent;
     }
 
@@ -1469,6 +1923,46 @@
       });
     });
 
+    // ---- Carrusel de tarjetas de la sección "Todo sobre la experiencia" (solo mobile) ----
+    (function () {
+      const grid = document.getElementById('statsGrid');
+      const dotsWrap = document.getElementById('statsDots');
+      if (!grid || !dotsWrap) return;
+      const dots = Array.from(dotsWrap.querySelectorAll('.stats-dot'));
+      const cards = Array.from(grid.querySelectorAll('.stat-card'));
+
+      function setActiveDot(index) {
+        dots.forEach((dot, i) => dot.classList.toggle('is-active', i === index));
+      }
+
+      let scrollTimeout;
+      grid.addEventListener('scroll', () => {
+        clearTimeout(scrollTimeout);
+        scrollTimeout = setTimeout(() => {
+          const centerX = grid.scrollLeft + grid.clientWidth / 2;
+          let closestIndex = 0;
+          let closestDist = Infinity;
+          cards.forEach((card, i) => {
+            const cardCenter = card.offsetLeft + card.offsetWidth / 2;
+            const dist = Math.abs(cardCenter - centerX);
+            if (dist < closestDist) { closestDist = dist; closestIndex = i; }
+          });
+          setActiveDot(closestIndex);
+        }, 100);
+      }, { passive: true });
+
+      dots.forEach((dot, i) => {
+        dot.addEventListener('click', () => {
+          const card = cards[i];
+          if (!card) return;
+          grid.scrollTo({
+            left: card.offsetLeft - (grid.clientWidth - card.offsetWidth) / 2,
+            behavior: 'smooth'
+          });
+        });
+      });
+    })();
+
     // ---- Tarjetas de "¿Cómo reservar?": en desktop se resaltan con hover (CSS); en táctil, con un toque ----
     (function () {
       if (!window.matchMedia('(hover: none)').matches) return;
@@ -1520,46 +2014,8 @@
     initMobileCarousel('portalsGrid', 'portalsDots', '.portal-card', 'stats-dot', 'Ir a la plataforma');
     initMobileCarousel('reviewsGrid', 'reviewsDots', '.review-card', 'gallery-dot', 'Ir a la reseña');
     initMobileCarousel('bookingGrid', 'bookingDots', '.step-card', 'gallery-dot', 'Ir al paso');
-
-    // ---- Carrusel de tarjetas de la sección "¿Qué vais a pescar?" (solo mobile) ----
-    (function () {
-      const grid = document.getElementById('statsGrid');
-      const dotsWrap = document.getElementById('statsDots');
-      if (!grid || !dotsWrap) return;
-      const dots = Array.from(dotsWrap.querySelectorAll('.stats-dot'));
-      const cards = Array.from(grid.querySelectorAll('.stat-card'));
-
-      function setActiveDot(index) {
-        dots.forEach((dot, i) => dot.classList.toggle('is-active', i === index));
-      }
-
-      let scrollTimeout;
-      grid.addEventListener('scroll', () => {
-        clearTimeout(scrollTimeout);
-        scrollTimeout = setTimeout(() => {
-          const centerX = grid.scrollLeft + grid.clientWidth / 2;
-          let closestIndex = 0;
-          let closestDist = Infinity;
-          cards.forEach((card, i) => {
-            const cardCenter = card.offsetLeft + card.offsetWidth / 2;
-            const dist = Math.abs(cardCenter - centerX);
-            if (dist < closestDist) { closestDist = dist; closestIndex = i; }
-          });
-          setActiveDot(closestIndex);
-        }, 100);
-      }, { passive: true });
-
-      dots.forEach((dot, i) => {
-        dot.addEventListener('click', () => {
-          const card = cards[i];
-          if (!card) return;
-          grid.scrollTo({
-            left: card.offsetLeft - (grid.clientWidth - card.offsetWidth) / 2,
-            behavior: 'smooth'
-          });
-        });
-      });
-    })();
+    initMobileCarousel('typesGrid', 'typesDots', '.fishing-type-card', 'gallery-dot', 'Ir a la técnica de pesca');
+    initMobileCarousel('modesGrid', 'modesDots', '.fishing-type-card', 'gallery-dot', 'Ir al tipo de pesca');
 
     // ---- Galería: dots en mobile (carrusel con swipe) ----
     (function () {
@@ -1821,7 +2277,7 @@
       </div>
 
       <label data-i18n="labelPersonas" for="sfPersonas">Número de personas</label>
-      <input type="number" id="sfPersonas" min="1" max="5" step="1" required data-i18n-ph="phPersonas" placeholder="Ej: 4">
+      <input type="number" id="sfPersonas" min="1" max="6" step="1" required data-i18n-ph="phPersonas" placeholder="Ej: 4">
 
       <label data-i18n="labelPuerto">Puerto de salida</label>
       <div class="sf-wa-float__radio-group">
@@ -1845,7 +2301,7 @@
   (function () {
     const NUMERO_WHATSAPP = "34686683373";
 
-    const isEN = /^\/en(\/|$)/.test(window.location.pathname);
+    const isEN = !/^\/es(\/|$)/.test(window.location.pathname);
 
     (function capturarUTMs() {
       const params = new URLSearchParams(window.location.search);
