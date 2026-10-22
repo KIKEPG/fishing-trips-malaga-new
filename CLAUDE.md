@@ -108,10 +108,10 @@ Ver `buyer-persona-marbella.md` (documento completo). Resumen operativo para qui
 
 | # | Sección (diseño) | Qué objeción/deseo del buyer persona resuelve |
 |---|---|---|
-| 1 | Hero (foto full-bleed, H1, párrafo, CTA, trust row GYG/Google/TripAdvisor + estrellas + "+500 pescadores") | "¿Es esto para mí?" + prueba social inmediata |
+| 1 | Hero (foto full-bleed, H1, párrafo, CTA, trust row GYG/Google/TripAdvisor + estrellas + "+700 pescadores") | "¿Es esto para mí?" + prueba social inmediata |
 | 2 | Charter intro (imagen + bullets con check, badge flotante "+4 años") | Credibilidad de empresa + deseo de pertenencia (amigos/familia) |
 | 3 | Barra de stats (4 iconos: técnicas, equipo, especies, capacidad) sobre fondo navy | Refuerzo rápido de "todo incluido" y variedad |
-| 4 | Banner CTA intermedio (foto full-bleed + overlay cian + "Únete a las +500 personas") | Pertenencia + segundo microcompromiso de WhatsApp |
+| 4 | Banner CTA intermedio (foto full-bleed + overlay cian + "Únete a las +700 personas") | Pertenencia + segundo microcompromiso de WhatsApp |
 | 5 | "¿Cómo reservar?" — 4 pasos numerados | Reduce fricción de "¿en qué me estoy metiendo?" |
 | 6 | "¿Por qué elegir nuestro charter?" — foto + grid 2×2 con 4 razones | "¿Sabéis pescar de verdad?" + credibilidad técnica |
 | 7 | Galería de capturas (grid 3×3) | "Yo quiero hacer eso" — la recompensa psicológica de la captura |
