@@ -707,6 +707,19 @@ El siguiente bloque **es el widget completo, real y ya probado en producción** 
 - Añadir atributos `width`/`height` explícitos en cada `<img>` para evitar Cumulative Layout Shift.
 - Medir con Lighthouse/PageSpeed Insights (mobile y desktop) antes de dar por cerrada esta fase — objetivo Core Web Vitals: LCP < 2.5s, CLS < 0.1, INP < 200ms.
 
+### Decisiones de rendimiento ya aplicadas (23/10/2026) — no deshacer
+
+Medido con Lighthouse móvil: de ~64-77 a 95-100 en todas las plantillas. Reglas que lo sostienen:
+
+- **Fuentes autoalojadas** en `/fonts/` (Poppins 400/500/600/700, subconjunto latino, `font-display: swap`), declaradas con `@font-face` al principio de `style.css` y precargadas (400/600/700) en el `<head>`. **No volver a usar `@import` de Google Fonts** (encadenaba 3 peticiones bloqueantes a otros dominios).
+- **Sin Font Awesome.** Los iconos son SVG en línea con un sprite (`<symbol id="fa-…">` justo después de `<body>`) y `<svg class="fa-icon …"><use href="#fa-…"/></svg>`. Para un icono nuevo: añadir su `<symbol>` al sprite de cada página (SVG oficial de fontawesome-free 6.5.2), nunca enlazar la hoja de Font Awesome.
+- **Primera sección de cada página:** nunca lleva la animación `.reveal` (el JS la excluye) y su foto principal no lleva `loading="lazy"` sino `fetchpriority="high"`.
+- **Carruseles de fotos (`.intro-slide`):** solo la foto activa lleva `src`; el resto usa `data-src` y el JS las carga tras el `load`, justo antes de mostrarlas.
+- **Avatares redondos (`.why-proof`):** usan miniaturas `images/avatar-*.webp` de 112 px, no las fotos completas.
+- **Vídeo del hero:** se mantiene con `autoplay` y `preload="auto"` desde el inicio (decisión de Kike, 23/10/2026: prioriza que el vídeo se vea en movimiento desde el primer momento frente a la optimización).
+- **`content-visibility: auto`** en las secciones a partir de la tercera y en el footer (en `style.css`): no se maquetan ni pintan hasta acercarse a la pantalla.
+- **Caché en `vercel.json`:** fuentes 1 año inmutable, imágenes 30 días, `style.css` 1 día + revalidación. Si se sustituye una imagen manteniendo el nombre, los visitantes recurrentes pueden verla antigua hasta 30 días: mejor usar un nombre nuevo.
+
 ## 2. Banner de cookies GDPR, personalizado
 
 - Construido a medida (vanilla JS), no un plugin de terceros pesado — coherente con el resto del sitio (sin dependencias externas salvas las estrictamente necesarias).

@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" href="/fonts/poppins-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/poppins-600-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/poppins-700-latin.woff2" as="font" type="font/woff2" crossorigin>
   <!-- Google Tag Manager: el snippet está en el head, pero solo se carga GTM con consentimiento
        de Estadísticas o Marketing (banner de cookies), con Consent Mode v2 denegado por defecto. -->
   <script>
@@ -42,7 +45,6 @@
   <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="stylesheet" href="/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
   <script type="application/ld+json">
   {
@@ -223,6 +225,7 @@
   </script>
 </head>
 <body>
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true"><symbol id="fa-whatsapp" viewBox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></symbol><symbol id="fa-instagram" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></symbol><symbol id="fa-google" viewBox="0 0 488 512"><path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"/></symbol><symbol id="fa-bars" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></symbol><symbol id="fa-xmark" viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></symbol></svg>
   <!-- Header -->
   <header class="header header-solid" id="siteHeader">
     <div class="logo-container">
@@ -230,12 +233,12 @@
     </div>
 
     <button type="button" class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="primaryNav">
-      <i class="fa-solid fa-bars" id="navToggleIcon"></i>
+      <span class="fa-solid fa-bars nav-toggle-icon" id="navToggleIcon" aria-hidden="true"><svg class="fa-icon fa-bars" width="0.875em" height="1em" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><use href="#fa-bars"/></svg><svg class="fa-icon fa-xmark" width="0.75em" height="1em" viewBox="0 0 384 512" aria-hidden="true" focusable="false"><use href="#fa-xmark"/></svg></span>
     </button>
 
     <nav class="nav" id="primaryNav">
       <button type="button" class="nav-close" id="navClose" aria-label="Close menu">
-        <i class="fa-solid fa-xmark"></i>
+        <svg class="fa-icon fa-xmark" width="0.75em" height="1em" viewBox="0 0 384 512" aria-hidden="true" focusable="false"><use href="#fa-xmark"/></svg>
       </button>
       <a href="/">Home</a>
       <div class="nav-dropdown" id="navDropdownTipos">
@@ -259,7 +262,7 @@
         <a href="/trolling-malaga/" class="lang-active">EN</a>
       </div>
       <a href="#" class="btn-outline sf-wa-trigger">
-        <i class="fa-brands fa-whatsapp"></i>
+        <svg class="fa-icon fa-whatsapp" width="0.875em" height="1em" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><use href="#fa-whatsapp"/></svg>
         Book Now
       </a>
     </nav>
@@ -270,9 +273,9 @@
   <section class="section section-light intro-charter">
     <div class="intro-image-wrapper">
       <div class="intro-carousel" id="curricanCarousel">
-        <img src="/images/catch5.webp" alt="Angler in a blue jacket holding a fish caught next to a bent rod during a fishing trip in Málaga" width="500" height="667" loading="lazy" class="intro-slide active">
-        <img src="/images/catch7.webp" alt="Sunset over the sea with a fishing rod ready on board during a fishing trip in Málaga" width="500" height="667" loading="lazy" class="intro-slide">
-        <img src="/images/catch6.webp" alt="Angler in a cap holding a red porgy caught offshore during a fishing trip in Málaga" width="500" height="667" loading="lazy" class="intro-slide">
+        <img src="/images/catch5.webp" alt="Angler in a blue jacket holding a fish caught next to a bent rod during a fishing trip in Málaga" width="500" height="667" fetchpriority="high" class="intro-slide active">
+        <img data-src="/images/catch7.webp" alt="Sunset over the sea with a fishing rod ready on board during a fishing trip in Málaga" width="500" height="667" class="intro-slide">
+        <img data-src="/images/catch6.webp" alt="Angler in a cap holding a red porgy caught offshore during a fishing trip in Málaga" width="500" height="667" class="intro-slide">
       </div>
       <div class="badge-years">
         <strong>+4</strong>
@@ -332,7 +335,7 @@
 
   <!-- What will you catch? (same structure as the home Stats Section) -->
   <section class="section section-dark stats-section">
-    <img src="/images/stats-bg.webp" alt="" class="stats-bg" width="1200" height="1600" loading="lazy" aria-hidden="true">
+    <img src="/images/stats-bg.webp" alt="" class="stats-bg" width="900" height="1200" loading="lazy" aria-hidden="true">
     <div class="stats-overlay" aria-hidden="true"></div>
     <div class="stats-header">
       <p class="eyebrow" style="color: #ffffff;">What will you catch?</p>
@@ -357,7 +360,7 @@
         <strong>Departures at 7:30am &amp; 4:00pm</strong>
       </div>
     </div>
-    <div class="stats-dots" id="statsDots" role="tablist" aria-label="Card selector">
+    <div class="stats-dots" id="statsDots" role="group" aria-label="Card selector">
       <button type="button" class="stats-dot is-active" data-index="0" aria-label="Go to card 1"></button>
       <button type="button" class="stats-dot" data-index="1" aria-label="Go to card 2"></button>
       <button type="button" class="stats-dot" data-index="2" aria-label="Go to card 3"></button>
@@ -478,9 +481,9 @@
       <h2 class="h2 h2-light">Everything included in your trolling trip in Málaga</h2>
       <p>Are you on vacation in Costa del Sol and looking for a different, fun and authentic plan? We take you out to sea to live an unforgettable fishing experience, no previous experience is necessary. Just bring your desire to have fun... we take care of the rest!</p>
       <div class="why-proof">
-        <img src="/images/nino-pescando-malaga.webp" alt="Boy landing his first catches with his father on a fishing trip in Málaga" width="56" height="56" loading="lazy">
-        <img src="/images/pescador-pargo-fishing-trips-malaga.webp" alt="Angler sitting on board showing a sea bream caught with Fishing Trips Málaga" width="56" height="56" loading="lazy">
-        <img src="/images/padre-hijos-pargo-pesca-malaga.webp" alt="Father and sons posing with a sea bream caught on a family fishing trip in Málaga" width="56" height="56" loading="lazy">
+        <img src="/images/avatar-nino-pescando-malaga.webp" alt="Boy landing his first catches with his father on a fishing trip in Málaga" width="56" height="56" loading="lazy">
+        <img src="/images/avatar-pescador-pargo-fishing-trips-malaga.webp" alt="Angler sitting on board showing a sea bream caught with Fishing Trips Málaga" width="56" height="56" loading="lazy">
+        <img src="/images/avatar-padre-hijos-pargo-pesca-malaga.webp" alt="Father and sons posing with a sea bream caught on a family fishing trip in Málaga" width="56" height="56" loading="lazy">
         <span class="why-proof-text">Real clients, real catches</span>
       </div>
     </div>
@@ -577,7 +580,7 @@
 
       <div class="boat-listing-cta">
         <button class="btn-primary sf-wa-trigger">
-          <span class="btn-icon"><i class="fa-brands fa-whatsapp"></i></span>
+          <svg class="fa-icon fa-whatsapp" width="0.875em" height="1em" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><use href="#fa-whatsapp"/></svg>
           Book Now
         </button>
       </div>
@@ -626,7 +629,7 @@
       <div class="stats-dots portals-dots" id="portalsDots" aria-label="Platform selector"></div>
       <p class="portals-text">Read what other anglers say, then book your trip directly with us. Same boat, same skipper, no middleman.</p>
       <button class="btn-primary sf-wa-trigger">
-        <span class="btn-icon"><i class="fa-brands fa-whatsapp"></i></span>
+        <svg class="fa-icon fa-whatsapp" width="0.875em" height="1em" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><use href="#fa-whatsapp"/></svg>
         Book Now
       </button>
     </div>
@@ -673,7 +676,7 @@
   <!-- Lightbox de la galería -->
   <div class="lightbox" id="galleryLightbox" role="dialog" aria-modal="true" aria-label="Imagen ampliada" hidden>
     <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Close image">
-      <i class="fa-solid fa-xmark"></i>
+      <svg class="fa-icon fa-xmark" width="0.75em" height="1em" viewBox="0 0 384 512" aria-hidden="true" focusable="false"><use href="#fa-xmark"/></svg>
     </button>
     <img src="" alt="" id="lightboxImg">
   </div>
@@ -1098,7 +1101,7 @@
       })();
     </script>
     <a href="https://share.google/WLvcuenLzACgzVrgT" target="_blank" rel="noopener" class="reviews-cta">
-      <i class="fa-brands fa-google" aria-hidden="true"></i>
+      <svg class="fa-icon fa-google" width="0.9531em" height="1em" viewBox="0 0 488 512" aria-hidden="true" focusable="false"><use href="#fa-google"/></svg>
       See all reviews on Google
     </a>
   </section>
@@ -1191,7 +1194,7 @@
         <p>Experience a fishing trip in Málaga with expert guides who guarantee a fun and safe experience. Book now!</p>
         <div style="display:flex;gap:10px;margin-top:4px;">
           <a href="https://www.instagram.com/fishingtrips_malaga/" target="_blank" rel="noopener" aria-label="Fishing Trips Málaga on Instagram" style="width:46px;height:46px;border-radius:12px;background:rgba(255,255,255,0.08);display:flex;align-items:center;justify-content:center;">
-            <i class="fa-brands fa-instagram" style="color:#ffffff;font-size:24px;"></i>
+            <svg class="fa-icon fa-instagram" width="0.875em" height="1em" viewBox="0 0 448 512" aria-hidden="true" focusable="false" style="color:#ffffff;font-size:24px;"><use href="#fa-instagram"/></svg>
           </a>
         </div>
       </div>
@@ -1306,7 +1309,7 @@
     function updateHeaderScrolled() {
       siteHeader.classList.toggle('scrolled', window.scrollY > 40);
     }
-    updateHeaderScrolled();
+    requestAnimationFrame(updateHeaderScrolled);
     window.addEventListener('scroll', updateHeaderScrolled, { passive: true });
 
     // ---- Menú móvil (hamburguesa) ----
@@ -1377,7 +1380,10 @@
           }
         });
       }, { threshold: 0.12 });
-      sections.forEach(section => {
+      // La primera sección (hero / bloque con el H1) nunca se oculta: está en la primera
+      // pantalla y animarla retrasaba el pintado del contenido principal (LCP).
+      sections.forEach((section, i) => {
+        if (i === 0) return;
         section.classList.add('reveal');
         io.observe(section);
       });
@@ -1390,11 +1396,23 @@
       const slides = Array.from(carousel.querySelectorAll('.intro-slide'));
       if (slides.length < 2) return;
       let current = 0;
-      setInterval(() => {
-        slides[current].classList.remove('active');
-        current = (current + 1) % slides.length;
-        slides[current].classList.add('active');
-      }, 4000);
+      // Las fotos 2..n solo tienen data-src: se cargan tras el "load" y cada una justo antes de
+      // mostrarse, para no competir con la primera pantalla por el ancho de banda.
+      const loadSlide = (i) => {
+        const img = slides[i];
+        if (img && img.dataset.src) { img.src = img.dataset.src; img.removeAttribute('data-src'); }
+      };
+      const start = () => {
+        loadSlide(1);
+        setInterval(() => {
+          slides[current].classList.remove('active');
+          current = (current + 1) % slides.length;
+          slides[current].classList.add('active');
+          loadSlide((current + 1) % slides.length);
+        }, 4000);
+      };
+      if (document.readyState === 'complete') start();
+      else window.addEventListener('load', start, { once: true });
     })();
 
     // ---- Cookies Banner Logic (Funcional / Preferencias / Estadísticas / Marketing) ----
