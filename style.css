@@ -2177,6 +2177,8 @@ body > section:nth-of-type(n+3), body > footer {
 }
 .btn-primary.sf-wa-trigger .fa-icon,
 .btn-outline.sf-wa-trigger .fa-icon { font-size: 1.1rem; }
+/* El clic siempre lo recibe el botón (no el icono), para que el activador de GTM por clase sf-wa-trigger lo detecte */
+.sf-wa-trigger * { pointer-events: none; }
 .btn-primary.sf-wa-trigger:hover,
 .btn-outline.sf-wa-trigger:hover,
 .header.scrolled .btn-outline.sf-wa-trigger:hover,
